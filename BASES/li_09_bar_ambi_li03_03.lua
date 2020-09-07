@@ -1,0 +1,396 @@
+duration  =  10000.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Ambi_Layer_Basic_li_09_bar_Li03_03",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Inf_10oc",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.957667, 0, -0.356404 },
+			orient  =  { { 0.931277, 0.000000, 0.364313 },
+					   { -0.052033, 0.989748, 0.133010 },
+					   { -0.360578, -0.142825, 0.921729 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 174, 232, 249 },
+			diffuse  =  { 0.443137, 0.443137, 0.556863 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.27451, 0.254902, 0.329412 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  99.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Inf_2oc",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.979413, 0, 0.463978 },
+			orient  =  { { -0.931798, 0.000000, 0.362977 },
+					   { -0.075671, 0.978028, -0.194254 },
+					   { -0.355002, -0.208472, -0.911325 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 197, 222, 192 },
+			diffuse  =  { 0.560784, 0.454902, 0.270588 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  99.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG20_Geo_Inf",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  20, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.630128, 0, 0.865694 },
+			orient  =  { { 0.799085, 0.000000, -0.601217 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.601217, 0.000000, 0.799085 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 1, 1, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 1, 1, 1 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG21_TDistant_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  21, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.635458, 0, 1.632055 },
+			orient  =  { { 0.636787, 0.000000, -0.771040 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.771040, 0.000000, 0.636787 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.501961, 0.376471, 0.192157 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG10_Terrain_Inf",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.667863, 0, -0.525955 },
+			orient  =  { { -0.834332, -0.264204, -0.483824 },
+					   { -0.551259, 0.402602, 0.730770 },
+					   { 0.001716, 0.876417, -0.481549 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.780392, 0.65098, 0.352941 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.215686, 0.184314, 0.317647 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Ambi_Key_TerrainField_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.545547, -0.838080 },
+					   { 0.000000, 0.838080, 0.545547 } }
+		}
+	},
+
+	{
+		entity_name  =  "Ambi_Key_DistantRoids_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -15000, 1500, 0 },
+			orient  =  { { -0.357294, 0.000000, 0.933992 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.933992, 0.000000, -0.357294 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Set_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.865657, 0, 0.044509 },
+			orient  =  { { 0.000107, 0.015646, -0.999878 },
+					   { 0.999977, -0.006817, 0.000000 },
+					   { -0.006816, -0.999854, -0.015646 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.882353, 0.882353, 0.882353 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG11_Puffs_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  11, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.675188, 0, 0.158034 },
+			orient  =  { { -0.012351, 0.000000, -0.999924 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999924, 0.000000, -0.012351 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 1, 1, 1 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "Ambi_Key_TerrainDyna_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.811293, 0.584640 },
+					   { 0.000000, -0.584640, 0.811293 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Ships_Inf",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.667863, 0, -0.525955 },
+			orient  =  { { -0.880407, -0.335913, -0.334732 },
+					   { -0.473803, 0.593551, 0.650545 },
+					   { -0.019846, 0.731341, -0.681723 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.780392, 0.65098, 0.352941 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.215686, 0.184314, 0.317647 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG23_Sky_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.635458, 0, 1.632055 },
+			orient  =  { { 0.636787, 0.000000, -0.771040 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.771040, 0.000000, 0.636787 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 1, 1, 1 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Ambi_Key_NebulaClouds_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_starsphere_Li03_3",
+		type  =  COMPOUND,
+		template_name  =  "starsphere_Li03",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  1,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { -0.727152, -0.034093, -0.685630 },
+					   { -0.046834, 0.998903, 0.000000 },
+					   { 0.684877, 0.032111, -0.727950 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			NoFog  =  "Y",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_starsphere_Li03_stars_4",
+		type  =  COMPOUND,
+		template_name  =  "starsphere_Li03_stars",
+		lt_grp  =  23, srt_grp  =  -101, usr_flg  =  1,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { -0.727152, -0.034093, -0.685630 },
+					   { -0.046834, 0.998903, 0.000000 },
+					   { 0.684877, 0.032111, -0.727950 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			NoFog  =  "Y",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "Ambi_Layer_Basic_li_09_bar_Li03_03" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  N,
+				fogcolor  =  { 0, 0, 0 },
+				fogmode  =  F_NONE,
+				fogstart  =  0,
+				fogend  =  0,
+				fogdensity  =  0
+			}
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Inf_2oc", "ambi_LtG00_Inf_10oc" },
+		{
+			duration  =  0.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.556863, 0.454902, 0.266667 },
+			}
+		}
+	}
+};

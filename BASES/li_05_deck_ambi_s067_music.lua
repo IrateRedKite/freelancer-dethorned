@@ -1,0 +1,155 @@
+duration  =  299.997;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Li_05_Deck_Ambi",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 128, 128, 128 }
+	},
+
+	{
+		entity_name  =  "ambience_deck_space_larger_2",
+		type  =  SOUND,
+		template_name  =  "ambience_deck_space_larger",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -10,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "ship_levitation",
+		type  =  SOUND,
+		template_name  =  "ship_levitation",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  SPATIAL,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  0,
+			pan  =  0,
+			dmin  =  20,
+			dmax  =  100,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "X/Shipcentre/01",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.879033, 0.000000, -0.476761 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.476761, 0.000000, 0.879033 } }
+		}
+	},
+
+	{
+		entity_name  =  "rtc_music_anticipation_motivated_2",
+		type  =  SOUND,
+		template_name  =  "rtc_music_anticipation_motivated",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -6,
+			pan  =  0,
+			dmin  =  50,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_SOUND, { "ambience_deck_space_larger_2" },
+		{
+			duration  =  300.000,
+			flags  =  LOOP
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "ship_levitation", "X/Shipcentre/01" },
+		{
+			duration  =  300.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_SOUND, { "rtc_music_anticipation_motivated_2" },
+		{
+			duration  =  300.000,
+			flags  =  LOOP
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "ship_levitation" },
+		{
+			duration  =  299.998,
+			flags  =  LOOP
+		}
+	}
+};

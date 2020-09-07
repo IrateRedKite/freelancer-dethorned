@@ -1,0 +1,202 @@
+duration  =  8.343;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_br_01_Shipdlr_Enter",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "Monitor_Enter",
+		type  =  MONITOR,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+	},
+
+	{
+		entity_name  =  "Camera_Enter",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.345907, -0.947203, -71.30077 },
+			orient  =  { { -0.999993, 0.000000, 0.003816 },
+					   { -0.000332, 0.996198, -0.087119 },
+					   { -0.003802, -0.087119, -0.996191 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  45,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_Path",
+		type  =  MOTION_PATH,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops  = 
+		{
+			path_type  =  "CV_CROrientationSplinePath",
+			path_data  =  "OPEN,{ -0.345907, -0.947203, -71.300774 }, { -0.001906, -0.000083, 0.999047, -0.043601 }, { -1.466280, 9.253694, -35.793053 }, { -0.018908, -0.000813, 0.998885, -0.043255 }, { -3.288454, 4.150611, -4.925756 }, { -0.025624, 0.000723, 0.999274, 0.028181 }, "
+		}
+	},
+
+	{
+		entity_name  =  "character_trent",
+		type  =  DEFORMABLE,
+		template_name  =  "trent",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 7.179738, 0, 5.876308 },
+			orient  =  { { -0.337335, 0.000000, -0.941385 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.941385, 0.000000, -0.337335 } }
+		},
+		compoundprops  = 
+		{
+			floor_height  =  0
+		},
+		userprops  = 
+		{
+			category  =  "Character",
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 0.173174, 0, 8.272089 },
+			orient  =  { { -0.331927, 0.000000, -0.943305 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.943305, 0.000000, -0.331927 } }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_PATH_ANIMATION, { "Camera_Enter", "Camera_Enter_Path" },
+		{
+			duration  =  7.000,
+			start_percent  =  0,
+			stop_percent  =  1,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			flags  =  POSITION + ORIENTATION,
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1
+		}
+	},
+
+	{
+		0.000, START_CAMERA_PROP_ANIM, { "Camera_Enter" },
+		{
+			duration  =  7.000,
+			cameraprops  = 
+			{
+				fovh  =  31
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration  =  5.199,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1,
+			event_flags  =  2
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Monitor_Enter", "Camera_Enter" }
+	},
+
+	{
+		5.187, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration  =  2.400,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		7.587, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_STND_IDLE_000LV_xa_04",
+			duration  =  7.466,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		7.587, START_SPATIAL_PROP_ANIM, { "character_trent", "Zg/PC/Player/01/A/Stand" },
+		{
+			duration  =  0.753,
+			target_part  =  "",
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				pos  =  { 0.173174, 0, 8.272089 },
+				q_orient  =  { -0.331927, 0, -0.943305, 0 }
+			}
+		}
+	}
+};

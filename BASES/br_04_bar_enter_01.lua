@@ -1,0 +1,413 @@
+duration  =  5.184;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Scene_br_04_bar_enter",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "character_trent",
+		type  =  DEFORMABLE,
+		template_name  =  "trent",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -7.027764, 0, -0.341526 },
+			orient  =  { { -0.148405, 0.000000, 0.988927 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.988927, 0.000000, -0.148405 } }
+		},
+		compoundprops  = 
+		{
+			floor_height  =  0
+		},
+		userprops  = 
+		{
+			category  =  "Character",
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -5.013776, 1.390813, 0.156222 },
+			orient  =  { { 0.382212, 0.000000, -0.924075 },
+					   { -0.024173, 0.999658, -0.009998 },
+					   { 0.923759, 0.026160, 0.382081 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Monitor_Enter",
+		type  =  MONITOR,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+	},
+
+	{
+		entity_name  =  "Camera_Enter_Path",
+		type  =  MOTION_PATH,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops  = 
+		{
+			path_type  =  "CV_CROrientationSplinePath",
+			path_data  =  "OPEN,{ -5.013776, 1.390813, 0.156222 }, { 0.831257, -0.010874, 0.555735, 0.007270 }, { -1.525571, 1.632258, 2.661379 }, { 0.977192, 0.000000, 0.212303, 0.004859 }, { -4.138839, 3.806485, 6.761771 }, { 0.963813, -0.187147, -0.186362, -0.036186 }, "
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_ml_hard01_1",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard01",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -20,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_mr_hard04_2",
+		type  =  SOUND,
+		template_name  =  "fs_mr_hard04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -20,
+			pan  =  -10,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_ml_hard02_3",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard02",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -22,
+			pan  =  -20,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_mr_hard03_4",
+		type  =  SOUND,
+		template_name  =  "fs_mr_hard03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -23,
+			pan  =  -35,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_ml_hard03_5",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -25,
+			pan  =  -22,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_mr_hard02_6",
+		type  =  SOUND,
+		template_name  =  "fs_mr_hard02",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -25,
+			pan  =  -8,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_fs_ml_hard04_7",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -27,
+			pan  =  -4,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "character_trent_sfx_fstop_male01_8",
+		type  =  SOUND,
+		template_name  =  "sfx_fstop_male01",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -15,
+			pan  =  -8,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, SET_CAMERA, { "Monitor_Enter", "Camera_Enter" }
+	},
+
+	{
+		0.000, START_PATH_ANIMATION, { "Camera_Enter", "Camera_Enter_Path" },
+		{
+			duration  =  5.000,
+			start_percent  =  0,
+			stop_percent  =  1,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			flags  =  POSITION + ORIENTATION,
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration  =  2.599,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1,
+			event_flags  =  2
+		}
+	},
+
+	{
+		0.343, START_SOUND, { "character_trent_fs_ml_hard01_1" },
+		{
+			duration  =  0.416
+		}
+	},
+
+	{
+		0.937, START_SOUND, { "character_trent_fs_mr_hard04_2" },
+		{
+			duration  =  0.231
+		}
+	},
+
+	{
+		1.687, START_SOUND, { "character_trent_fs_ml_hard02_3" },
+		{
+			duration  =  0.208
+		}
+	},
+
+	{
+		2.281, START_SOUND, { "character_trent_fs_mr_hard03_4" },
+		{
+			duration  =  0.441
+		}
+	},
+
+	{
+		2.562, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration  =  2.400,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		2.843, START_SOUND, { "character_trent_fs_ml_hard03_5" },
+		{
+			duration  =  0.254
+		}
+	},
+
+	{
+		3.593, START_SOUND, { "character_trent_fs_mr_hard02_6" },
+		{
+			duration  =  0.277
+		}
+	},
+
+	{
+		4.277, START_SOUND, { "character_trent_fs_ml_hard04_7" },
+		{
+			duration  =  0.289
+		}
+	},
+
+	{
+		4.746, START_SOUND, { "character_trent_sfx_fstop_male01_8" },
+		{
+			duration  =  0.185
+		}
+	}
+};

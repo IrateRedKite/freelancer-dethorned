@@ -1,0 +1,657 @@
+duration  =  3000.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "ambi_Layer_li_01_city_Day",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "ambi_skydome_sky_vrtx_blue",
+		type  =  COMPOUND,
+		template_name  =  "skydome_sky_vrtx_blue",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
+		flags  =  HIDDEN + LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 2000 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			nofog  =  "Y",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_skydome_clouds_thin",
+		type  =  COMPOUND,
+		template_name  =  "skydome_clouds_thin",
+		lt_grp  =  21, srt_grp  =  -80, usr_flg  =  2,
+		flags  =  HIDDEN + LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 500, 2000 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			NoFog  =  "Y",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_skydome_clouds_snow",
+		type  =  COMPOUND,
+		template_name  =  "skydome_clouds_snow",
+		lt_grp  =  22, srt_grp  =  -90, usr_flg  =  2,
+		flags  =  HIDDEN + LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.856571, 0.000000, 0.516030 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.516030, 0.000000, 0.856571 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			nofog  =  "Y",
+		}
+	},
+
+	{
+		entity_name  =  "gf_rtc_shipcushion_1",
+		type  =  PSYS,
+		template_name  =  "PlayerShipHover",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Marker_Shipcushion",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 57.19823, 0.01599, -64.13699 },
+			orient  =  { { -0.987940, 0.000000, 0.154836 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.154836, 0.000000, -0.987940 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG23_Point_Sky",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 13.12987, 0, -0.620008 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.113725, 0.109804, 0.168627 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG12_Direct_Mntns",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  12, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 10.28035, 0, -0.02069 },
+			orient  =  { { -0.999938, 0.000000, -0.011120 },
+					   { 0.000000, 1.000000, -0.000024 },
+					   { 0.011120, -0.000024, -0.999938 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.329412, 0.321569, 0.376471 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.121569, 0.121569, 0.121569 },
+			direction  =  { 0, 0, 1 },
+			range  =  10000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Sun_02",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.913689, 0, -0.556919 },
+			orient  =  { { 0.987570, 0.000000, 0.157183 },
+					   { -0.093083, 0.805792, 0.584838 },
+					   { -0.126657, -0.592199, 0.795775 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 1, 0.776471, 0.439216 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Sky",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.5326, 0, 0 },
+			orient  =  { { -0.727378, -0.117860, -0.676040 },
+					   { 0.136285, 0.940708, -0.310637 },
+					   { 0.672568, -0.318085, -0.668188 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.603922, 0.54902, 0.694118 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Sun_01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.088887, 0, 0 },
+			orient  =  { { 0.426056, 0.000000, 0.904697 },
+					   { -0.312081, 0.938619, 0.146971 },
+					   { -0.849165, -0.344956, 0.399904 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 1, 0.929412, 0.819608 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG11_Direct_Skylines",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  11, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.754497, 0, 0.249986 },
+			orient  =  { { -0.567765, 0.000000, -0.823191 },
+					   { 0.279241, 0.940708, -0.192596 },
+					   { 0.774382, -0.339218, -0.534101 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.721569, 0.686275, 0.811765 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Direct_City",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 7.542086, 0, 0.104819 },
+			orient  =  { { 0.328521, 0.000000, 0.944497 },
+					   { -0.267294, 0.959119, 0.092972 },
+					   { -0.905885, -0.283002, 0.315091 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.984314, 0.886275, 0.694118 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.529412, 0.47451, 0.592157 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG12_Spot_mnts",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  12, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -3.011788, -1.529636, 2005.994 },
+			orient  =  { { -0.916659, 0.008088, -0.399589 },
+					   { -0.023467, 0.996981, 0.074014 },
+					   { 0.398981, 0.077223, -0.913702 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.87451, 0.811765, 0.733333 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  9.999987,
+			type  =  L_SPOT,
+			theta  =  0.9999999,
+			atten  =  { 1, 0, 2e-009 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG22_Point_CloudsSnow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  22, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 12.43548, 0, -0.669469 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.345098, 0.301961, 0.435294 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG21_Point_CloudsThin",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  21, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 11.54664, 0, -0.732781 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.137255, 0.094118, 0.156863 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Direct_City_Sky",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.46879, 0, -2.263844 },
+			orient  =  { { -0.727378, -0.117860, -0.676040 },
+					   { -0.175055, 0.984417, 0.016726 },
+					   { 0.663534, 0.130510, -0.736675 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.356863, 0.301961, 0.447059 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Direct_City_Sun_01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.00609, 0, -2.903967 },
+			orient  =  { { 0.426056, 0.000000, 0.904697 },
+					   { -0.312081, 0.938619, 0.146971 },
+					   { -0.849165, -0.344956, 0.399904 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 1, 0.94902, 0.835294 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Direct_City_Sun_02",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.558776, 0, -3.449848 },
+			orient  =  { { 0.989030, 0.001731, -0.147706 },
+					   { 0.017204, 0.991777, 0.126819 },
+					   { 0.146711, -0.127969, 0.980867 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.87451, 0.776471, 0.619608 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG23_Spot_Sky_Splash",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -3.011788, -1.529636, 2005.994 },
+			orient  =  { { -0.904383, 0.006898, -0.426665 },
+					   { 0.023343, 0.999172, -0.033324 },
+					   { 0.426082, -0.040098, -0.903795 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.658824, 0.690196, 0.741176 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  60,
+			type  =  L_SPOT,
+			theta  =  9.999996,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG21_Spot_Clouds_Splash",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  21, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -3.011788, -1.529636, 2005.994 },
+			orient  =  { { -0.916659, 0.008088, -0.399589 },
+					   { -0.023467, 0.996981, 0.074014 },
+					   { 0.398981, 0.077223, -0.913702 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.356863, 0.27451, 0.168627 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  69.99999,
+			type  =  L_SPOT,
+			theta  =  9.999996,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "SET_LtG09_li_01_Cityscape",
+		type  =  COMPOUND,
+		template_name  =  "li_01_cityscape",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE + LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG12_Spot_mnts_copy_1",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  12, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -3.011788, -1.529636, 2005.994 },
+			orient  =  { { -0.098147, 0.163507, -0.981648 },
+					   { -0.144859, 0.973557, 0.176642 },
+					   { 0.984573, 0.159538, -0.071867 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.713726, 0.588235, 0.827451 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  200000,
+			cutoff  =  54.99999,
+			type  =  L_SPOT,
+			theta  =  0.9999999,
+			atten  =  { 1, 0, 2e-010 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, ATTACH_ENTITY, { "gf_rtc_shipcushion_1", "Marker_Shipcushion" },
+		{
+			duration  =  900.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "gf_rtc_shipcushion_1" },
+		{
+			duration  =  900.000
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_skydome_clouds_snow" },
+		{
+			duration  =  3000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { -360, Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 1.000000 },
+					{ 1.000000, 1.000000, 0.882353, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_skydome_clouds_thin" },
+		{
+			duration  =  3000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { -360, Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 1.000000 },
+					{ 1.000000, 1.000000, 0.882353, 0.000000 },
+				}
+			},
+			pcurve_period  =  1000000
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "SET_LtG09_li_01_Cityscape" },
+		{
+			animation  =  "Sc_li_01_manhattan_cityscape",
+			duration  =  100000.000,
+			time_scale  =  1,
+			weight  =  1,
+			trans_scale  =  1,
+			event_flags  =  2
+		}
+	},
+
+	{
+		0.000, START_FOG_PROP_ANIM, { "ambi_Layer_li_01_city_Day" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  Y,
+				fogcolor  =  { 75, 67, 52 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  -6000,
+				fogend  =  35000.1,
+				fogdensity  =  0
+			}
+		}
+	}
+};

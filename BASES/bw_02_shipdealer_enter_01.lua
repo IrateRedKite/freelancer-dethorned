@@ -1,0 +1,189 @@
+duration  =  8.343;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_bw_02_Shipdlr_Enter",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "Monitor_Enter",
+		type  =  MONITOR,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+	},
+
+	{
+		entity_name  =  "Camera_Enter",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -15.83965, 30.87312, 12.25298 },
+			orient  =  { { 0.721527, 0.000000, 0.692386 },
+					   { 0.383185, 0.832898, -0.399312 },
+					   { -0.576687, 0.553427, 0.600959 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  35,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_Path",
+		type  =  MOTION_PATH,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops  = 
+		{
+			path_type  =  "CV_CROrientationSplinePath",
+			path_data  =  "OPEN,{ -15.839645, 30.873119, 12.252976 }, { 0.888170, -0.268175, -0.357216, -0.107858 }, { -5.749598, 9.573138, -6.364182 }, { 0.904283, -0.148521, -0.394976, -0.064871 }, { 7.170654, 5.938981, -11.414500 }, { 0.732753, -0.086468, -0.670328, -0.079102 }, "
+		}
+	},
+
+	{
+		entity_name  =  "character_trent",
+		type  =  DEFORMABLE,
+		template_name  =  "trent",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 33.80329, 0, -12.89934 },
+			orient  =  { { 0.015998, 0.000000, -0.999872 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999872, 0.000000, 0.015998 } }
+		},
+		compoundprops  = 
+		{
+			floor_height  =  0
+		},
+		userprops  = 
+		{
+			category  =  "Character",
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { -0.846043, 0, -16.942 },
+			orient  =  { { 0.761693, 0.000000, -0.647938 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.647938, 0.000000, 0.761693 } }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, SET_CAMERA, { "Monitor_Enter", "Camera_Enter" }
+	},
+
+	{
+		0.000, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration  =  5.199,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1,
+			event_flags  =  2
+		}
+	},
+
+	{
+		0.000, START_CAMERA_PROP_ANIM, { "Camera_Enter" },
+		{
+			duration  =  7.812,
+			cameraprops  = 
+			{
+				fovh  =  31
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		0.000, START_PATH_ANIMATION, { "Camera_Enter", "Camera_Enter_Path" },
+		{
+			duration  =  7.812,
+			start_percent  =  0,
+			stop_percent  =  1,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			flags  =  POSITION + ORIENTATION,
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		5.187, START_MOTION, { "character_trent" },
+		{
+			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration  =  2.400,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		8.340, ATTACH_ENTITY, { "character_trent", "Zg/PC/Player/01/A/Stand" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	}
+};

@@ -1,0 +1,525 @@
+duration  =  60.187;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "LtShadowSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.441345, -1.622984, 1.088021 },
+			orient  =  { { 0.060139, -0.154655, 0.986136 },
+					   { -0.985208, -0.168008, 0.033734 },
+					   { 0.160462, -0.973579, -0.162471 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 0, 0, 0 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Layer_Pl_01_Pad_Hardpoint",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 168, 160, 168 }
+	},
+
+	{
+		entity_name  =  "Camera_0",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 22.67496, 19.49225, 77.15772 },
+			orient  =  { { 0.965953, 0.000000, -0.258719 },
+					   { -0.030932, 0.992827, -0.115488 },
+					   { 0.256863, 0.119559, 0.959024 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  20,
+			hvaspect  =  1.333333,
+			nearplane  =  2,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "LtGlareSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 22.67496, 29.49225, 77.15772 },
+			orient  =  { { 0.965953, 0.000000, -0.258719 },
+					   { -0.030932, 0.992827, -0.115488 },
+					   { 0.256863, 0.119559, 0.959024 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.164706, 0.164706, 0.164706 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Cart_li_flat02_Marker",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.020767, 0.77, 11.71493 },
+			orient  =  { { -0.654543, 0.000000, 0.756025 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.756025, 0.000000, -0.654543 } }
+		}
+	},
+
+	{
+		entity_name  =  "Cart_li_Cart01_Marker",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -10.88754, 0.58, 4.973846 },
+			orient  =  { { -0.750078, 0.000000, 0.661349 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.661349, 0.000000, -0.750078 } }
+		}
+	},
+
+	{
+		entity_name  =  "X/Shipcentre/02",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -47.6373, 0, 12.73767 },
+			orient  =  { { 0.952981, 0.000000, 0.303030 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.303030, 0.000000, 0.952981 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -18.8333, 0, -6.154572 },
+			orient  =  { { -0.736678, 0.000000, 0.676244 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.676244, 0.000000, -0.736678 } }
+		}
+	},
+
+	{
+		entity_name  =  "Bin_artifacts_1_1",
+		type  =  COMPOUND,
+		template_name  =  "StackGreen_Refgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 20.90742, 0.359937, 2.905418 },
+			orient  =  { { -0.594015, 0.000000, 0.804454 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.804454, 0.000000, -0.594015 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_1_2",
+		type  =  COMPOUND,
+		template_name  =  "Stackwhite_liquidgas",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 19.53779, 0.369627, 5.20166 },
+			orient  =  { { -0.594015, 0.000000, 0.804454 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.804454, 0.000000, -0.594015 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Set_pl_01_planetscape_1",
+		type  =  COMPOUND,
+		template_name  =  "pl_01_planetscape",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Room",
+		}
+	},
+
+	{
+		entity_name  =  "Set_landingpad_pittsburgh_a",
+		type  =  COMPOUND,
+		template_name  =  "landingpad_pittsburgh_a",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -47.56914, 0, 13.40359 },
+			orient  =  { { 0.802834, 0.000000, -0.596202 },
+					   { -0.596202, 0.000047, -0.802834 },
+					   { 0.000028, 1.000000, 0.000038 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "Cart_li_cart_01",
+		type  =  COMPOUND,
+		template_name  =  "li_cart",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.88754, 0.58, 4.973846 },
+			orient  =  { { -0.750078, 0.000000, 0.661349 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.661349, 0.000000, -0.750078 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment Cart",
+			Priority  =  "Equip_2",
+		}
+	},
+
+	{
+		entity_name  =  "Cart_li_flat_02",
+		type  =  COMPOUND,
+		template_name  =  "li_flat",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -2.020767, 0.77, 11.71493 },
+			orient  =  { { -0.654543, 0.000000, 0.756025 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.756025, 0.000000, -0.654543 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment Cart",
+			Priority  =  "Equip_2",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_hardware_li_free_flow_ion_drive_5",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_hardware_li_free_flow_ion_drive",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.97061, 1.554153, 4.791596 },
+			orient  =  { { 0.740006, 0.000000, 0.672600 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.672600, 0.000000, 0.740006 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_hardware_li_fusion_reactor_6",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_hardware_li_fusion_reactor",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -4.758768, 1.914411, 9.223675 },
+			orient  =  { { 0.782561, 0.000000, 0.622574 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.622574, 0.000000, 0.782561 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_hardware_li_policing_armor_7",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_hardware_li_policing_armor",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -8.548048, 1.914706, 7.506566 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_weapons_li_heavy_ion_blaster_9",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_weapons_li_heavy_ion_blaster",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -0.106602, 1.186955, 14.6836 },
+			orient  =  { { 0.769089, 0.000000, 0.639141 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.639141, 0.000000, 0.769089 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_weapons_li_laser_beam_10",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_weapons_li_laser_beam",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -2.13877, 1.185267, 12.82024 },
+			orient  =  { { 0.788775, 0.000000, 0.614682 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.614682, 0.000000, 0.788775 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_weapons_li_plasma_blaster_11",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_weapons_li_plasma_blaster",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -2.88695, 1.18324, 11.86699 },
+			orient  =  { { 0.799943, 0.000000, 0.600076 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.600076, 0.000000, 0.799943 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "rtcprop_weapons_li_rad_launcher_12",
+		type  =  COMPOUND,
+		template_name  =  "rtcprop_weapons_li_rad_launcher",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -13.46373, 0.816501, 2.852528 },
+			orient  =  { { 0.740385, 0.000000, 0.672184 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.672184, 0.000000, 0.740385 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Equip_1",
+		}
+	},
+
+	{
+		entity_name  =  "X/Marker_Weather",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 22.67496, 19.49225, 77.15772 },
+			orient  =  { { 0.965953, 0.000000, -0.258719 },
+					   { -0.030932, 0.992827, -0.115488 },
+					   { 0.256863, 0.119559, 0.959024 } }
+		}
+	},
+
+	{
+		entity_name  =  "Set_pl_01_bar_facade_1",
+		type  =  COMPOUND,
+		template_name  =  "pl_01_bar_facade",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 92.8034, 18.81576, 35.80216 },
+			orient  =  { { -0.398749, 0.000000, 0.917060 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.917060, 0.000000, -0.398749 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "LtGlareSource_g3",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 22.67496, 29.49225, 77.15772 },
+			orient  =  { { 0.965953, 0.000000, -0.258719 },
+					   { -0.030932, 0.992827, -0.115488 },
+					   { 0.256863, 0.119559, 0.959024 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.164706, 0.164706, 0.164706 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "LtShadowSource_g3",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.441345, -1.622984, 1.088021 },
+			orient  =  { { 0.060139, -0.154655, 0.986136 },
+					   { -0.985208, -0.168008, 0.033734 },
+					   { 0.160462, -0.973579, -0.162471 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 0, 0, 0 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "Layer_Pl_01_Pad_Hardpoint" },
+		{
+			duration  =  0.100,
+			fogprops  = 
+			{
+				fogon  =  N,
+				fogtable  =  N,
+				fogcolor  =  { 55, 38, 30 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  -750,
+				fogend  =  2000,
+				fogdensity  =  1
+			}
+		}
+	},
+
+	{
+		0.000, CONNECT_HARDPOINTS, { "Set_pl_01_bar_facade_1", "Set_pl_01_planetscape_1" },
+		{
+			duration  =  0.100,
+			hardpoint  =  "hp_facade_connection",
+			parent_hardpoint  =  "hp_facade_mount"
+		}
+	}
+};

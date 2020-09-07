@@ -1,0 +1,912 @@
+duration  =  3600.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "ambi_Layer_Pl_01_ambi_day",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke01_6",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke01",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 299.9788, -20.05345, 26.96679 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke02_7",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke02",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 313.2091, -17.01744, 14.73765 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_Plasma1",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 311.0178, 3.734074, -49.45567 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_Plasma2",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 257.7779, -35.1309, 47.93596 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Skydome_KuwaitSky",
+		type  =  COMPOUND,
+		template_name  =  "skydome_pittsburgh_a",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.002608, -0.999997 },
+					   { 0.000000, 0.999997, 0.002608 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			nofog  =  "Y",
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke01_6_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 402.91, 34.29354, -43.56115 },
+			orient  =  { { -0.999945, 0.000000, 0.010508 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.010508, 0.000000, -0.999945 } }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_Plasma1_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 221.4879, -20.96702, 82.84179 },
+			orient  =  { { -0.615604, 0.000000, 0.788056 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.788056, 0.000000, -0.615604 } }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_Plasma2_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 216.8132, -28.38053, 80.1403 },
+			orient  =  { { -0.745809, 0.000000, 0.666160 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.666160, 0.000000, -0.745809 } }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke02_7_Mrk",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 155.7467, 16.20319, 217.2747 },
+			orient  =  { { -0.994703, 0.000000, 0.102794 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.102794, 0.000000, -0.994703 } }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_4",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 351.3911, 15.64099, -156.1557 },
+			orient  =  { { -0.984815, 0.000000, -0.173605 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.173605, 0.000000, -0.984815 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_4_Mrk",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 318.1521, 15.64099, -141.7113 },
+			orient  =  { { -0.984815, 0.000000, -0.173605 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.173605, 0.000000, -0.984815 } }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_5",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 290.486, 2.389498, 213.1494 },
+			orient  =  { { -0.999995, 0.000000, 0.003017 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.003017, 0.000000, -0.999995 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_5_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 223.7479, 2.389498, 162.3558 },
+			orient  =  { { -0.999995, 0.000000, 0.003017 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.003017, 0.000000, -0.999995 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG10_Direct_Terrain",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -139.4016, 20.05837, -216.4165 },
+			orient  =  { { 0.771285, 0.000000, -0.636490 },
+					   { 0.107541, 0.985623, 0.130315 },
+					   { 0.627339, -0.168959, 0.760196 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.470588, 0.403922, 0.360784 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.262745, 0.247059, 0.239216 },
+			direction  =  { 0, 0, -1 },
+			range  =  20,
+			cutoff  =  60,
+			type  =  L_DIRECT,
+			theta  =  60,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_7",
+		type  =  PSYS,
+		template_name  =  "rtc_base_smoke03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 184.9167, -3.628197, -138.3444 },
+			orient  =  { { -0.999684, 0.000000, -0.025128 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.025128, 0.000000, -0.999684 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Alchemy_rtc_base_smoke03_7_Mkr",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 170.6724, -3.628197, -128.4326 },
+			orient  =  { { -0.999684, 0.000000, -0.025128 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.025128, 0.000000, -0.999684 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Direct_Set_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -5.871049, 3.597729, -0.490809 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.615686, 0.580392, 0.556863 },
+			direction  =  { 0, 0, 1 },
+			range  =  20,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG10_Point_Flame02",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 149.9104, 30, 124.6199 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.019608, 0, 0.082353 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 5e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG10_Point_Flame01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 181.8162, 30, -14.69206 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.019608, 0, 0.082353 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 5e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG23_Direct_Sky_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.34902, 0.34902, 0.34902 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Direct_Flame01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.164488, 0.382392, 0.669481 },
+			orient  =  { { -0.019302, -0.006416, 0.999793 },
+					   { -0.315440, 0.948946, 0.000000 },
+					   { -0.948749, -0.315374, -0.020340 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "Set_pl_01_planetscape_2",
+		type  =  COMPOUND,
+		template_name  =  "pl_01_planetscape",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE + LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 94.91861, -37.59617, -2.231644 },
+			orient  =  { { -0.967001, 0.000000, 0.254774 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.254774, 0.000000, -0.967001 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Flame01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.164488, 0.382392, 0.669481 },
+			orient  =  { { -0.019302, -0.006416, 0.999793 },
+					   { -0.315440, 0.948946, 0.000000 },
+					   { -0.948749, -0.315374, -0.020340 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Blue_3oc",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.442779, 0.382392, 1.076689 },
+			orient  =  { { -0.996138, -0.006416, -0.087569 },
+					   { -0.002744, 0.999114, -0.041988 },
+					   { 0.087761, -0.041586, -0.995273 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.439216, 0.439216, 0.560784 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Direct_Blue_9oc",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.427598, 0.351161, 0.334541 },
+			orient  =  { { 0.998407, 0.005103, 0.056189 },
+					   { -0.002744, 0.999114, -0.041988 },
+					   { -0.056353, 0.041767, 0.997537 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.439216, 0.439216, 0.560784 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  500,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "ambi_Layer_Pl_01_ambi_day" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  Y,
+				fogcolor  =  { 55, 38, 30 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  -100,
+				fogend  =  2000,
+				fogdensity  =  0.0005
+			}
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Flame01" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.768628, 0.941177, 0.858824 },
+				ambient  =  { 0.078431, 0.086275, 0.082353 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "CatmullRomPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.605769, 0.000000, 0.000000 },
+					{ 0.089744, 0.935897, 0.000000, 0.000000 },
+					{ 0.233974, 0.596154, 0.000000, 0.000000 },
+					{ 0.310897, 1.000000, 0.000000, 0.000000 },
+					{ 0.583333, 0.647436, 0.000000, 0.000000 },
+					{ 0.660256, 0.891026, 0.000000, 0.000000 },
+					{ 0.881410, 0.971154, 0.000000, 0.000000 },
+					{ 1.000000, 0.599359, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Blue_9oc", "ambi_LtG00_Direct_Blue_3oc" },
+		{
+			duration  =  0.000,
+			lightprops  = 
+			{
+				on  =  Y,
+				diffuse  =  { 0.439216, 0.439216, 0.560784 },
+				ambient  =  { 0, 0, 0 },
+				direction  =  { 0, 0, 1 },
+				range  =  500,
+				cutoff  =  98.99998,
+				theta  =  90,
+				atten  =  { 1, 0, 0 }
+			}
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG10_Point_Flame02" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.768628, 0.941177, 0.858824 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "CatmullRomPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.804487, 0.000000, 0.000000 },
+					{ 0.089744, 0.935897, 0.000000, 0.000000 },
+					{ 0.214744, 0.852564, 0.000000, 0.000000 },
+					{ 0.310897, 1.000000, 0.000000, 0.000000 },
+					{ 0.586538, 0.878205, 0.000000, 0.000000 },
+					{ 0.676282, 0.977564, 0.000000, 0.000000 },
+					{ 0.887821, 1.000000, 0.000000, 0.000000 },
+					{ 1.000000, 0.804487, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG10_Point_Flame01" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.768628, 0.941177, 0.858824 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "CatmullRomPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.804487, 0.000000, 0.000000 },
+					{ 0.089744, 0.935897, 0.000000, 0.000000 },
+					{ 0.214744, 0.852564, 0.000000, 0.000000 },
+					{ 0.310897, 1.000000, 0.000000, 0.000000 },
+					{ 0.586538, 0.878205, 0.000000, 0.000000 },
+					{ 0.676282, 0.977564, 0.000000, 0.000000 },
+					{ 0.887821, 1.000000, 0.000000, 0.000000 },
+					{ 1.000000, 0.804487, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG09_Direct_Flame01" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.917647, 1, 0.960784 },
+				ambient  =  { 0.078431, 0.086275, 0.082353 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "CatmullRomPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.605769, 0.000000, 0.000000 },
+					{ 0.089744, 0.935897, 0.000000, 0.000000 },
+					{ 0.233974, 0.596154, 0.000000, 0.000000 },
+					{ 0.310897, 1.000000, 0.000000, 0.000000 },
+					{ 0.583333, 0.647436, 0.000000, 0.000000 },
+					{ 0.660256, 0.891026, 0.000000, 0.000000 },
+					{ 0.881410, 0.971154, 0.000000, 0.000000 },
+					{ 1.000000, 0.599359, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_Plasma1_Mkr", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -101.075, 16.62915, -123.3165 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_Plasma2_Mkr", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -96.88593, 9.215643, -110.7093 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke01_6_Mkr", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -308.3577, 71.88971, -38.50253 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke02_7_Mrk", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -2.896336, 53.79936, -227.7603 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_4_Mrk", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -251.4028, 53.23716, 78.00285 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_5_Mkr", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -82.64545, 39.98567, -191.9786 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_7_Mkr", "Set_pl_01_planetscape_2" },
+		{
+			duration  =  0.000,
+			offset  =  { -105.4067, 33.96797, 102.7364 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "Skydome_KuwaitSky" },
+		{
+			duration  =  3600.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { -360, Y_AXIS }
+			}
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_5", "Alchemy_rtc_base_smoke03_5_Mkr" },
+		{
+			duration  =  1000.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_smoke03_5" },
+		{
+			duration  =  1000.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_4", "Alchemy_rtc_base_smoke03_4_Mrk" },
+		{
+			duration  =  1000.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_smoke03_4" },
+		{
+			duration  =  1000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_Plasma1" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_Plasma1", "Alchemy_rtc_base_Plasma1_Mkr" },
+		{
+			duration  =  588.749,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_smoke01_6" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_smoke02_7" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_Plasma2", "Alchemy_rtc_base_Plasma2_Mkr" },
+		{
+			duration  =  500.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke01_6", "Alchemy_rtc_base_smoke01_6_Mkr" },
+		{
+			duration  =  500.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke02_7", "Alchemy_rtc_base_smoke02_7_Mrk" },
+		{
+			duration  =  500.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "Alchemy_rtc_base_smoke03_7" },
+		{
+			duration  =  1000.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Alchemy_rtc_base_smoke03_7", "Alchemy_rtc_base_smoke03_7_Mkr" },
+		{
+			duration  =  1000.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.300, START_PSYS, { "Alchemy_rtc_base_Plasma2" },
+		{
+			duration  =  3600.000
+		}
+	}
+};

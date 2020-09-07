@@ -1,0 +1,359 @@
+duration  =  6.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Ku_02_Trader_Enter",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "Monitor_Enter",
+		type  =  MONITOR,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+	},
+
+	{
+		entity_name  =  "Char_Trent",
+		type  =  DEFORMABLE,
+		template_name  =  "trent",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 3.992216, 0, 2.084014 },
+			orient  =  { { 0.025049, 0.000000, -0.999686 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999686, 0.000000, 0.025049 } }
+		},
+		compoundprops  = 
+		{
+			floor_height  =  0
+		},
+		userprops  = 
+		{
+			actor  =  "player",
+			category  =  "Character",
+		}
+	},
+
+	{
+		entity_name  =  "Char_Trent_Mk_start",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.992216, 0, 2.084014 },
+			orient  =  { { 0.025049, 0.000000, -0.999686 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999686, 0.000000, 0.025049 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 1.354839, 0, 2.146088 },
+			orient  =  { { 0.025049, 0.000000, -0.999686 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999686, 0.000000, 0.025049 } }
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_A",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.750614, 45.91364, 2.913986 },
+			orient  =  { { 0.999972, 0.000000, 0.007418 },
+					   { 0.007359, 0.125065, -0.992121 },
+					   { -0.000928, 0.992149, 0.125061 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_B",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.220591, 9.261628, 3.168172 },
+			orient  =  { { 0.999972, 0.000000, 0.007418 },
+					   { 0.007363, 0.120735, -0.992658 },
+					   { -0.000896, 0.992685, 0.120731 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Char_trent_fs_mr_hard04_1",
+		type  =  SOUND,
+		template_name  =  "fs_mr_hard04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -28,
+			pan  =  7,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "Char_trent_fs_ml_hard04_2",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -27,
+			pan  =  6.5,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "Char_trent_fs_mr_hard03_3",
+		type  =  SOUND,
+		template_name  =  "fs_mr_hard03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -26,
+			pan  =  5,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "Char_trent_fs_ml_hard03_4",
+		type  =  SOUND,
+		template_name  =  "fs_ml_hard03",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -24,
+			pan  =  10,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "Char_trent_sfx_fstop_male04_5",
+		type  =  SOUND,
+		template_name  =  "sfx_fstop_male04",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -13,
+			pan  =  12,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_Mk_start" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_Trent" },
+		{
+			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration  =  1.000,
+			start_time  =  0.500,
+			time_scale  =  0.8,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Monitor_Enter", "Camera_Enter_A" }
+	},
+
+	{
+		0.218, START_SPATIAL_PROP_ANIM, { "Camera_Enter_A", "Camera_Enter_B" },
+		{
+			duration  =  4.500,
+			target_part  =  "",
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				pos  =  { -0.220591, 9.261628, 3.168172 },
+				q_orient  =  { 0.999972, 1e-006, 0.007418, 0.007364 }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		0.593, START_SOUND, { "Char_trent_fs_mr_hard04_1" },
+		{
+			duration  =  0.231
+		}
+	},
+
+	{
+		1.000, START_MOTION, { "Char_Trent" },
+		{
+			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration  =  3.000,
+			time_scale  =  0.8,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		1.437, START_SOUND, { "Char_trent_fs_ml_hard04_2" },
+		{
+			duration  =  0.289
+		}
+	},
+
+	{
+		2.187, START_SOUND, { "Char_trent_fs_mr_hard03_3" },
+		{
+			duration  =  0.441
+		}
+	},
+
+	{
+		3.125, START_SOUND, { "Char_trent_fs_ml_hard03_4" },
+		{
+			duration  =  0.254
+		}
+	},
+
+	{
+		3.656, START_SOUND, { "Char_trent_sfx_fstop_male04_5" },
+		{
+			duration  =  0.081
+		}
+	}
+};

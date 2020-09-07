@@ -1,0 +1,58 @@
+duration  =  4000.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Br_03_Equip_ambient_int",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 128, 128, 128 }
+	},
+
+	{
+		entity_name  =  "rtc_music_anticipation_more_forboding_1",
+		type  =  SOUND,
+		template_name  =  "rtc_music_anticipation_more_forboding",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -6,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  300,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_SOUND, { "rtc_music_anticipation_more_forboding_1" },
+		{
+			duration  =  4000.000,
+			flags  =  LOOP
+		}
+	}
+};

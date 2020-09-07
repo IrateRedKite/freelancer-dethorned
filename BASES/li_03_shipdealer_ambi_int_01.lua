@@ -1,0 +1,243 @@
+duration  =  299.997;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "ambi_Layer_Rh_03_Shipdealer",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "ambi_gf_rtc_shipcushion",
+		type  =  PSYS,
+		template_name  =  "gf_rtc_shipcushion",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0.009207, 0 },
+			orient  =  { { 0.006113, 0.000000, -0.999981 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999981, 0.000000, 0.006113 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "X/Shipcentre/01",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 13.0969, -0.169109, -29.27577 },
+			orient  =  { { 0.596514, 0.000000, -0.802603 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.802603, 0.000000, 0.596514 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_gf_rtc_shipcushion_MKR",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 13.0969, -0.169109, -29.27577 },
+			orient  =  { { 0.596514, 0.000000, -0.802603 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.802603, 0.000000, 0.596514 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG01_SET_Amb",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.376471, 0.376471, 0.376471 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Overhead_Direct",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.726578, 0, -24.61926 },
+			orient  =  { { -0.265010, 0.000000, 0.964246 },
+					   { -0.809322, 0.543620, -0.222431 },
+					   { -0.524183, -0.839332, -0.144064 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.666667, 0.666667, 0.666667 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_ShopGlow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.665957, -0.324654, -24.82058 },
+			orient  =  { { 0.653370, 0.000000, -0.757039 },
+					   { -0.405307, 0.844608, -0.349805 },
+					   { 0.639401, 0.535385, 0.551842 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.415686, 0.305882, 0.25098 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.14902, 0.113725, 0.090196 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Overhead_Direct",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.726578, 0, -24.61926 },
+			orient  =  { { -0.072312, 0.000000, 0.997382 },
+					   { -0.752953, 0.655806, -0.054590 },
+					   { -0.654089, -0.754929, -0.047423 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.74902, 0.74902, 0.74902 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_ShopGlow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.665957, -0.324654, -24.82058 },
+			orient  =  { { 0.653370, 0.000000, -0.757039 },
+					   { -0.405307, 0.844608, -0.349805 },
+					   { 0.639401, 0.535385, 0.551842 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.337255, 0.239216, 0.192157 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.14902, 0.109804, 0.086275 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 0 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "ambi_Layer_Rh_03_Shipdealer" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  Y,
+				fogcolor  =  { 27, 20, 16 },
+				fogmode  =  F_EXP2,
+				fogdensity  =  0.008
+			}
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "ambi_gf_rtc_shipcushion", "ambi_gf_rtc_shipcushion_MKR" },
+		{
+			duration  =  10000.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "ambi_gf_rtc_shipcushion" },
+		{
+			duration  =  10000.000
+		}
+	}
+};

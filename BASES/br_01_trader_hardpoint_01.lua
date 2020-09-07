@@ -1,0 +1,1117 @@
+duration  =  11.562;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Br_01_Trader_Hardpoint",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "LtShadowSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 1.500091, 0 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.000000, 1.000000 },
+					   { 0.000000, -1.000000, 0.000000 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 0, 0, 0 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Wide",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 7.616237, 12.07408, -9.167693 },
+			orient  =  { { -0.629552, 0.000000, -0.776959 },
+					   { -0.423009, 0.838798, 0.342755 },
+					   { 0.651712, 0.544442, -0.528067 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  35,
+			hvaspect  =  1.333333,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.106143, 1.189782, -4.613074 },
+			orient  =  { { 0.472066, 0.000000, 0.881563 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.881563, 0.000000, 0.472066 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan01",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -7.490575, 0, 15.87314 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan02",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -7.294885, 0, 9.582261 },
+			orient  =  { { 0.044302, 0.000000, 0.999018 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999018, 0.000000, 0.044302 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan03",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -7.605589, 0, 3.139445 },
+			orient  =  { { 0.025811, 0.000000, 0.999667 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999667, 0.000000, 0.025811 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan04",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -7.33021, 0, -2.121679 },
+			orient  =  { { -0.095865, 0.000000, 0.995394 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995394, 0.000000, -0.095865 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan05",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -8.463895, 0, -8.70155 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		}
+	},
+
+	{
+		entity_name  =  "HPCan06",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -10.41435, 8.922196, -2.379997 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/NPC/mFloor2/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.706629, 0, 6.260191 },
+			orient  =  { { 0.754881, 0.000000, -0.655862 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.655862, 0.000000, 0.754881 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/NPC/mFloor2/01/B/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.418019, 0, 6.279343 },
+			orient  =  { { 0.607323, 0.000000, 0.794455 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.794455, 0.000000, 0.607323 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/NPC/mFloor2/02/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.621117, 1.155653, 7.452008 },
+			orient  =  { { 0.995274, 0.000000, -0.097108 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.097108, 0.000000, 0.995274 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/NPC/mFloor2/02/B/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.628024, 1.155653, 7.04243 },
+			orient  =  { { 0.490597, 0.000000, 0.871386 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.871386, 0.000000, 0.490597 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/AC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.579125, 1.679792, 4.744165 },
+			orient  =  { { -0.970243, 0.000000, -0.242133 },
+					   { -0.032513, 0.990944, 0.130281 },
+					   { 0.239941, 0.134276, -0.961456 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/ACOH/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.038672, 1.707609, 5.087141 },
+			orient  =  { { -0.950988, 0.000000, 0.309229 },
+					   { 0.039006, 0.992013, 0.119957 },
+					   { -0.306759, 0.126139, -0.943392 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/ACS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.175307, 1.683877, 5.435723 },
+			orient  =  { { -0.901822, 0.000000, 0.432108 },
+					   { 0.034190, 0.996865, 0.071355 },
+					   { -0.430753, 0.079123, -0.898994 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/ACU/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.279069, 1.674293, 5.563596 },
+			orient  =  { { -0.893964, 0.000000, 0.448138 },
+					   { 0.012819, 0.999591, 0.025572 },
+					   { -0.447954, 0.028605, -0.893599 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/PC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.665584, 1.636218, 5.403795 },
+			orient  =  { { -0.364687, 0.000000, -0.931130 },
+					   { -0.074130, 0.996826, 0.029034 },
+					   { 0.928175, 0.079612, -0.363529 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/P2/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.981442, 0, 5.569332 },
+			orient  =  { { -0.592433, 0.015698, 0.805467 },
+					   { 0.024977, 0.999687, -0.001112 },
+					   { -0.805233, 0.019459, -0.592640 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/PCO/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.147731, 1.706414, 6.180793 },
+			orient  =  { { 0.264776, 0.000000, -0.964310 },
+					   { -0.130435, 0.990810, -0.035814 },
+					   { 0.955448, 0.135262, 0.262343 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/PCS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.968316, 1.704054, 6.013763 },
+			orient  =  { { 0.303917, 0.000000, -0.952698 },
+					   { -0.110024, 0.993309, -0.035098 },
+					   { 0.946324, 0.115486, 0.301884 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/PCU/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.686881, 1.733582, 5.905085 },
+			orient  =  { { 0.370182, 0.000000, -0.928959 },
+					   { -0.098951, 0.994311, -0.039431 },
+					   { 0.923674, 0.106518, 0.368076 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/TCI/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.981541, 2.205348, 5.059381 },
+			orient  =  { { -0.895051, 0.000000, 0.445964 },
+					   { 0.323011, 0.689486, 0.648285 },
+					   { -0.307486, 0.724299, -0.617125 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  15,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/WFC/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 6.249297, 0.360701, 4.340524 },
+			orient  =  { { -0.469535, 0.000000, -0.882914 },
+					   { 0.349742, 0.918197, -0.185994 },
+					   { 0.810689, -0.396123, -0.431126 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  1,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/AC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.369877, 2.821994, 6.086118 },
+			orient  =  { { -0.679987, 0.000000, -0.733224 },
+					   { -0.085766, 0.993135, 0.079539 },
+					   { 0.728191, 0.116971, -0.675319 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/ACOH/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.949414, 2.868678, 6.098904 },
+			orient  =  { { -0.878960, 0.000000, -0.476896 },
+					   { -0.072429, 0.988400, 0.133493 },
+					   { 0.471364, 0.151876, -0.868764 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/ACS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.736117, 2.841641, 6.473645 },
+			orient  =  { { -0.966690, 0.000000, -0.255948 },
+					   { -0.020245, 0.996867, 0.076463 },
+					   { 0.255147, 0.079098, -0.963662 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/ACU/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.752384, 2.833098, 6.642779 },
+			orient  =  { { -0.967908, 0.000000, -0.251306 },
+					   { -0.010469, 0.999132, 0.040322 },
+					   { 0.251088, 0.041659, -0.967068 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/P2/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.434892, 1.155653, 6.50081 },
+			orient  =  { { -0.886904, 0.002945, 0.461945 },
+					   { -0.009520, 0.999651, -0.024650 },
+					   { -0.461856, -0.026260, -0.886566 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/PC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.856249, 2.816689, 7.336801 },
+			orient  =  { { 0.255552, 0.000000, -0.966795 },
+					   { -0.093804, 0.995282, -0.024795 },
+					   { 0.962234, 0.097026, 0.254346 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/PCO/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.119, 2.868431, 7.624024 },
+			orient  =  { { 0.718966, 0.000000, -0.695046 },
+					   { -0.099995, 0.989597, -0.103436 },
+					   { 0.687815, 0.143868, 0.711486 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/PCS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.027744, 2.885735, 7.25697 },
+			orient  =  { { 0.701339, 0.000000, -0.712828 },
+					   { -0.091641, 0.991702, -0.090164 },
+					   { 0.706913, 0.128559, 0.695519 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/PCU/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.906748, 2.90846, 7.151337 },
+			orient  =  { { 0.764261, 0.000000, -0.644907 },
+					   { -0.088302, 0.990582, -0.104644 },
+					   { 0.638833, 0.136922, 0.757063 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/TCI/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.725986, 3.361001, 6.053187 },
+			orient  =  { { -0.987886, 0.000000, -0.155182 },
+					   { -0.112398, 0.689486, 0.715525 },
+					   { 0.106996, 0.724299, -0.681133 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  15,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/WFC/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 5.523336, 0.131247, 4.052063 },
+			orient  =  { { -0.669433, 0.000000, -0.742872 },
+					   { 0.311600, 0.907777, -0.280796 },
+					   { 0.674363, -0.419453, -0.607696 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  1,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "LtGlareSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.294756, 13.4, -12.15121 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.000000, 1.000000 },
+					   { 0.000000, -1.000000, 0.000000 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.164706, 0.164706, 0.164706 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/01/P/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.544852, 0.005205, 5.29827 },
+			orient  =  { { -0.592433, 0.015698, 0.805467 },
+					   { 0.024977, 0.999687, -0.001112 },
+					   { -0.805233, 0.019459, -0.592640 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/mFloor2/02/P/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.162504, 1.136921, 6.065418 },
+			orient  =  { { -0.886904, 0.002945, 0.461945 },
+					   { -0.009520, 0.999651, -0.024650 },
+					   { -0.461856, -0.026260, -0.886566 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.474247, 1.176319, -6.128752 },
+			orient  =  { { -0.253560, 0.000000, -0.967320 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.967320, 0.000000, -0.253560 } }
+		}
+	},
+
+	{
+		entity_name  =  "Camera_0",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 4.404093, 3.411451, -12.40429 },
+			orient  =  { { -0.918001, 0.000000, -0.396578 },
+					   { -0.000776, 0.999998, 0.001796 },
+					   { 0.396577, 0.001956, -0.917999 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.333333,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_1",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -7.776228, 0.387916, 15.33663 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_2",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -7.871906, 0.379492, 9.527042 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_3",
+		type  =  COMPOUND,
+		template_name  =  "Stackwhite_liquidgas",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -7.950254, 0.378772, 3.375799 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_4",
+		type  =  COMPOUND,
+		template_name  =  "StackGrey_hivalue",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -8.149523, 0.379813, -2.538342 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_5",
+		type  =  COMPOUND,
+		template_name  =  "Stackred_lightgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -7.984389, 0.384027, -8.609859 },
+			orient  =  { { -0.006315, 0.000000, 0.999980 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999980, 0.000000, -0.006315 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_6",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.27008, 9.311697, -2.393319 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_7",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.12776, 9.298483, -8.31347 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_8",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.22013, 9.307119, 4.422917 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bin_machines_2_9",
+		type  =  COMPOUND,
+		template_name  =  "StackBlue_manufgoods",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -10.25743, 9.315639, 10.3611 },
+			orient  =  { { 0.092090, 0.000000, 0.995751 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.995751, 0.000000, 0.092090 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/AC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.458165, 2.553531, -8.186692 },
+			orient  =  { { -0.941994, 0.000000, 0.335630 },
+					   { 0.039155, 0.993172, 0.109895 },
+					   { -0.333339, 0.116662, -0.935562 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/ACOH/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.555907, 2.712955, -7.371178 },
+			orient  =  { { -0.922306, 0.000000, -0.386461 },
+					   { -0.020287, 0.998621, 0.048415 },
+					   { 0.385928, 0.052493, -0.921034 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/ACS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.165901, 2.616977, -5.705801 },
+			orient  =  { { -0.780205, 0.000000, -0.625523 },
+					   { 0.022868, 0.999331, -0.028522 },
+					   { 0.625105, -0.036558, -0.779684 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/P/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.875332, 1.189782, -6.330791 },
+			orient  =  { { -0.105748, 0.000000, -0.994393 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.994393, 0.000000, -0.105748 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/P2/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 2.474247, 1.176319, -6.128752 },
+			orient  =  { { -0.253560, 0.000000, -0.967320 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.967320, 0.000000, -0.253560 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/PC2/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.416082, 2.369191, -7.002786 },
+			orient  =  { { -0.537566, 0.000000, 0.843222 },
+					   { -0.003150, 0.999993, -0.002008 },
+					   { -0.843216, -0.003736, -0.537562 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/PCO/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.475889, 2.918983, -4.807983 },
+			orient  =  { { 0.145936, 0.000000, 0.989294 },
+					   { 0.142830, 0.989523, -0.021070 },
+					   { -0.978929, 0.144376, 0.144407 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Trader/01/PCS/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.027749, 2.718655, -5.973957 },
+			orient  =  { { -0.020455, 0.000000, 0.999791 },
+					   { 0.016361, 0.999866, 0.000335 },
+					   { -0.999657, 0.016364, -0.020452 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Set_Br_01_Trader",
+		type  =  COMPOUND,
+		template_name  =  "br_01_trader",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Room",
+		}
+	}
+};
+
+events  = 
+{
+};

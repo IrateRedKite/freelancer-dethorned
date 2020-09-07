@@ -1,0 +1,421 @@
+duration  =  3600.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Hi_02_City_Ambi_Day",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "AMBI_LT09_SPOT04",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 30.78398, 19.72042, -92.93509 },
+			orient  =  { { -0.480921, 0.000000, -0.876764 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.876764, 0.000000, -0.480921 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 236, 170 },
+			diffuse  =  { 0.388235, 0.254902, 0.219608 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.066667, 0.039216, 0.015686 },
+			direction  =  { 0, 0, 1 },
+			range  =  100000,
+			cutoff  =  182.4999,
+			type  =  L_POINT,
+			theta  =  74.99998,
+			atten  =  { 1, 0, 3e-009 }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT09_SPOT03",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 186.368, 94.73253, 173.2681 },
+			orient  =  { { 0.664231, 0.045880, -0.746118 },
+					   { 0.216013, -0.967314, 0.132823 },
+					   { -0.715636, -0.249397, -0.652431 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 248, 223 },
+			diffuse  =  { 1, 0.972549, 0.87451 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  9000,
+			cutoff  =  35,
+			type  =  L_SPOT,
+			theta  =  25,
+			atten  =  { 1, 0, 3e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT09_SPOT01OFF",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 267.5775, -241.8308, 1799.902 },
+			orient  =  { { 0.998643, 0.037936, -0.035682 },
+					   { 0.029778, -0.978018, -0.206383 },
+					   { -0.042727, 0.205041, -0.977820 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 248, 223 },
+			diffuse  =  { 1, 1, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  20000,
+			cutoff  =  9.999996,
+			type  =  L_SPOT,
+			theta  =  9.999996,
+			atten  =  { 1, 0, 2e-008 }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT09_SPOT02",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 174.2244, 2194.692, 63.46296 },
+			orient  =  { { 0.943520, 0.038828, -0.329032 },
+					   { 0.331183, -0.138645, 0.933325 },
+					   { -0.009379, -0.989581, -0.143673 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 236, 170 },
+			diffuse  =  { 0.992157, 0.968628, 0.901961 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  6000,
+			cutoff  =  19.99999,
+			type  =  L_SPOT,
+			theta  =  9.999996,
+			atten  =  { 1, 0, 3e-007 }
+		}
+	},
+
+	{
+		entity_name  =  "PlayerShip_gf_rtc_shipcushion_1",
+		type  =  PSYS,
+		template_name  =  "gf_rtc_shipcushion",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -0.414811, 0, -18.33673 },
+			orient  =  { { -0.480921, 0.000000, -0.876764 },
+					   { 0.000000, 1.000000, 0.000001 },
+					   { 0.876764, 0.000001, -0.480921 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "Marker_Shipcushion",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.414808, 0, -18.33673 },
+			orient  =  { { -0.480921, 0.000000, -0.876764 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.876764, 0.000000, -0.480921 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_starsphere_Hi02_1",
+		type  =  COMPOUND,
+		template_name  =  "starsphere_Hi02",
+		lt_grp  =  0, srt_grp  =  -100, usr_flg  =  1,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.770606, -0.196593, -0.606232 },
+					   { 0.597945, -0.106108, 0.794483 },
+					   { -0.220516, -0.974727, 0.035785 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			NoFog  =  "y",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_starsphere_Hi02_stars_2",
+		type  =  COMPOUND,
+		template_name  =  "starsphere_Hi02_stars",
+		lt_grp  =  0, srt_grp  =  -101, usr_flg  =  1,
+		flags  =  HIDDEN + LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.928169, 0.330531, -0.171030 },
+					   { 0.000000, -0.459562, -0.888146 },
+					   { -0.372158, 0.824350, -0.426551 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			NoFog  =  "y",
+		}
+	},
+
+	{
+		entity_name  =  "rtc_shootingstars_emit_1",
+		type  =  PSYS,
+		template_name  =  "rtc_shootingstars_emit",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 422.2607, -1157.38 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "rtc_shootingstar_marker",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 422.2607, -1157.38 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT03_SPOT01",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 267.5775, -241.8308, 1799.902 },
+			orient  =  { { 0.998643, 0.037936, -0.035682 },
+					   { 0.029778, -0.978018, -0.206383 },
+					   { -0.042727, 0.205041, -0.977820 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 248, 223 },
+			diffuse  =  { 1, 1, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  20000,
+			cutoff  =  99.99998,
+			type  =  L_POINT,
+			theta  =  99.99998,
+			atten  =  { 1, 0, 2e-007 }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT03_SPOT02",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 174.2244, 2194.692, 63.46296 },
+			orient  =  { { 0.943520, 0.038828, -0.329032 },
+					   { 0.331183, -0.138645, 0.933325 },
+					   { -0.009379, -0.989581, -0.143673 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 236, 170 },
+			diffuse  =  { 0.717647, 0.709804, 0.541176 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  4000,
+			cutoff  =  120,
+			type  =  L_SPOT,
+			theta  =  110,
+			atten  =  { 1, 0, 3e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "AMBI_LT03_SPOT03",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 371.8669, 172.856, 269.6508 },
+			orient  =  { { 0.579209, 0.017437, -0.814992 },
+					   { 0.216013, -0.967314, 0.132823 },
+					   { -0.786037, -0.252982, -0.564044 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 248, 223 },
+			diffuse  =  { 0.360784, 0.360784, 0.278431 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  900,
+			cutoff  =  35,
+			type  =  L_SPOT,
+			theta  =  25,
+			atten  =  { 1, 0, 0 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, ATTACH_ENTITY, { "rtc_shootingstars_emit_1", "rtc_shootingstar_marker" },
+		{
+			duration  =  450.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, START_FOG_PROP_ANIM, { "Layer_Hi_02_City_Ambi_Day" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  N,
+				fogcolor  =  { 37, 27, 10 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  -300,
+				fogend  =  3400,
+				fogdensity  =  0.1
+			}
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "PlayerShip_gf_rtc_shipcushion_1" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShip_gf_rtc_shipcushion_1", "Marker_Shipcushion" },
+		{
+			duration  =  3600.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "rtc_shootingstars_emit_1" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_starsphere_Hi02_1" },
+		{
+			duration  =  3600.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { 360, NEG_X_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 1.062500 },
+					{ 1.000000, 1.000000, 0.928571, 0.000000 },
+				}
+			},
+			pcurve_period  =  3000000
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_starsphere_Hi02_stars_2" },
+		{
+			duration  =  3600.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { 360, NEG_X_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 1.062500 },
+					{ 1.000000, 1.000000, 0.928571, 0.000000 },
+				}
+			},
+			pcurve_period  =  3000000
+		}
+	}
+};

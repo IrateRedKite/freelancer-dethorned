@@ -1,0 +1,306 @@
+duration  =  60000.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_ku_01_trader_ambient",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "ambi_ltg00_inf_key_white_4",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.736205, 1.613023, -0.066805 },
+			orient  =  { { 0.945290, 0.022264, 0.325471 },
+					   { -0.034623, 0.998881, 0.032229 },
+					   { -0.324389, -0.041734, 0.945003 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 234, 242, 255 },
+			diffuse  =  { 0.933333, 0.901961, 0.792157 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  3,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 0, 0, 0.8 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg03_equip_inf_key_yellow_2",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.548591, 2.333403, -0.120634 },
+			orient  =  { { 0.257647, 0.180086, 0.949309 },
+					   { -0.515023, 0.856874, -0.022771 },
+					   { -0.817539, -0.483049, 0.313519 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.913726, 0.827451, 0.486275 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_ambOFF",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.42859, 5.361612, -7.005117 },
+			orient  =  { { -0.999590, -0.014369, 0.024766 },
+					   { -0.014640, 0.999835, -0.010778 },
+					   { -0.024607, -0.011136, -0.999635 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.713726, 0.509804, 0.34902 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  300,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0.0001 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg00_inf_fill_green_10",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.736205, 1.613023, -0.066805 },
+			orient  =  { { -0.979514, 0.147018, -0.137615 },
+					   { 0.030151, 0.782743, 0.621614 },
+					   { 0.199106, 0.604730, -0.771141 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 234, 242, 255 },
+			diffuse  =  { 0.623529, 0.756863, 0.533333 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  3,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 0, 0, 0.8 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg03_equip_inf_fill_green_10",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 3.548591, 2.333403, -0.120634 },
+			orient  =  { { -0.642771, -0.012400, -0.765958 },
+					   { -0.091985, 0.993884, 0.061102 },
+					   { 0.760516, 0.109731, -0.639980 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.447059, 0.537255, 0.419608 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_spot_white_1",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 6.305135, 0.37491, 6.247721 },
+			orient  =  { { -0.575025, -0.045321, 0.816880 },
+					   { 0.278529, 0.927977, 0.247549 },
+					   { -0.769264, 0.369872, -0.520987 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.996078, 0.796079, 0.737255 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.023529, 0.019608, 0.047059 },
+			direction  =  { 0, 0, 1 },
+			range  =  100,
+			cutoff  =  45,
+			type  =  L_DIRECT,
+			theta  =  30,
+			atten  =  { 0, 0, 0.001 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_spot_white_2",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -5.254522, 1.000666, -0.658774 },
+			orient  =  { { 0.147690, -0.102717, -0.983685 },
+					   { -0.053590, 0.992300, -0.111663 },
+					   { 0.987581, 0.069207, 0.141048 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.996078, 0.956863, 0.945098 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  200,
+			cutoff  =  49.99999,
+			type  =  L_DIRECT,
+			theta  =  19.99999,
+			atten  =  { 0, 0, 0.001 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg23_skydome_Ambient",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.121216, 13.24701, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.643137, 0.760784, 0.8 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_skydome_sky_storm_gray",
+		type  =  COMPOUND,
+		template_name  =  "skydome_sky_storm_gray",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
+		flags  =  HIDDEN + LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, 15.6627, -0.44035 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.999605, -0.028103 },
+					   { 0.000000, 0.028103, 0.999605 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "Layer_ku_01_trader_ambient" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  N,
+				fogcolor  =  { 152, 131, 150 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  10.1,
+				fogend  =  900,
+			}
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_skydome_sky_storm_gray" },
+		{
+			duration  =  6000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { 360, NEG_Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.882353 },
+					{ 0.163462, 0.160256, 1.117647, 1.538462 },
+					{ 0.294872, 0.323718, 0.526316, 1.315789 },
+					{ 0.490385, 0.500000, 0.789474, 1.187500 },
+					{ 0.682692, 0.641026, 1.000000, 1.714286 },
+					{ 0.817308, 0.823718, 0.947368, 1.100000 },
+					{ 1.000000, 1.000000, 0.826087, 0.000000 },
+				}
+			},
+			pcurve_period  =  2424833
+		}
+	}
+};

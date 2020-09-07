@@ -1,0 +1,748 @@
+duration  =  3600.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "ambi_Layer_li_01_Equip_ambient_int",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Inf_Key",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.330156, 0.140467, -1.124973 },
+			orient  =  { { -0.782882, 0.010692, 0.622078 },
+					   { -0.232639, 0.922296, -0.308626 },
+					   { -0.577040, -0.386337, -0.719562 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.529412, 0.490196, 0.411765 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.039216, 0.039216, 0.039216 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_gf_rtc_shipcushion_2",
+		type  =  PSYS,
+		template_name  =  "PlayerShipHover",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "X/Shipcentre/01",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Inf_Fill",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.307657, 0.280372, -1.765076 },
+			orient  =  { { 0.923054, -0.041729, -0.382400 },
+					   { 0.212383, 0.884130, 0.416181 },
+					   { 0.320725, -0.465373, 0.824963 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.529412, 0.490196, 0.411765 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_Alchemy_Steam_LeftPit_Mk",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -24.84658, -2.37983, -7.267125 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_Alchemy_Steam_LeftPit",
+		type  =  PSYS,
+		template_name  =  "rtc_steam",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -24.84658, -2.37983, -6.267125 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_Alchemy_Steam_RightPit_Mk",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -24.19404, -2.37983, 6.415844 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_Alchemy_Steam_RightPit",
+		type  =  PSYS,
+		template_name  =  "rtc_steam",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -24.19404, -2.37983, 6.415844 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Pit_Point_Right",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -26.96116, 0, 4.61342 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.921569, 0.921569, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  40,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 0.7, 0.1, 0.05 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_Pit_Point_Left",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -27.0903, -5, -10.44195 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.921569, 0.921569, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  40,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 0.7, 0.1, 0.05 }
+		}
+	},
+
+	{
+		entity_name  =  "snd_sfx_steam01_2",
+		type  =  SOUND,
+		template_name  =  "sfx_steam01",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  SPATIAL,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -30,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  200,
+			ain  =  360,
+			aout  =  360,
+			atout  =  -100,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "snd_sfx_steam02_3",
+		type  =  SOUND,
+		template_name  =  "sfx_steam02",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  SPATIAL,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -30,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  200,
+			ain  =  360,
+			aout  =  360,
+			atout  =  -100,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "snd_SFX_ship_levitation_4",
+		type  =  SOUND,
+		template_name  =  "ship_levitation",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  SPATIAL,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops  = 
+		{
+			attenuation  =  -5,
+			pan  =  0,
+			dmin  =  50,
+			dmax  =  10000,
+			ain  =  360,
+			aout  =  360,
+			atout  =  0,
+			rmix  =  0,
+		},
+		userprops  = 
+		{
+			category  =  "Audio",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_Mrk_equip_grd_larger",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 38.70279, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "Marker_Shipcushion",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Inf_1",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.696715, 0.140467, -1.146132 },
+			orient  =  { { -0.998258, 0.010692, -0.058014 },
+					   { 0.008236, 0.999067, 0.042397 },
+					   { 0.058413, 0.041845, -0.997415 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.494118, 0.419608, 0.294118 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.039216, 0.039216, 0.039216 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_Inf_2",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -2.77992, 0.280372, -1.693878 },
+			orient  =  { { 0.923054, -0.041729, -0.382400 },
+					   { 0.158731, 0.946837, 0.279830 },
+					   { 0.350394, -0.318997, 0.880605 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.376471, 0.337255, 0.286275 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_CushionGlow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 1.60275, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.980392, 0.956863, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  10,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 0.21 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG00_CushionGlow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 1.60275, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.384314, 0.192157, 0.576471 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  10,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 0.5, 0, 0.21 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Inf_Fill",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.307657, 0.280372, -1.765076 },
+			orient  =  { { 0.923054, -0.041729, -0.382400 },
+					   { 0.212383, 0.884130, 0.416181 },
+					   { 0.320725, -0.465373, 0.824963 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.596078, 0.513726, 0.352941 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Inf_Key",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -1.330156, 0.140467, -1.124973 },
+			orient  =  { { -0.782882, 0.010692, 0.622078 },
+					   { -0.232639, 0.922296, -0.308626 },
+					   { -0.577040, -0.386337, -0.719562 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.596078, 0.513726, 0.352941 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.039216, 0.039216, 0.039216 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  90,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG09_Pit_Point_Right",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -26.96116, 0, 4.61342 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.921569, 0.921569, 1 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  40,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0.1, 0.006 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_LtG03_CushionGlow",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 1.60275, 0 },
+			orient  =  { { -0.012966, 0.000000, -0.999916 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.999916, 0.000000, -0.012966 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.384314, 0.192157, 0.576471 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  10,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 0.5, 0, 0.21 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "ambi_Layer_li_01_Equip_ambient_int" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  Y,
+				fogcolor  =  { 129, 100, 84 },
+				fogmode  =  F_EXP2,
+				fogdensity  =  0.0103
+			}
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "ambi_Alchemy_Steam_LeftPit" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "ambi_Alchemy_Steam_LeftPit", "ambi_Alchemy_Steam_LeftPit_Mk" },
+		{
+			duration  =  3600.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "ambi_Alchemy_Steam_RightPit" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "ambi_Alchemy_Steam_RightPit", "ambi_Alchemy_Steam_RightPit_Mk" },
+		{
+			duration  =  3600.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "snd_sfx_steam01_2", "ambi_Alchemy_Steam_LeftPit" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "snd_sfx_steam02_3", "ambi_Alchemy_Steam_RightPit" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "snd_SFX_ship_levitation_4", "ambi_gf_rtc_shipcushion_2" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "ambi_gf_rtc_shipcushion_2" },
+		{
+			duration  =  3600.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "ambi_gf_rtc_shipcushion_2", "Marker_Shipcushion" },
+		{
+			duration  =  3600.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG00_CushionGlow" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.784314, 0.576471, 1 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 1.000000, 0.000000, 0.000000 },
+					{ 0.195513, 0.317308, 0.000000, 0.000000 },
+					{ 0.394231, 0.855769, 0.000000, 0.000000 },
+					{ 0.596154, 0.500000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.000, START_LIGHT_PROP_ANIM, { "ambi_LtG03_CushionGlow" },
+		{
+			duration  =  3600.000,
+			lightprops  = 
+			{
+				diffuse  =  { 0.784314, 0.576471, 1 },
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 1.000000, 0.000000, 0.000000 },
+					{ 0.195513, 0.317308, 0.000000, 0.000000 },
+					{ 0.394231, 0.855769, 0.000000, 0.000000 },
+					{ 0.596154, 0.500000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  2000
+		}
+	},
+
+	{
+		0.062, START_SOUND, { "snd_sfx_steam01_2" },
+		{
+			duration  =  3601.000,
+			flags  =  LOOP
+		}
+	},
+
+	{
+		0.100, START_SOUND, { "snd_sfx_steam02_3" },
+		{
+			duration  =  3601.000,
+			flags  =  LOOP
+		}
+	},
+
+	{
+		0.100, START_SOUND, { "snd_SFX_ship_levitation_4" },
+		{
+			duration  =  3601.000,
+			flags  =  LOOP
+		}
+	}
+};

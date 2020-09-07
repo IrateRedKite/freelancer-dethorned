@@ -1,0 +1,200 @@
+duration  =  5.656;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Ku_02_Shipdlr_enter",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "Cam_Monitor_Enter",
+		type  =  MONITOR,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+	},
+
+	{
+		entity_name  =  "char_trent",
+		type  =  DEFORMABLE,
+		template_name  =  "trent",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 10.46407, 0, -26.81106 },
+			orient  =  { { -0.996006, 0.000000, -0.089287 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.089287, 0.000000, -0.996006 } }
+		},
+		compoundprops  = 
+		{
+			floor_height  =  0
+		},
+		userprops  = 
+		{
+			Actor  =  "Player",
+			category  =  "Character",
+		}
+	},
+
+	{
+		entity_name  =  "Char_Trent_Mk_start",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 10.46407, 0, -26.81106 },
+			orient  =  { { -0.996006, 0.000000, -0.089287 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.089287, 0.000000, -0.996006 } }
+		}
+	},
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 10.01581, 0, -22.23289 },
+			orient  =  { { -0.996006, 0.000000, -0.089287 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.089287, 0.000000, -0.996006 } }
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_A",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 9.059345, 9.997609, 15.19354 },
+			orient  =  { { 0.784941, 0.000000, 0.619570 },
+					   { 0.042663, 0.997626, -0.054050 },
+					   { -0.618099, 0.068859, 0.783078 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Enter_B",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 14.08321, 3.830718, -10.70941 },
+			orient  =  { { 0.925542, 0.000000, -0.378646 },
+					   { -0.018616, 0.998791, -0.045505 },
+					   { 0.378188, 0.049166, 0.924422 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, ATTACH_ENTITY, { "char_trent", "Char_Trent_Mk_start" },
+		{
+			duration  =  0.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Cam_Monitor_Enter", "Camera_Enter_A" }
+	},
+
+	{
+		0.000, START_MOTION, { "char_trent" },
+		{
+			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration  =  2.599,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1,
+			event_flags  =  2
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "Camera_Enter_A", "Camera_Enter_B" },
+		{
+			duration  =  5.031,
+			target_part  =  "",
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				pos  =  { 14.08321, 3.830718, -10.70941 },
+				q_orient  =  { 0.925542, 0, -0.378646, -0.018616 }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		2.625, START_MOTION, { "char_trent" },
+		{
+			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration  =  2.400,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	},
+
+	{
+		5.031, START_MOTION, { "char_trent" },
+		{
+			animation  =  "Sc_MLBODY_STND_IDLE_000LV_xa_04",
+			duration  =  7.466,
+			time_scale  =  1,
+			weight  =  1,
+			heading  =  -1
+		}
+	}
+};

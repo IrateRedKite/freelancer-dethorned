@@ -1,0 +1,394 @@
+duration  =  280.000;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Zg/PC/Player/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -5.456637, 0, -7.331858 },
+			orient  =  { { -0.999385, 0.000000, 0.035074 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.035074, 0.000000, -0.999385 } }
+		}
+	},
+
+	{
+		entity_name  =  "Layer_Li_09_Bar_hardpoint",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 49, 49, 53 }
+	},
+
+	{
+		entity_name  =  "Set_li_09_depot",
+		type  =  COMPOUND,
+		template_name  =  "li_09_depot",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Room",
+		}
+	},
+
+	{
+		entity_name  =  "LtShadowSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.573701, -0.819063, -0.001769 },
+					   { -0.000874, -0.002772, 0.999996 },
+					   { -0.819065, -0.573697, -0.002306 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_DIRECT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "LtGlareSource",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -9.7723, 12.68891, 6.296179 },
+			orient  =  { { 0.724699, 0.000000, 0.689066 },
+					   { 0.043398, 0.998015, -0.045642 },
+					   { -0.687698, 0.062980, 0.723260 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.74902, 0.74902, 0.74902 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  2000,
+			cutoff  =  98.99998,
+			type  =  L_POINT,
+			theta  =  90,
+			atten  =  { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name  =  "Bins_artifacts_3_2",
+		type  =  COMPOUND,
+		template_name  =  "consumer_3",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -0.674642, 0, -3.521175 },
+			orient  =  { { 0.999719, 0.000000, 0.023725 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.023725, 0.000000, 0.999719 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Prop_li_table_round_01",
+		type  =  COMPOUND,
+		template_name  =  "li_table_round",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -3.537018, 0, 3.788198 },
+			orient  =  { { 0.760878, 0.000000, -0.648895 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.648895, 0.000000, 0.760878 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			Priority  =  "Story_Prop_1",
+		}
+	},
+
+	{
+		entity_name  =  "Bins_artifacts_3_1",
+		type  =  COMPOUND,
+		template_name  =  "contraband_2",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0.036062, 0, 3.623235 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+			Priority  =  "Bin_1",
+		}
+	},
+
+	{
+		entity_name  =  "Camera_0",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -9.7723, 2.688908, 6.296179 },
+			orient  =  { { 0.724699, 0.000000, 0.689066 },
+					   { 0.043398, 0.998015, -0.045642 },
+					   { -0.687698, 0.062980, 0.723260 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.333333,
+			nearplane  =  1,
+			farplane  =  4000
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Wide",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -9.55482, 3.458802, 2.383188 },
+			orient  =  { { -0.282317, 0.000000, 0.959321 },
+					   { 0.472750, 0.870145, 0.139125 },
+					   { -0.834748, 0.492796, -0.245656 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.333333,
+			nearplane  =  1,
+			farplane  =  200
+		}
+	},
+
+	{
+		entity_name  =  "Camera_News",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.883348, 1.649254, -5.312243 },
+			orient  =  { { 0.999978, 0.000000, -0.006565 },
+					   { 0.000126, 0.999817, 0.019148 },
+					   { 0.006564, -0.019148, 0.999795 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.333333,
+			nearplane  =  1,
+			farplane  =  200
+		}
+	},
+
+	{
+		entity_name  =  "Camera_Mission",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -0.899007, 1.662763, -5.314538 },
+			orient  =  { { 0.999979, 0.000000, 0.006533 },
+					   { -0.000096, 0.999892, 0.014727 },
+					   { -0.006532, -0.014728, 0.999870 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  30,
+			hvaspect  =  1.333333,
+			nearplane  =  1,
+			farplane  =  200
+		}
+	},
+
+	{
+		entity_name  =  "Prop_li_science_console_02",
+		type  =  COMPOUND,
+		template_name  =  "li_science_console",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 6.75, 0, 4 },
+			orient  =  { { 0.003859, 0.000000, 0.999993 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999993, 0.000000, 0.003859 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			Priority  =  "Story_Prop_1",
+		}
+	},
+
+	{
+		entity_name  =  "Prop_li_science_console_03",
+		type  =  COMPOUND,
+		template_name  =  "li_science_console",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 6.75, 0, -4 },
+			orient  =  { { 0.003859, 0.000000, 0.999993 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.999993, 0.000000, 0.003859 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			Priority  =  "Story_Prop_1",
+		}
+	},
+
+	{
+		entity_name  =  "Prop_li_table_round_02",
+		type  =  COMPOUND,
+		template_name  =  "li_table_round",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -6.017794, 0, -1.853245 },
+			orient  =  { { 0.747657, 0.000000, -0.664085 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.664085, 0.000000, 0.747657 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+			Priority  =  "Story_Prop_1",
+		}
+	},
+
+	{
+		entity_name  =  "Zs/NPC/Bartender/01/A/Stand",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -5.456637, 0, -7.331858 },
+			orient  =  { { -0.999385, 0.000000, 0.035074 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.035074, 0.000000, -0.999385 } }
+		}
+	},
+
+	{
+		entity_name  =  "Lonnigan_news_screen",
+		type  =  COMPOUND,
+		template_name  =  "Lonnigan_news_screen",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0.858792, 1.760991, -9.860895 },
+			orient  =  { { -0.006260, 0.000000, 0.999980 },
+					   { 0.002014, 0.999998, 0.000012 },
+					   { -0.999978, 0.002014, -0.006260 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "Bins_artifacts_3_2_copy_1",
+		type  =  COMPOUND,
+		template_name  =  "consumer_3",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0.583048, 0, -3.789195 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+		}
+	},
+
+	{
+		entity_name  =  "Bins_artifacts_3_2_copy_1_copy_1",
+		type  =  COMPOUND,
+		template_name  =  "consumer_3",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { -0.030592, 0.99666, -4.048014 },
+			orient  =  { { 0.992466, 0.000000, -0.122524 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.122524, 0.000000, 0.992466 } }
+		},
+		userprops  = 
+		{
+			category  =  "Equipment",
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, ATTACH_ENTITY, { "Lonnigan_news_screen", "Set_li_09_depot" },
+		{
+			duration  =  40.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "NewsVendor_ni",
+			target_type  =  PART,
+			flags  =  POSITION + ORIENTATION
+		}
+	}
+};

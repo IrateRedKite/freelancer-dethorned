@@ -1,0 +1,1227 @@
+duration  =  500.622;
+
+entities  = 
+{
+
+	{
+		entity_name  =  "Layer_Pl_06_Pad_Ambi",
+		type  =  SCENE,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up  =  Y_AXIS,
+		front  =  Z_AXIS,
+		ambient  =  { 0, 0, 0 }
+	},
+
+	{
+		entity_name  =  "PlayerShip_gf_rtc_shipcushion_1",
+		type  =  PSYS,
+		template_name  =  "gf_rtc_shipcushion",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "PlayerShip_gf_rtc_shipcushion_2",
+		type  =  PSYS,
+		template_name  =  "gf_rtc_shipcushion",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_inf_waterreflect",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -9.533411, -68.99715, -23.54123 },
+			orient  =  { { 0.795812, 0.020333, 0.605202 },
+					   { 0.576144, 0.282205, -0.767084 },
+					   { -0.186388, 0.959139, 0.212868 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.705882, 0.835294, 0.309804 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  20,
+			cutoff  =  30.99996,
+			type  =  L_DIRECT,
+			theta  =  20.99999,
+			atten  =  { 1, 0, 0.04 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_inf_key",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 127.4764, 9.618422, -38.20079 },
+			orient  =  { { 0.587865, -0.074054, -0.805562 },
+					   { 0.326917, 0.932613, 0.152836 },
+					   { 0.739960, -0.353198, 0.572460 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.85098, 0.52549, 0.168627 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.058824, 0.090196, 0.235294 },
+			direction  =  { 0, 0, 1 },
+			range  =  400,
+			cutoff  =  120.9999,
+			type  =  L_DIRECT,
+			theta  =  70.99999,
+			atten  =  { 0.3, 0, 6e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg10_point_watertop",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -23377.9, 6158.316, 1419.246 },
+			orient  =  { { 0.636384, 0.771302, 0.010442 },
+					   { -0.016422, 0.000014, 0.999865 },
+					   { 0.771198, -0.636469, 0.012675 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.380392, 0.380392, 0.380392 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.345098, 0.627451, 0.913726 },
+			direction  =  { 0, 0, 1 },
+			range  =  50000,
+			cutoff  =  55.99999,
+			type  =  L_POINT,
+			theta  =  45.99998,
+			atten  =  { 0.5, 0, 7e-009 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg23_skydome_inf",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  23, srt_grp  =  0, usr_flg  =  2,
+		spatialprops  = 
+		{
+			pos  =  { 56.36973, -7295.396, -38.37159 },
+			orient  =  { { -0.016700, -0.998635, -0.049482 },
+					   { 0.158568, -0.051508, 0.986004 },
+					   { -0.987207, 0.008620, 0.159212 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.321569, 0.4, 0.603922 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.223529, 0.211765, 0.380392 },
+			direction  =  { 0, 0, 1 },
+			range  =  200000,
+			cutoff  =  90.99989,
+			type  =  L_DIRECT,
+			theta  =  70.99994,
+			atten  =  { 1, 0, 1 }
+		}
+	},
+
+	{
+		entity_name  =  "Ambi_MK",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 0.822365, 0.000000, -0.568961 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.568961, 0.000000, 0.822365 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg11_inf_waterbtm_off",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  11, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 1.403186, -86.44965, -2.527344 },
+			orient  =  { { 1.000000, 0.000000, 0.000000 },
+					   { 0.000000, 0.000000, 1.000000 },
+					   { 0.000000, -1.000000, 0.000000 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.972549, 0.984314, 0.968628 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  200,
+			cutoff  =  300.9999,
+			type  =  L_DIRECT,
+			theta  =  180,
+			atten  =  { 1, 0, 1e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_1_rig1_1",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_01",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 102.2834, -91.2747, 21.05028 },
+			orient  =  { { 0.957031, 0.000000, -0.289984 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.289984, 0.000000, 0.957031 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_2_rig1_1",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_02",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 111.6916, -91.93975, 15.72089 },
+			orient  =  { { -0.283003, 0.000000, -0.959119 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.959119, 0.000000, -0.283003 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_3_rig1_1",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_03",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -1.737151, -90.82606, 1.187317 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_fireburst_rig1_1",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_fireburst",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -21.68378, 67.40935, -22.01404 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_1",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -53.83052, 53.04416, -62.42413 },
+			orient  =  { { 0.835949, 0.000000, -0.548808 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.548808, 0.000000, 0.835949 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_2_rig1_2",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_02",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -123.5597, -91.93973, 0.370396 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_2_rig1_3",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_02",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -0.978835, -91.93975, -136.6076 },
+			orient  =  { { 0.789900, 0.000000, 0.613236 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.613236, 0.000000, 0.789900 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_2_rig1_5",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_02",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -0.220623, -91.93975, 134.1328 },
+			orient  =  { { -0.962835, 0.000000, -0.270092 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.270092, 0.000000, -0.962835 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_supportfoam_2_rig1_6",
+		type  =  PSYS,
+		template_name  =  "rtc_supportfoam_02",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 98.79975, -91.93975, 53.97961 },
+			orient  =  { { -0.997600, 0.000000, 0.069246 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.069246, 0.000000, -0.997600 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_2",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 19.67316, 78.48434, 21.80542 },
+			orient  =  { { 0.615179, 0.000000, -0.788387 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.788387, 0.000000, 0.615179 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_fireburst_rig3_1",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_fireburst",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 5864.527, 145.4937, -4404.926 },
+			orient  =  { { 0.923723, 0.000000, -0.383061 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.383061, 0.000000, 0.923723 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "Marker_Shipcushion",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 122.0477, 0, -57.01533 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "Marker_Shipcushion_2",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		flags  =  REFERENCE,
+		spatialprops  = 
+		{
+			pos  =  { 131.3603, 0, -27.21194 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_fireburst_rig1_2",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_fireburst",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -0.007153, 194.5465, 0.432922 },
+			orient  =  { { -0.196186, 0.000000, -0.980567 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.980567, 0.000000, -0.196186 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_3",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -96.7968, 94.81107, 1.679321 },
+			orient  =  { { 0.963092, 0.000000, 0.269172 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.269172, 0.000000, 0.963092 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_4",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -88.83894, 94.81107, 1.896866 },
+			orient  =  { { 0.973419, 0.000000, -0.229031 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { 0.229031, 0.000000, 0.973419 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_5",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -93.13158, 100.6824, -0.267174 },
+			orient  =  { { 0.837603, 0.000000, 0.546279 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.546279, 0.000000, 0.837603 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_6",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { -0.007151, 207.5016, 0.432918 },
+			orient  =  { { 0.896196, 0.000000, 0.443658 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.443658, 0.000000, 0.896196 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_7",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 53.80915, 20.99346, -71.5197 },
+			orient  =  { { 0.374365, 0.000000, 0.927282 },
+					   { 0.000000, 1.000000, 0.000000 },
+					   { -0.927282, 0.000000, 0.374365 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "FX_rtc_pl07_smallsteam_rig1_7_copy_1",
+		type  =  PSYS,
+		template_name  =  "rtc_pl07_smallsteam",
+		lt_grp  =  0, srt_grp  =  10, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops  = 
+		{
+			pos  =  { 62.07606, 27.30381, -66.73309 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops  = 
+		{
+			sparam  =  0
+		},
+		userprops  = 
+		{
+			Priority  =  "Smoke_FX_1",
+		}
+	},
+
+	{
+		entity_name  =  "BG_ocean_green_btm_2",
+		type  =  COMPOUND,
+		template_name  =  "ocean_grey_btm.3db",
+		lt_grp  =  10, srt_grp  =  1, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 130.9539, -179.5843, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "BG_ocean_green_top_3",
+		type  =  COMPOUND,
+		template_name  =  "ocean_grey_top.3db",
+		lt_grp  =  10, srt_grp  =  1, usr_flg  =  0,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, -89.68876, -8.387741 },
+			orient  =  { { 0.065482, 0.000000, 0.997854 },
+					   { 0.997854, 0.000000, -0.065482 },
+					   { 0.000000, 1.000000, 0.000000 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg09_set_inf_key2",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -11.92486, 12.49295, 46.31696 },
+			orient  =  { { 0.276651, 0.571101, -0.772857 },
+					   { 0.452049, 0.632365, 0.629100 },
+					   { 0.848007, -0.523410, -0.083221 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.152941, 0.14902, 0.047059 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.019608, 0.011765, 0.003922 },
+			direction  =  { 0, 0, 1 },
+			range  =  400,
+			cutoff  =  120.9999,
+			type  =  L_DIRECT,
+			theta  =  70.99999,
+			atten  =  { 0.3, 0, 6e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_MK01",
+		type  =  MARKER,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0, 0, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_skydome_sky_sunset_1",
+		type  =  COMPOUND,
+		template_name  =  "skydome_sky_sunset",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, -1500.042, 0 },
+			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg03_equip_inf_key",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 127.4764, 9.618422, -38.20079 },
+			orient  =  { { 0.587865, -0.074054, -0.805562 },
+					   { 0.326917, 0.932613, 0.152836 },
+					   { 0.739960, -0.353198, 0.572460 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.92549, 0.666667, 0.384314 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.027451, 0.047059, 0.113725 },
+			direction  =  { 0, 0, 1 },
+			range  =  400,
+			cutoff  =  120.9999,
+			type  =  L_DIRECT,
+			theta  =  70.99999,
+			atten  =  { 0.3, 0, 6e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg10_spot_watertop_centre",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -9481.416, 6158.316, -946.3535 },
+			orient  =  { { 0.636384, 0.771302, 0.010442 },
+					   { -0.016422, 0.000014, 0.999865 },
+					   { 0.771198, -0.636469, 0.012675 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.937255, 0.917647, 0.172549 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.047059, 0.894118, 0.854902 },
+			direction  =  { 0, 0, 1 },
+			range  =  20000,
+			cutoff  =  14.99999,
+			type  =  L_SPOT,
+			theta  =  14.99999,
+			atten  =  { 1, 0, 1e-008 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg03_equip_point_waterreflect",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 147.0886, 0.301453, -11.64484 },
+			orient  =  { { 0.980280, -0.158671, -0.117790 },
+					   { -0.094730, 0.145797, -0.984769 },
+					   { 0.173428, 0.976507, 0.127891 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.305882, 0.360784, 0.129412 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  20000,
+			cutoff  =  30.99996,
+			type  =  L_POINT,
+			theta  =  20.99999,
+			atten  =  { 0.5, 0, 4e-009 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg10_inf_watertop_Ambient_off",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { -23377.9, 6158.316, 1419.246 },
+			orient  =  { { 0.636384, 0.771302, 0.010442 },
+					   { -0.016422, 0.000014, 0.999865 },
+					   { 0.771198, -0.636469, 0.012675 } }
+		},
+		lightprops  = 
+		{
+			on  =  N,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0, 0, 0 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.031373, 0.027451, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  50000,
+			cutoff  =  55.99999,
+			type  =  L_DIRECT,
+			theta  =  45.99998,
+			atten  =  { 0.5, 0, 1e-010 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_skydome_sky_sunset_1_btm",
+		type  =  COMPOUND,
+		template_name  =  "skydome_sky_sunset",
+		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
+		flags  =  LIT_DYNAMIC,
+		spatialprops  = 
+		{
+			pos  =  { 0, -12697.31, 0 },
+			orient  =  { { 0.000000, 0.000000, 1.000000 },
+					   { 0.000000, -1.000000, 0.000000 },
+					   { 1.000000, 0.000000, 0.000000 } }
+		},
+		userprops  = 
+		{
+			category  =  "Prop",
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg24_skydome_inf",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  24, srt_grp  =  0, usr_flg  =  2,
+		spatialprops  = 
+		{
+			pos  =  { 56.36973, -7295.396, -38.37159 },
+			orient  =  { { -0.016700, -0.998635, -0.049482 },
+					   { 0.158568, -0.051508, 0.986004 },
+					   { -0.987207, 0.008620, 0.159212 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.74902, 0.74902, 0.74902 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.019608, 0.011765, 0.003922 },
+			direction  =  { 0, 0, 1 },
+			range  =  200000,
+			cutoff  =  180.9998,
+			type  =  L_DIRECT,
+			theta  =  80.99998,
+			atten  =  { 0.5, 0, 1e-009 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg00_char_point_waterreflect",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 160.4558, 0.301453, -29.64516 },
+			orient  =  { { 0.980280, -0.158671, -0.117790 },
+					   { -0.094730, 0.145797, -0.984769 },
+					   { 0.173428, 0.976507, 0.127891 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.176471, 0.2, 0.082353 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0, 0, 0 },
+			direction  =  { 0, 0, 1 },
+			range  =  200,
+			cutoff  =  30.99996,
+			type  =  L_POINT,
+			theta  =  20.99999,
+			atten  =  { 0.5, 0, 4e-005 }
+		}
+	},
+
+	{
+		entity_name  =  "ambi_ltg00_char_inf_key",
+		type  =  LIGHT,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 127.4764, 9.618422, -38.20079 },
+			orient  =  { { 0.587865, -0.074054, -0.805562 },
+					   { 0.326917, 0.932613, 0.152836 },
+					   { 0.739960, -0.353198, 0.572460 } }
+		},
+		lightprops  = 
+		{
+			on  =  Y,
+			color  =  { 255, 255, 255 },
+			diffuse  =  { 0.737255, 0.403922, 0.039216 },
+			specular  =  { 0, 0, 0 },
+			ambient  =  { 0.058824, 0.14902, 0.192157 },
+			direction  =  { 0, 0, 1 },
+			range  =  400,
+			cutoff  =  120.9999,
+			type  =  L_DIRECT,
+			theta  =  70.99999,
+			atten  =  { 0.3, 0, 6e-005 }
+		}
+	}
+};
+
+events  = 
+{
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "ambi_skydome_sky_sunset_1_btm" },
+		{
+			duration  =  3000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { -360, Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.838710 },
+					{ 1.000000, 1.000000, 0.800000, 0.000000 },
+				}
+			},
+			pcurve_period  =  -6
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_2_rig1_5" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "BG_ocean_green_top_3" },
+		{
+			duration  =  5000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				pos  =  { 0, -95.3905, -8.387741 }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 0.496795, 1.000000, 0.000000, 0.000000 },
+					{ 1.000000, 0.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  0
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "BG_ocean_green_btm_2" },
+		{
+			duration  =  5000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				pos  =  { 0, -170.6905, -8.387741 }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.000000 },
+					{ 0.496795, 1.000000, 0.000000, 0.000000 },
+					{ 1.000000, 0.000000, 0.000000, 0.000000 },
+				}
+			},
+			pcurve_period  =  0
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_pl07_fireburst_rig1_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_7" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShip_gf_rtc_shipcushion_1", "Marker_Shipcushion" },
+		{
+			duration  =  300.000,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "PlayerShip_gf_rtc_shipcushion_2" },
+		{
+			duration  =  500.618
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "PlayerShip_gf_rtc_shipcushion_1" },
+		{
+			duration  =  300.000
+		}
+	},
+
+	{
+		0.000, START_FOG_PROP_ANIM, { "Layer_Pl_06_Pad_Ambi" },
+		{
+			duration  =  0.000,
+			fogprops  = 
+			{
+				fogon  =  N,
+				fogcolor  =  { 221, 221, 221 },
+				fogmode  =  F_LINEAR,
+				fogstart  =  0,
+				fogend  =  100000,
+				fogdensity  =  0
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.212121 },
+					{ 1.000000, 1.000000, 3.368421, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_2_rig1_3" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_pl07_fireburst_rig3_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_3" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShip_gf_rtc_shipcushion_2", "Marker_Shipcushion_2" },
+		{
+			duration  =  500.618,
+			offset  =  { 0, 0, 0 },
+			up  =  Y_AXIS,
+			front  =  NEG_Z_AXIS,
+			target_part  =  "",
+			target_type  =  ROOT,
+			flags  =  POSITION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_2_rig1_6" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_1_rig1_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_2_rig1_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_3_rig1_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "FX_rtc_supportfoam_2_rig1_2" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.234, START_SPATIAL_PROP_ANIM, { "ambi_skydome_sky_sunset_1" },
+		{
+			duration  =  3000.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { -360, Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 0.838710 },
+					{ 1.000000, 1.000000, 0.800000, 0.000000 },
+				}
+			},
+			pcurve_period  =  6000000
+		}
+	},
+
+	{
+		0.468, START_PSYS, { "FX_rtc_pl07_fireburst_rig1_2" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.468, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_2" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.468, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_5" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.468, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_7_copy_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		0.937, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_4" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		1.093, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_6" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		1.250, START_PSYS, { "FX_rtc_pl07_smallsteam_rig1_1" },
+		{
+			duration  =  5000.000
+		}
+	},
+
+	{
+		6000.000, START_SPATIAL_PROP_ANIM, { "ambi_ltg23_skydome_inf" },
+		{
+			duration  =  0.000,
+			target_type  =  ROOT,
+			spatialprops  = 
+			{
+				axisrot  =  { 360, Y_AXIS }
+			},
+			param_curve  = 
+			{
+				CLSID  =  "FreeFormPCurve",
+				points  = 
+				{
+					{ 0.000000, 0.000000, 0.000000, 1.066667 },
+					{ 1.000000, 1.000000, 0.764706, 0.000000 },
+				}
+			},
+			pcurve_period  =  -1000
+		}
+	}
+};

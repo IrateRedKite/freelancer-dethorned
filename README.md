@@ -1,6 +1,7 @@
 # freelancer-dethorned
 The contents of Freelancer's SCRIPTS and MISSIONS folders decompiled to lua using [Dethorn by Jason Hood](http://adoxa.altervista.org/freelancer/tools.html#dethorn).  
-The following files have been modified by [Jason's Freelaner Patch](http://adoxa.altervista.org/freelancer/dl.php?f=jflp):
+Contains files from the release version of the game as well as the 2002 multiplayer beta build that can be [found on The Starport.](https://the-starport.net/freelancer/download/singlefile.php?cid=11&lid=2678).  
+The following release files have been modified by [Jason's Freelaner Patch](http://adoxa.altervista.org/freelancer/dl.php?f=jflp):
 
 `DATA\SCRIPTS\BASES\bw_01_equipment_ambi_int_01.thn` Removed copy of ship cushion.  
 `DATA\SCRIPTS\BASES\bw_01_shipdealer_ambi_int_01.thn`Removed player ship cushion.  

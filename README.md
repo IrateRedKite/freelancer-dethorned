@@ -1,5 +1,5 @@
 # freelancer-dethorned
-The contents of Freelancer's SCRIPTS folder decompiled to lua using [Dethorn by Jason Hood](http://adoxa.altervista.org/freelancer/tools.html#dethorn).  
+The contents of Freelancer's SCRIPTS and MISSIONS folders decompiled to lua using [Dethorn by Jason Hood](http://adoxa.altervista.org/freelancer/tools.html#dethorn).  
 The following files have been modified by [Jason's Freelaner Patch](http://adoxa.altervista.org/freelancer/dl.php?f=jflp):
 
 `DATA\SCRIPTS\BASES\bw_01_equipment_ambi_int_01.thn` Removed copy of ship cushion.  

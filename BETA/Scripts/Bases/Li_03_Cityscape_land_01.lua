@@ -1,0 +1,1037 @@
+duration = 19.000;
+
+entities =
+{
+
+	{
+		entity_name = "Layer_li_03_Cityscape_Land",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
+	},
+
+	{
+		entity_name = "Monitor_1",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
+	},
+
+	{
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.109022, 19.88126, 15.0304 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShip",
+		type = COMPOUND,
+		template_name = "PlayerShip",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { -113.8704, 204.9173, 384.7838 },
+			orient = { {  0.737834,  0.130832,  0.662181 },
+					   { -0.062566,  0.990068, -0.125902 },
+					   { -0.672076,  0.051464,  0.738692 } }
+		},
+		userprops =
+		{
+			category = "Spaceship",
+		}
+	},
+
+	{
+		entity_name = "Mk_Ship_land_on_deck",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.109022, 19.88126, 15.0304 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Mk_Ship_descend",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.109057, 102.659, 15.0304 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Mk_Ship_Park",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -206.7462, 212.0293, 486.8654 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Landing",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -53.91323, 183.755, 320.5624 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Cam_ShipLand_2_init",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -32.45061, 167.9729, 346.7391 },
+			orient = { {  0.975836,  0.000000, -0.218506 },
+					   { -0.002481,  0.999936, -0.011078 },
+					   {  0.218491,  0.011353,  0.975773 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Cam_ShipLand_2_end",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -15.48351, 188.6044, 317.7534 },
+			orient = { {  0.994119,  0.035021,  0.102472 },
+					   {  0.005849,  0.927519, -0.373730 },
+					   { -0.108133,  0.372132,  0.921860 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Cam_ShipLand_3_init",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -24.861, 50.2744, 169.3809 },
+			orient = { {  0.997402, -0.012650,  0.070911 },
+					   {  0.022855,  0.989166, -0.145011 },
+					   { -0.068309,  0.146256,  0.986886 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Cam_ShipLand_3_end",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -25.33695, 45.45291, 169.3081 },
+			orient = { {  0.974953,  0.000000,  0.222413 },
+					   {  0.008728,  0.999230, -0.038259 },
+					   { -0.222241,  0.039242,  0.974202 } }
+		}
+	},
+
+	{
+		entity_name = "Camera_0",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { -21.82424, 45.54268, 208.2924 },
+			orient = { {  0.999919,  0.000000, -0.012703 },
+					   {  0.002185,  0.985094,  0.172006 },
+					   {  0.012514, -0.172020,  0.985014 } }
+		},
+		cameraprops =
+		{
+			fovh = 60,
+			hvaspect = 1.333333,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Mk_Ship_approach_orient",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -26.02352, 167.9871, 130.1328 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_MOP",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -31.65569, 134.0541, 213.9994 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name = "Camera_ShipLand_01",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -64.18871, 208.155, 422.5167 },
+			orient = { {  0.996070, -0.032871,  0.082248 },
+					   {  0.010476,  0.965788,  0.259121 },
+					   { -0.087951, -0.257241,  0.962337 } }
+		},
+		cameraprops =
+		{
+			fovh = 15,
+			hvaspect = 1.85,
+			nearplane = 5,
+			farplane = 5000
+		}
+	},
+
+	{
+		entity_name = "Path_Ship_Orientation",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -30.93483, 156.6911, 325.7025 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops =
+		{
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{-0.720854,-22.636993,-111.703064}, {0.337003,0.000000,0.941504,0.000000}, {3.219454,-22.636993,-111.703064}, {0.327530,-0.069268,0.941620,0.035742}, {6.497955,-22.636993,-111.703064}, {0.304964,-0.002883,0.949913,0.068216}, "
+		}
+	},
+
+	{
+		entity_name = "X/Marker_Weather",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { -16.68174, 74.7764, 222.3509 },
+			orient = { {  0.999796,  0.000000,  0.020214 },
+					   { -0.000868,  0.999078,  0.042914 },
+					   { -0.020195, -0.042923,  0.998874 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShipEngines_1",
+		type = PSYS,
+		template_name = "PlayerShipEngines",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops =
+		{
+			sparam = 0
+		}
+	},
+
+	{
+		entity_name = "Path_Cam_ShipLand",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -40.59484, 70.84636, 14.02295 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops =
+		{
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{-23.593868,137.308655,408.493713}, {0.998544,0.040495,0.035386,-0.004164}, {-26.248127,131.330795,379.679077}, {0.999387,-0.026177,0.015984,0.016897}, {-20.329292,123.418716,351.926910}, {0.995288,-0.087035,-0.042576,-0.003723}, {9.177296,89.976379,276.166046}, {0.994924,-0.082763,-0.057236,-0.001225}, {19.083117,-42.012886,86.850029}, {0.994005,0.000493,-0.109336,0.000054}, "
+		}
+	},
+
+	{
+		entity_name = "Mk_Ship_approach",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -45.72079, 208.4126, 113.9599 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShip_engine_playership_1",
+		type = SOUND,
+		template_name = "engine_playership",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 180,
+			aout = 180,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "Mk_Player_on_deck",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -21.44868, 19.89448, 8.027054 },
+			orient = { { -0.781742,  0.000000,  0.623602 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.623602,  0.000000, -0.781742 } }
+		}
+	},
+
+	{
+		entity_name = "Char_Mk_Offscreen",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -47.82992, 19.89448, 436.8223 },
+			orient = { { -0.781742,  0.000000,  0.623602 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.623602,  0.000000, -0.781742 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShip_Mk_Attached",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.109022, 20.21845, 15.0304 },
+			orient = { { -0.773776, -0.015926, -0.633259 },
+					   { -0.021667,  0.999764,  0.001331 },
+					   {  0.633088,  0.014751, -0.773939 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShip_Mk_Attached_copy_1",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0.878376, 30.86106, 15.04456 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "PlayerShip_Mk_Attached_copy_1_copy_1",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0.878376, 30.86106, 15.04456 },
+			orient = { { -0.988106, -0.021635, -0.152242 },
+					   { -0.022300,  0.999748,  0.002663 },
+					   {  0.152146,  0.006026, -0.988340 } }
+		}
+	},
+
+	{
+		entity_name = "Char_Trent",
+		type = DEFORMABLE,
+		template_name = "benchmark_male",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "player",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "rtc_shipdust_7",
+		type = PSYS,
+		template_name = "rtc_shipdust",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops =
+		{
+			sparam = 0
+		}
+	},
+
+	{
+		entity_name = "X/ShipCentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { 1.109022, 19.88126, 15.0304 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	},
+
+	{
+		entity_name = "Marker_Shipcushion",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { 1.109022, 19.88126, 15.0304 },
+			orient = { { -0.772858,  0.000000, -0.634579 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.634579,  0.000000, -0.772858 } }
+		}
+	}
+};
+
+events =
+{
+	{
+		0.000, START_PSYS_PROP_ANIM, { "PlayerShipEngines_1" },
+		{
+			duration = 0.200,
+			psysprops =
+			{
+				sparam = 0.8
+			}
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Monitor_1", "Camera_ShipLand_01" }
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "Marker_Landing", "Mk_Ship_approach" },
+		{
+			duration = 1.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { -45.72079, 208.4126, 113.9599 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "Marker_Landing", "Mk_Ship_descend" },
+		{
+			duration = 3.625,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 1.109057, 102.659, 15.0304 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  0.641026,  0.942308,  0.312500,  0.368421 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShip_engine_playership_1", "PlayerShip" },
+		{
+			duration = 17.750,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpEngine01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PSYS, { "PlayerShipEngines_1" },
+		{
+			duration = 17.812
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShipEngines_1", "PlayerShip" },
+		{
+			duration = 17.812,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpEngine01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.000, START_PATH_ANIMATION, { "Camera_ShipLand_01", "Path_Cam_ShipLand" },
+		{
+			duration = 14.000,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION,
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.136364 },
+					{  0.201923,  0.096154,  0.478261,  0.380952 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "PlayerShip", "Marker_Landing" },
+		{
+			duration = 6.312,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { -53.91323, 183.755, 320.5624 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  0.881410,  0.987179,  0.210526,  0.217391 },
+					{  1.000000,  1.000000,  0.040000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "X/Marker_Weather", "Camera_ShipLand_01" },
+		{
+			duration = 17.812,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "Char_Trent", "Char_Mk_Offscreen" },
+		{
+			duration = 0.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "rtc_shipdust_7", "X/Shipcentre/01" },
+		{
+			duration = 0.009,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 1.109022, 19.88126, 15.0304 }
+			}
+		}
+	},
+
+	{
+		0.000, ATTACH_ENTITY, { "PlayerShip_Mk_Attached", "PlayerShip" },
+		{
+			duration = 18.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpMount",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		0.100, START_SOUND, { "PlayerShip_engine_playership_1" },
+		{
+			duration = 17.774,
+			flags = LOOP
+		}
+	},
+
+	{
+		0.100, START_SPATIAL_PROP_ANIM, { "Marker_Shipcushion" },
+		{
+			duration = 0.100,
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 1.109, 16.8813, 15.0304 }
+			}
+		}
+	},
+
+	{
+		2.562, ATTACH_ENTITY, { "Mk_Ship_approach", "PlayerShip" },
+		{
+			duration = 14.062,
+			offset = { 0, 9, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION + ENTITY_RELATIVE
+		}
+	},
+
+	{
+		3.187, START_PATH_ANIMATION, { "Marker_MOP", "Path_Ship_Orientation" },
+		{
+			duration = 13.281,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION,
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  0.310897,  0.858974,  0.000000,  0.000000 },
+					{  0.647436,  0.000000,  0.000000,  0.000000 },
+					{  0.826923,  1.000000,  0.000000,  0.000000 },
+					{  0.948718,  0.064103, -0.100000, -0.214286 },
+					{  1.000000,  0.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		3.500, START_SPATIAL_PROP_ANIM, { "PlayerShip", "Marker_MOP" },
+		{
+			duration = 9.750,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { 0.198268, 0.167184, -0.965784, -0.040572 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.055556 },
+					{  0.147436,  0.028846,  0.266667,  0.333333 },
+					{  0.875000,  0.967949,  0.187500,  0.210526 },
+					{  1.000000,  0.993590,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		3.937, START_PSYS_PROP_ANIM, { "PlayerShipEngines_1" },
+		{
+			duration = 2.062,
+			psysprops =
+			{
+				sparam = 0
+			}
+		}
+	},
+
+	{
+		5.685, START_SPATIAL_PROP_ANIM, { "PlayerShip", "Mk_Ship_land_on_deck" },
+		{
+			duration = 11.750,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 1.109022, 19.88126, 15.0304 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.090909 },
+					{  0.141026,  0.025641,  0.600000,  0.400000 },
+					{  0.711538,  0.913462,  0.294118,  0.631579 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		7.968, START_PSYS, { "rtc_shipdust_7" },
+		{
+			duration = 12.250
+		}
+	},
+
+	{
+		10.750, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.2
+			}
+		}
+	},
+
+	{
+		11.218, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.3
+			}
+		}
+	},
+
+	{
+		11.687, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.4
+			}
+		}
+	},
+
+	{
+		12.093, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.5
+			}
+		}
+	},
+
+	{
+		12.187, START_SPATIAL_PROP_ANIM, { "Marker_Shipcushion" },
+		{
+			duration = 3.000,
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 1.109, 19.8813, 15.0304 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1000
+		}
+	},
+
+	{
+		12.406, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.6
+			}
+		}
+	},
+
+	{
+		12.687, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.7
+			}
+		}
+	},
+
+	{
+		12.937, START_SPATIAL_PROP_ANIM, { "PlayerShip", "PlayerShip_Mk_Attached_copy_1" },
+		{
+			duration = 2.062,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { 0.231621, 0.001552, 0.972805, -0.040717 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.500000 },
+					{  1.000000,  0.592949,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		12.937, START_SPATIAL_PROP_ANIM, { "PlayerShip_Mk_Attached_copy_1", "PlayerShip_Mk_Attached_copy_1_copy_1" },
+		{
+			duration = 2.187,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { 0.355796, -0.048025, -0.933329, -0.18181 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.352941 },
+					{  1.000000,  0.573718,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		12.968, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.8
+			}
+		}
+	},
+
+	{
+		13.000, START_SPATIAL_PROP_ANIM, { "PlayerShip", "Marker_MOP" },
+		{
+			duration = 2.875,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { 0.451706, 0.150549, 0.879373, -0.871825 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  0.150641,  0.028846,  0.375000,  0.315789 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	},
+
+	{
+		13.250, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 0.9
+			}
+		}
+	},
+
+	{
+		13.562, START_PSYS_PROP_ANIM, { "rtc_shipdust_7" },
+		{
+			duration = 0.100,
+			psysprops =
+			{
+				sparam = 1
+			}
+		}
+	},
+
+	{
+		14.062, START_PSYS_PROP_ANIM, { "PlayerShipEngines_1" },
+		{
+			duration = 1.000,
+			psysprops =
+			{
+				
+			}
+		}
+	},
+
+	{
+		16.812, START_AUDIO_PROP_ANIM, { "PlayerShip_engine_playership_1" },
+		{
+			duration = 1.000,
+			audioprops =
+			{
+				attenuation = -80
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1
+		}
+	}
+};

@@ -1,0 +1,195 @@
+duration = 7.875;
+
+entities =
+{
+
+	{
+		entity_name = "Layer_Ku_04_Shipdlr_enter",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
+	},
+
+	{
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { -64.08496, 0, 0 },
+			orient = { {  0.002346,  0.000000,  0.999997 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.999997,  0.000000,  0.002346 } }
+		}
+	},
+
+	{
+		entity_name = "Camera_Enter",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -17.78181, 11.59855, 15.84724 },
+			orient = { { -0.400148,  0.000000, -0.916451 },
+					   { -0.024239,  0.999650,  0.010584 },
+					   {  0.916130,  0.026449, -0.400008 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Monitor_Enter",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
+	},
+
+	{
+		entity_name = "Marker_Shipcushion",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		}
+	},
+
+	{
+		entity_name = "Camera_0",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { -1.297635, 2.797351, 20.40691 },
+			orient = { {  0.786967,  0.000000, -0.616995 },
+					   { -0.063032,  0.994768, -0.080396 },
+					   {  0.613767,  0.102160,  0.782850 } }
+		},
+		cameraprops =
+		{
+			fovh = 60,
+			hvaspect = 1.333333,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "char_trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { -11.52659, 0, 16.78754 },
+			orient = { {  0.959564,  0.006536, -0.281416 },
+					   { -0.005494,  0.999975,  0.004490 },
+					   {  0.281438, -0.002762,  0.959575 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			Actor = "Player",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "Camera_0_copy_1",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		cameraprops =
+		{
+			fovh = 60,
+			hvaspect = 1.333333,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	}
+};
+
+events =
+{
+	{
+		0.000, SET_CAMERA, { "Monitor_Enter", "Camera_Enter" }
+	},
+
+	{
+		0.250, START_SPATIAL_PROP_ANIM, { "Camera_Enter", "Camera_0" },
+		{
+			duration = 6.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { -1.297635, 2.797351, 20.40691 },
+				q_orient = { 0.786967, 0, -0.616995, -0.063032 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1000
+		}
+	},
+
+	{
+		3.531, START_MOTION, { "char_trent" },
+		{
+			animation = "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration = 2.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		5.937, START_MOTION, { "char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_IDLE_000LV_xa_04",
+			duration = 7.466,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	}
+};

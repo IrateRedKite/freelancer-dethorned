@@ -1,0 +1,929 @@
+duration = 12.468;
+
+entities =
+{
+
+	{
+		entity_name = "Layer_Scene_s055c",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
+	},
+
+	{
+		entity_name = "Char_akira",
+		type = DEFORMABLE,
+		template_name = "akiro",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 0.579676, 0, 4.982631 },
+			orient = { {  0.991942,  0.000000, -0.126697 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.126697,  0.000000,  0.991942 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "akira",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "Char_juni",
+		type = DEFORMABLE,
+		template_name = "juni",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 0.806266, 0, 3.067586 },
+			orient = { { -0.999987,  0.000000,  0.005197 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.005197,  0.000000, -0.999987 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "juni",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "Char_trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 1.668758, 0, 3.392192 },
+			orient = { { -0.852759,  0.000000, -0.522304 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.522304,  0.000000, -0.852759 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "player",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "dx_s055c_0101_Trent_38",
+		type = SOUND,
+		template_name = "dx_s055c_0101_Trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -1,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s055c_0201_Akira_39",
+		type = SOUND,
+		template_name = "dx_s055c_0201_Akira",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -1,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s055c_0202_Akira_40",
+		type = SOUND,
+		template_name = "dx_s055c_0202_Akira",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -1,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "Cam_03_MS_Akira",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.951389, 1.648394, 3.660166 },
+			orient = { { -0.571491,  0.000000, -0.820608 },
+					   { -0.259445,  0.948705,  0.180684 },
+					   {  0.778515,  0.316162, -0.542177 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Cam_Monitor_s055c",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		userprops =
+		{
+			Priority = "Monitor_Moving_1",
+		}
+	},
+
+	{
+		entity_name = "Cam_02_OTS_Akira",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 2.545622, 2.000236, 3.196401 },
+			orient = { { -0.461134, -0.000001, -0.887331 },
+					   { -0.361333,  0.913333,  0.187779 },
+					   {  0.810429,  0.407213, -0.421169 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Cam_01_OTS_on_Trent",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.15599, 0.932274, 6.600791 },
+			orient = { {  0.998599,  0.000000, -0.052907 },
+					   {  0.004980,  0.995560,  0.093994 },
+					   {  0.052673, -0.094126,  0.994166 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Char_trent_Mk_IK_Juni",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0.786649, 1.176678, 3.513137 },
+			orient = { { -0.999033,  0.000000, -0.043972 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.043972,  0.000000, -0.999033 } }
+		}
+	},
+
+	{
+		entity_name = "Char_juni_Mk_IK_Trent",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.297605, 1.470297, 3.59704 },
+			orient = { { -0.999033,  0.000000, -0.043972 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.043972,  0.000000, -0.999033 } }
+		}
+	},
+
+	{
+		entity_name = "sfx_ambience_bar_space_1",
+		type = SOUND,
+		template_name = "ambience_bar_space",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -5,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Story_Sound_1",
+		}
+	},
+
+	{
+		entity_name = "sfx_backgroundambient_2",
+		type = SOUND,
+		template_name = "backgroundambient",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "sfx_backgroundmusic_3",
+		type = SOUND,
+		template_name = "backgroundmusic",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "Cam_Monitor_s055c_static",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		userprops =
+		{
+			Priority = "Monitor_Static_1",
+		}
+	}
+};
+
+events =
+{
+	{
+		0.000, SET_CAMERA, { "Cam_Monitor_s055c", "Cam_01_OTS_on_Trent" }
+	},
+
+	{
+		0.000, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_IDLE_000LV_XB_04",
+			duration = 3.530,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLBODY_CHRB_IDLE_000LV_XA_05",
+			duration = 4.530,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMBODY_CHRB_IDLE_000LV_XA_06",
+			duration = 8.250,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_dx_s055c_0101_Trent",
+			duration = 3.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.000, START_AUDIO_PROP_ANIM, { "sfx_backgroundambient_2" },
+		{
+			duration = 1.000,
+			audioprops =
+			{
+				attenuation = -12
+			}
+		}
+	},
+
+	{
+		0.000, START_AUDIO_PROP_ANIM, { "sfx_backgroundmusic_3" },
+		{
+			duration = 1.000,
+			audioprops =
+			{
+				attenuation = -18
+			}
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Cam_Monitor_s055c_static", "Cam_01_OTS_on_Trent" }
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_ambience_bar_space_1" },
+		{
+			duration = 12.470,
+			flags = LOOP
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_backgroundambient_2" },
+		{
+			duration = 12.470,
+			flags = LOOP
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_backgroundmusic_3" },
+		{
+			duration = 12.470
+		}
+	},
+
+	{
+		0.100, START_IK, { "Char_trent", "Char_akira" },
+		{
+			duration = 12.368,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = PART,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		0.419, START_SOUND, { "dx_s055c_0101_Trent_38" },
+		{
+			duration = 2.861
+		}
+	},
+
+	{
+		0.843, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.937, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHAND_HNEUT_GESTR_CASL_000LV_00",
+			duration = 2.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.937, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHAND_HNEUT_GESTL_CASL_000LV_00",
+			duration = 2.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.937, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.484,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.953, START_IK, { "Char_akira", "Char_trent" },
+		{
+			duration = 3.671,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = PART,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		1.179, START_IK, { "Char_juni", "Char_juni_Mk_IK_Trent" },
+		{
+			duration = 2.400,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = ROOT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		1.906, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHAND_NEUT_RGHT_000LV_A_00",
+			duration = 1.000,
+			trans_time = 0.800,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		1.906, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHAND_NEUT_LEFT_000LV_A_00",
+			duration = 1.000,
+			trans_time = 0.800,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		2.031, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_CROSS_ARMS_000LV_xa_06",
+			duration = 3.832,
+			trans_time = 0.600,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		2.700, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_dx_s055c_0201_Akira",
+			duration = 3.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		3.031, START_SOUND, { "dx_s055c_0201_Akira_39" },
+		{
+			duration = 3.322
+		}
+	},
+
+	{
+		3.092, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.400,
+			trans_time = 0.200,
+			time_scale = 0.75,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		3.355, SET_CAMERA, { "Cam_Monitor_s055c", "Cam_02_OTS_Akira" }
+	},
+
+	{
+		3.355, SET_CAMERA, { "Cam_Monitor_s055c_static", "Cam_02_OTS_Akira" }
+	},
+
+	{
+		3.812, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		4.531, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLBODY_CHRB_CONV_LHNDUP_TRNS_000LV_XA_02",
+			duration = 2.000,
+			trans_time = 0.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		5.125, START_IK, { "Char_juni", "Char_juni_Mk_IK_Trent" },
+		{
+			duration = 2.000,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = ROOT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		5.217, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLHAND_HNEUT_GESTL_CASL_000LV_00",
+			duration = 2.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.199, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_dx_s055c_0202_Akira",
+			duration = 6.165,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.312, START_SOUND, { "dx_s055c_0202_Akira_40" },
+		{
+			duration = 5.861
+		}
+	},
+
+	{
+		6.312, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.381,
+			trans_time = 0.200,
+			time_scale = 0.7,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.435, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLBODY_CHRB_CONV_LHNDDN_TRNS_000LV_XA_02",
+			duration = 2.000,
+			trans_time = 0.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.583, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_HOLD_ARMS_CROSSED_000LV_XA_02",
+			duration = 2.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.717, START_IK, { "Char_akira", "Char_trent" },
+		{
+			duration = 2.000,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = PART,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		7.375, SET_CAMERA, { "Cam_Monitor_s055c", "Cam_01_OTS_on_Trent" }
+	},
+
+	{
+		7.375, SET_CAMERA, { "Cam_Monitor_s055c_static", "Cam_01_OTS_on_Trent" }
+	},
+
+	{
+		7.436, START_IK, { "Char_juni", "Char_akira" },
+		{
+			duration = 3.688,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Head_End",
+			target_type = PART,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
+		}
+	},
+
+	{
+		7.560, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMBODY_CHRB_CHRF_TRNS_000LV_XA_02",
+			duration = 2.664,
+			trans_time = 0.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		7.875, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		8.434, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLBODY_CHRB_IDLE_000LV_XA_05",
+			duration = 4.035,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
+		}
+	},
+
+	{
+		9.083, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_UNCRSS_ARMS_000LV_XA_02",
+			duration = 2.033,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		9.593, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		10.229, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_FMBODY_CHRF_IDLE_000LV_XA_05",
+			duration = 2.239,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		10.579, SET_CAMERA, { "Cam_Monitor_s055c", "Cam_03_MS_Akira" }
+	},
+
+	{
+		10.579, SET_CAMERA, { "Cam_Monitor_s055c_static", "Cam_03_MS_Akira" }
+	},
+
+	{
+		11.116, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_STND_IDLE_000LV_XB_04",
+			duration = 1.351,
+			trans_time = 0.600,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		11.125, START_MOTION, { "Char_akira" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			trans_time = 0.200,
+			time_scale = 0.55,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		11.468, START_AUDIO_PROP_ANIM, { "sfx_backgroundambient_2" },
+		{
+			duration = 1.000,
+			audioprops =
+			{
+				attenuation = 0
+			}
+		}
+	},
+
+	{
+		11.468, START_AUDIO_PROP_ANIM, { "sfx_backgroundmusic_3" },
+		{
+			duration = 1.000,
+			audioprops =
+			{
+				attenuation = 0
+			}
+		}
+	}
+};

@@ -1,0 +1,290 @@
+duration = 20.000;
+
+entities =
+{
+
+	{
+		entity_name = "Zg/PC/Player/01/A/Stand",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -34.44307, 0, -27.94035 },
+			orient = { {  0.972002,  0.000000,  0.234972 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.234972,  0.000000,  0.972002 } }
+		}
+	},
+
+	{
+		entity_name = "Set_Rh_01_city",
+		type = COMPOUND,
+		template_name = "rh_01_cityscape",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops =
+		{
+			category = "Room",
+		}
+	},
+
+	{
+		entity_name = "Camera_0",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -8.138763, 99.82896, 240.1803 },
+			orient = { {  0.998875,  0.000000, -0.047429 },
+					   { -0.002257,  0.998868, -0.047523 },
+					   {  0.047376,  0.047577,  0.997743 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.33,
+			nearplane = 25,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -52.34016, 0, -27.94035 },
+			orient = { { -0.806304,  0.000000,  0.591501 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.591501,  0.000000, -0.806304 } }
+		}
+	},
+
+	{
+		entity_name = "Layer_rh_01_City_Hardpoint",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
+	},
+
+	{
+		entity_name = "Camera_Ex_Bar_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -139.3982, 75.26324, -48.10668 },
+			orient = { {  0.999428,  0.000000, -0.033819 },
+					   {  0.002351,  0.997581,  0.069479 },
+					   {  0.033737, -0.069519,  0.997010 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Camera_Ex_Ship_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -42.07964, 120.4608, -3.479684 },
+			orient = { {  0.998168,  0.000000, -0.060510 },
+					   { -0.001825,  0.999545, -0.030111 },
+					   {  0.060482,  0.030167,  0.997713 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Camera_Ex_Trade_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 48.25253, 96.42014, 59.012 },
+			orient = { {  0.999857,  0.000000, -0.016907 },
+					   { -0.000361,  0.999771, -0.021375 },
+					   {  0.016903,  0.021378,  0.999629 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "X/Marker_Weather",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -8.138763, 99.82896, 240.1803 },
+			orient = { {  0.998875,  0.000000, -0.047429 },
+					   { -0.002257,  0.998868, -0.047523 },
+					   {  0.047376,  0.047577,  0.997743 } }
+		}
+	},
+
+	{
+		entity_name = "Camera_Ex_Equip_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 59.47898, 85.7877, 130.1159 },
+			orient = { {  0.974782,  0.000000, -0.223159 },
+					   {  0.008127,  0.999337,  0.035499 },
+					   {  0.223011, -0.036417,  0.974136 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "LtShadowSource",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		lightprops =
+		{
+			on = N,
+			color = { 255, 255, 255 },
+			diffuse = { 0, 0, 0 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 98.99998,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name = "LtGlareSource",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -8.138763, 109.829, 240.1803 },
+			orient = { {  0.998875,  0.000000, -0.047429 },
+					   { -0.002257,  0.998868, -0.047523 },
+					   {  0.047376,  0.047577,  0.997743 } }
+		},
+		lightprops =
+		{
+			on = N,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 98.99998,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
+		}
+	},
+
+	{
+		entity_name = "Camera_0_rc",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -92.10353, 51.84776, 191.4782 },
+			orient = { {  0.963745,  0.000000,  0.266824 },
+					   {  0.003064,  0.999934, -0.011066 },
+					   { -0.266807,  0.011482,  0.963682 } }
+		},
+		cameraprops =
+		{
+			fovh = 30,
+			hvaspect = 1.33,
+			nearplane = 25,
+			farplane = 100000
+		}
+	}
+};
+
+events =
+{
+	{
+		0.000, START_FOG_PROP_ANIM, { "Layer_rh_01_City_Hardpoint" },
+		{
+			duration = 0.100,
+			fogprops =
+			{
+				fogon = Y,
+				fogtable = N,
+				fogcolor = { 192, 192, 192 },
+				fogmode = F_EXP,
+				fogstart = -500,
+				fogend = 10000,
+				fogdensity = 0.0001
+			}
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Set_Rh_01_city" },
+		{
+			animation = "Sc_loop",
+			duration = 20.000,
+			time_scale = 1,
+			weight = 1,
+			trans_scale = 1
+		}
+	}
+};

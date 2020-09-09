@@ -1,0 +1,1370 @@
+duration = 15.343;
+
+entities =
+{
+
+	{
+		entity_name = "Layer_s045c_Decline_ku_03_Bar",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
+	},
+
+	{
+		entity_name = "Char_Juni",
+		type = DEFORMABLE,
+		template_name = "juni",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 4.3821, 0, 2.716995 },
+			orient = { { -0.059634,  0.000000,  0.998220 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.998220,  0.000000, -0.059634 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "juni",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
+		{
+			pos = { 5.065356, 0, 2.616931 },
+			orient = { { -0.057227,  0.000000, -0.998361 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.998361,  0.000000, -0.057227 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "player",
+			category = "Character",
+		}
+	},
+
+	{
+		entity_name = "Cam_01_PC2",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 3.67406, 1.552089, 4.344468 },
+			orient = { {  0.859077,  0.000000,  0.511847 },
+					   {  0.017994,  0.999382, -0.030201 },
+					   { -0.511530,  0.035155,  0.858546 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Cam_Monitor_s045c",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		userprops =
+		{
+			Priority = "Monitor_Moving_1",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0101_Trent",
+		type = SOUND,
+		template_name = "dx_s045c_0101_Trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0201_juni",
+		type = SOUND,
+		template_name = "dx_s045c_0201_juni",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0301_Trent",
+		type = SOUND,
+		template_name = "dx_s045c_0301_Trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0401_juni",
+		type = SOUND,
+		template_name = "dx_s045c_0401_juni",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0501_Trent",
+		type = SOUND,
+		template_name = "dx_s045c_0501_Trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0601_juni",
+		type = SOUND,
+		template_name = "dx_s045c_0601_juni",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "dx_s045c_0701_Trent",
+		type = SOUND,
+		template_name = "dx_s045c_0701_Trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "Cam_01_AC2",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 6.244281, 1.936768, 3.862089 },
+			orient = { {  0.588823,  0.000000, -0.808262 },
+					   { -0.205287,  0.967208, -0.149552 },
+					   {  0.781758,  0.253985,  0.569514 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Cam_02_PCO",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 3.87535, 1.516442, 3.390741 },
+			orient = { {  0.681631,  0.000000,  0.731696 },
+					   { -0.045384,  0.998075,  0.042278 },
+					   { -0.730287, -0.062025,  0.680319 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_orient_Mk_1",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 5.065356, 0.972928, 2.616931 },
+			orient = { {  0.998099,  0.000000,  0.061637 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.061637,  0.000000,  0.998099 } }
+		}
+	},
+
+	{
+		entity_name = "Cam_03_HighWide",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 1.863594, 6.983516, 4.767827 },
+			orient = { {  0.532316,  0.000000,  0.846545 },
+					   {  0.732479,  0.501330, -0.460590 },
+					   { -0.424399,  0.865256,  0.266866 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_sfx_fturn_male04_1",
+		type = SOUND,
+		template_name = "sfx_fturn_male04",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -15,
+			pan = 18,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_fs_mr_hard04_2",
+		type = SOUND,
+		template_name = "fs_mr_hard04",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -26,
+			pan = -5,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_fs_ml_hard04_3",
+		type = SOUND,
+		template_name = "fs_ml_hard04",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -26,
+			pan = -15,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_fs_mr_hard03_4",
+		type = SOUND,
+		template_name = "fs_mr_hard03",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -26,
+			pan = -20,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_fs_ml_hard03_5",
+		type = SOUND,
+		template_name = "fs_ml_hard03",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -26,
+			pan = -33,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Trent_fs_mr_hard02_6",
+		type = SOUND,
+		template_name = "fs_mr_hard02",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -28,
+			pan = -38,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Juni_sfx_fturn_female04_7",
+		type = SOUND,
+		template_name = "sfx_fturn_female04",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -20,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Juni_fs_fl_hard01_8",
+		type = SOUND,
+		template_name = "fs_fl_hard01",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -25,
+			pan = -5,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Juni_fs_fr_hard01_9",
+		type = SOUND,
+		template_name = "fs_fr_hard01",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -24,
+			pan = -10,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "Char_Juni_fs_fl_hard02_10",
+		type = SOUND,
+		template_name = "fs_fl_hard02",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -24,
+			pan = -28,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Steps_4",
+		}
+	},
+
+	{
+		entity_name = "sfx_ambience_bar_ground_smaller_11",
+		type = SOUND,
+		template_name = "ambience_bar_ground_smaller",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = -12,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+			Priority = "Story_Sound_1",
+		}
+	},
+
+	{
+		entity_name = "sfx_backgroundambient_12",
+		type = SOUND,
+		template_name = "backgroundambient",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "sfx_backgroundmusic_13",
+		type = SOUND,
+		template_name = "backgroundmusic",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+
+	{
+		entity_name = "Cam_Monitor_s045c_static",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		userprops =
+		{
+			Priority = "Monitor_Static_1",
+		}
+	},
+
+	{
+		entity_name = "Cam_01_PC2_static_mon",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 3.67406, 1.552089, 4.344468 },
+			orient = { {  0.859077,  0.000000,  0.511847 },
+					   {  0.017994,  0.999382, -0.030201 },
+					   { -0.511530,  0.035155,  0.858546 } }
+		},
+		cameraprops =
+		{
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.1,
+			farplane = 100000
+		}
+	}
+};
+
+events =
+{
+	{
+		0.000, SET_CAMERA, { "Cam_Monitor_s045c", "Cam_01_PC2" }
+	},
+
+	{
+		0.000, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLBODY_STND_GEST_NOPE_000LV_A_03",
+			duration = 6.111,
+			time_scale = 0.6,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.000, START_SPATIAL_PROP_ANIM, { "Cam_01_PC2", "Cam_01_AC2" },
+		{
+			duration = 10.031,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				pos = { 6.244281, 1.936768, 3.862089 },
+				q_orient = { 0.588823, 0, -0.808262, -0.205287 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1000
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_LSTN_000LV_A_10",
+			duration = 34.233,
+			time_scale = 0.8,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.000, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.266,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		0.000, START_AUDIO_PROP_ANIM, { "sfx_backgroundambient_12" },
+		{
+			duration = 1.250,
+			audioprops =
+			{
+				attenuation = -12
+			}
+		}
+	},
+
+	{
+		0.000, START_AUDIO_PROP_ANIM, { "sfx_backgroundmusic_13" },
+		{
+			duration = 1.250,
+			audioprops =
+			{
+				attenuation = -18
+			}
+		}
+	},
+
+	{
+		0.000, SET_CAMERA, { "Cam_Monitor_s045c_static", "Cam_01_PC2_static_mon" }
+	},
+
+	{
+		0.001, START_IK, { "Char_Trent", "Char_Juni" },
+		{
+			duration = 15.687,
+			end_effector = "Eye IK Left",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
+			damping = 1,
+			up = Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.500,
+			event_flags = 128
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_ambience_bar_ground_smaller_11" },
+		{
+			duration = 15.340,
+			flags = LOOP
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_backgroundambient_12" },
+		{
+			duration = 15.340,
+			flags = LOOP
+		}
+	},
+
+	{
+		0.001, START_SOUND, { "sfx_backgroundmusic_13" },
+		{
+			duration = 15.340
+		}
+	},
+
+	{
+		0.800, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_dx_s045c_0101_Trent",
+			duration = 2.165,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		1.000, START_SOUND, { "dx_s045c_0101_Trent" },
+		{
+			duration = 1.430
+		}
+	},
+
+	{
+		2.099, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_dx_s045c_0201_juni",
+			duration = 1.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		2.250, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_SHRG_SHLDRS_SMALL_000LV_XA_02",
+			duration = 2.500,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		2.500, START_SOUND, { "dx_s045c_0201_juni" },
+		{
+			duration = 0.554
+		}
+	},
+
+	{
+		3.099, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_dx_s045c_0301_Trent",
+			duration = 3.000,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		3.323, START_SOUND, { "dx_s045c_0301_Trent" },
+		{
+			duration = 2.493
+		}
+	},
+
+	{
+		3.625, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.300,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		3.665, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLBODY_STND_GESTL_LEFT_000LV_XA_02",
+			duration = 3.888,
+			trans_time = 1.000,
+			time_scale = 0.6,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		4.750, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_NOPE_SMALL_000LV_A_01",
+			duration = 1.500,
+			start_time = 0.200,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		5.449, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_dx_s045c_0401_juni",
+			duration = 1.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		5.625, START_SOUND, { "dx_s045c_0401_juni" },
+		{
+			duration = 0.460
+		}
+	},
+
+	{
+		5.781, SET_CAMERA, { "Cam_Monitor_s045c_static", "Cam_01_AC2" }
+	},
+
+	{
+		6.093, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLBODY_STND_GEST_EXPE_000DN_A_07",
+			duration = 12.777,
+			trans_time = 1.000,
+			time_scale = 0.6,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.099, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_dx_s045c_0501_Trent",
+			duration = 3.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.125, START_SOUND, { "dx_s045c_0501_Trent" },
+		{
+			duration = 2.769
+		}
+	},
+
+	{
+		6.250, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.300,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.250, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_TILT_HEAD_QUZZCLLY_000LV_XA_04",
+			duration = 4.333,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		6.750, START_IK, { "Char_Juni", "Char_Trent" },
+		{
+			duration = 3.000,
+			end_effector = "Eye IK Left",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
+			damping = 1,
+			up = Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.500,
+			event_flags = 128
+		}
+	},
+
+	{
+		8.562, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_CONV_HNDSUP_TRNS_000LV_XA_01",
+			duration = 1.266,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		8.812, START_IK, { "Char_Juni", "Char_Trent" },
+		{
+			duration = 1.812,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.500,
+			event_flags = 128
+		}
+	},
+
+	{
+		9.250, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_dx_s045c_0601_juni",
+			duration = 0.833,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		9.468, START_SOUND, { "dx_s045c_0601_juni" },
+		{
+			duration = 0.600
+		}
+	},
+
+	{
+		9.687, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.300,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		9.829, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_EMPH_HNDSDN_TRNS_000LV_XA_01",
+			duration = 1.432,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		10.000, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_dx_s045c_0701_Trent",
+			duration = 1.000,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		10.093, SET_CAMERA, { "Cam_Monitor_s045c", "Cam_02_PCO" }
+	},
+
+	{
+		10.093, SET_CAMERA, { "Cam_Monitor_s045c_static", "Cam_02_PCO" }
+	},
+
+	{
+		10.250, START_SOUND, { "dx_s045c_0701_Trent" },
+		{
+			duration = 0.414
+		}
+	},
+
+	{
+		10.687, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLBODY_STND_WALK_TRNS_090LV_XA_02",
+			duration = 3.208,
+			trans_time = 1.000,
+			time_scale = 0.8,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		10.937, START_SPATIAL_PROP_ANIM, { "Char_Trent", "Char_Trent_orient_Mk_1" },
+		{
+			duration = 2.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { 0.992402, 0, -0.12304, 0 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1000
+		}
+	},
+
+	{
+		11.250, START_SOUND, { "Char_Trent_sfx_fturn_male04_1" },
+		{
+			duration = 0.405
+		}
+	},
+
+	{
+		11.250, SET_CAMERA, { "Cam_Monitor_s045c", "Cam_03_HighWide" }
+	},
+
+	{
+		11.250, SET_CAMERA, { "Cam_Monitor_s045c_static", "Cam_03_HighWide" }
+	},
+
+	{
+		11.260, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_IDLE_MED_000LV_xa_05",
+			duration = 8.333,
+			trans_time = 0.500,
+			time_scale = 0.6,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		11.812, START_SOUND, { "Char_Trent_fs_mr_hard04_2" },
+		{
+			duration = 0.231
+		}
+	},
+
+	{
+		12.000, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_WALK_TRNS_180LV_XA_02",
+			duration = 2.466,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		12.031, START_AUDIO_PROP_ANIM, { "sfx_backgroundambient_12" },
+		{
+			duration = 3.000,
+			audioprops =
+			{
+				attenuation = 0
+			}
+		}
+	},
+
+	{
+		12.031, START_AUDIO_PROP_ANIM, { "sfx_backgroundmusic_13" },
+		{
+			duration = 3.000,
+			audioprops =
+			{
+				attenuation = 0
+			}
+		}
+	},
+
+	{
+		12.718, START_SOUND, { "Char_Trent_fs_ml_hard04_3" },
+		{
+			duration = 0.289
+		}
+	},
+
+	{
+		12.718, START_SOUND, { "Char_Juni_sfx_fturn_female04_7" },
+		{
+			duration = 0.579
+		}
+	},
+
+	{
+		13.125, START_SOUND, { "Char_Juni_fs_fl_hard01_8" },
+		{
+			duration = 0.277
+		}
+	},
+
+	{
+		13.500, START_SOUND, { "Char_Trent_fs_mr_hard03_4" },
+		{
+			duration = 0.441
+		}
+	},
+
+	{
+		13.895, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration = 1.299,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		14.093, START_SOUND, { "Char_Juni_fs_fr_hard01_9" },
+		{
+			duration = 0.324
+		}
+	},
+
+	{
+		14.187, START_SOUND, { "Char_Trent_fs_ml_hard03_5" },
+		{
+			duration = 0.254
+		}
+	},
+
+	{
+		14.437, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_WLKG_000LV_XA_01",
+			duration = 1.332,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		14.718, START_SOUND, { "Char_Juni_fs_fl_hard02_10" },
+		{
+			duration = 0.243
+		}
+	},
+
+	{
+		14.875, START_SOUND, { "Char_Trent_fs_mr_hard02_6" },
+		{
+			duration = 0.277
+		}
+	}
+};

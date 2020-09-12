@@ -1,0 +1,2 @@
+# Reclassifies `.thn` files as Lua
+*.thn linguist-language=Lua

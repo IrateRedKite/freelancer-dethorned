@@ -16,3 +16,9 @@ The following release files have been modified by [Jason's Freelaner Patch](http
 The following release files have been modified according to the 'Planetscapes Fixed for 16:9 Resolutions' patch that can be found on [ModDB](https://www.moddb.com/games/freelancer/addons/planetscapes-fixed-for-169-resolutions):  
 
 `DATA\SCRIPTS\BASES\cv_01_bar_ambi_ew04_01.thn` Added missing 'starsphere_ew04' and 'starsphere_ew04_stars'
+
+The following **beta** files have been adjusted to fix bugs that occured when they were decompiled:
+
+`DATA\Scripts\Bases\Li_01_Equipment_ambi_int_01.thn` Fixed `category = "Sound soundstc",` lines.  
+`DATA\Scripts\Bases\Pl_02_dig_ambi_int_01.thn` Fixed `category = "Sound soundstc",` lines.  
+`DATA\Scripts\Bases\Pl_02_dig_ambi_int_02.thn` Fixed `category = "Sound soundstc",` lines.  

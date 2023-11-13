@@ -1762,6 +1762,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -1791,6 +1792,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -1930,6 +1932,7 @@ entities =
 			dmin = 20,
 			dmax = 600,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -1958,6 +1961,7 @@ entities =
 			dmax = 3000,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -1985,6 +1989,7 @@ entities =
 			dmin = 20,
 			dmax = 600,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -2012,6 +2017,7 @@ entities =
 			pan = 0,
 			dmin = 150,
 			dmax = 4500,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -2041,6 +2047,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -4227,6 +4234,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -20,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,

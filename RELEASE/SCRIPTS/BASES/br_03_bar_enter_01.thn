@@ -1,212 +1,213 @@
-duration  =  6.625;
+duration = 6.625;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Layer_Br_03_Bar_enter",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_Br_03_Bar_enter",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "Monitor_enter",
-		type  =  MONITOR,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+		entity_name = "Monitor_enter",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
 	},
 
 	{
-		entity_name  =  "Camera_Enter",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Enter",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 7.772239, 1.754771, -3.050699 },
-			orient  =  { { -0.470861, -0.000001, -0.882208 },
-					   { -0.136426, 0.987971, 0.072814 },
-					   { 0.871595, 0.154641, -0.465197 } }
+			pos = { 7.772239, 1.754771, -3.050699 },
+			orient = { { -0.470861, -0.000001, -0.882208 },
+					   { -0.136426,  0.987971,  0.072814 },
+					   {  0.871595,  0.154641, -0.465197 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  20,
-			hvaspect  =  1.85,
-			nearplane  =  0.3,
-			farplane  =  4000
+			fovh = 20,
+			hvaspect = 1.85,
+			nearplane = 0.3,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Enter_Path",
-		type  =  MOTION_PATH,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Enter_Path",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		pathprops  = 
+		pathprops =
 		{
-			path_type  =  "CV_CROrientationSplinePath",
-			path_data  =  "OPEN,{ 7.772239, 1.754771, -3.050699 }, { 0.512814, -0.039891, 0.854990, 0.066508 }, { 4.860641, 1.709424, -1.131847 }, { 0.732085, -0.001647, 0.680242, 0.036330 }, { 1.894802, 2.376258, 0.714246 }, { 0.904515, -0.003918, 0.426415, -0.002746 }, { -1.865840, 3.188168, 2.779260 }, { 0.993024, -0.098667, -0.010363, -0.063722 }, { -6.261353, 3.899834, 4.933602 }, { 0.839206, -0.203620, -0.490036, -0.118899 }, "
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{7.772239,1.754771,-3.050699}, {0.512814,-0.039891,0.854990,0.066508}, {4.860641,1.709424,-1.131847}, {0.732085,-0.001647,0.680242,0.036330}, {1.894802,2.376258,0.714246}, {0.904515,-0.003918,0.426415,-0.002746}, {-1.865840,3.188168,2.779260}, {0.993024,-0.098667,-0.010363,-0.063722}, {-6.261353,3.899834,4.933602}, {0.839206,-0.203620,-0.490036,-0.118899}, "
 		}
 	},
 
 	{
-		entity_name  =  "Character_trent",
-		type  =  DEFORMABLE,
-		template_name  =  "trent",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Character_trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 6.208148, 0, -2.508646 },
-			orient  =  { { -0.426977, 0.000000, -0.904262 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.904262, 0.000000, -0.426977 } }
+			pos = { 6.208148, 0, -2.508646 },
+			orient = { { -0.426977,  0.000000, -0.904262 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.904262,  0.000000, -0.426977 } }
 		},
-		compoundprops  = 
+		compoundprops =
 		{
-			floor_height  =  0
+			floor_height = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Character",
+			category = "Character",
 		}
 	},
 
 	{
-		entity_name  =  "Cam_Mk_Orient",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Cam_Mk_Orient",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
 	{
-		entity_name  =  "Character_trent_fs_ml_steel01_1",
-		type  =  SOUND,
-		template_name  =  "fs_ml_steel01",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Character_trent_fs_ml_steel01_1",
+		type = SOUND,
+		template_name = "fs_ml_steel01",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  -20,
-			pan  =  5,
-			dmin  =  50,
-			dmax  =  300,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
+			attenuation = -20,
+			pan = 5,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Character_trent_fs_mr_steel01_2",
-		type  =  SOUND,
-		template_name  =  "fs_mr_steel01",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Character_trent_fs_mr_steel01_2",
+		type = SOUND,
+		template_name = "fs_mr_steel01",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  -20,
-			pan  =  35,
-			dmin  =  50,
-			dmax  =  300,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = -20,
+			pan = 35,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Character_trent_fs_ml_steel02_3",
-		type  =  SOUND,
-		template_name  =  "fs_ml_steel02",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Character_trent_fs_ml_steel02_3",
+		type = SOUND,
+		template_name = "fs_ml_steel02",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  -22,
-			pan  =  45,
-			dmin  =  50,
-			dmax  =  300,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = -22,
+			pan = 45,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Character_trent_sfx_fstop_steel_male01_4",
-		type  =  SOUND,
-		template_name  =  "sfx_fstop_steel_male01",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Character_trent_sfx_fstop_steel_male01_4",
+		type = SOUND,
+		template_name = "sfx_fstop_steel_male01",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  -24,
-			pan  =  42,
-			dmin  =  50,
-			dmax  =  300,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = -24,
+			pan = 42,
+			dmin = 50,
+			dmax = 300,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	}
 };
 
-events  = 
+events =
 {
 	{
 		0.000, SET_CAMERA, { "Monitor_enter", "Camera_Enter" }
@@ -215,141 +216,141 @@ events  =
 	{
 		0.000, START_CAMERA_PROP_ANIM, { "Camera_Enter" },
 		{
-			duration  =  6.000,
-			cameraprops  = 
+			duration = 6.000,
+			cameraprops =
 			{
-				fovh  =  35
+				fovh = 35
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.000, START_MOTION, { "Character_trent" },
 		{
-			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
-			duration  =  2.400,
-			time_scale  =  1,
-			weight  =  1,
-			heading  =  -1
+			animation = "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration = 2.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
 	{
 		0.000, START_PATH_ANIMATION, { "Camera_Enter", "Camera_Enter_Path" },
 		{
-			duration  =  6.000,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION,
-			param_curve  = 
+			duration = 6.000,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "Camera_Enter", "Cam_Mk_Orient" },
 		{
-			duration  =  6.000,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 6.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				q_orient  =  { 0.293374, 0.042508, -0.955052, -0.030631 }
+				q_orient = { 0.293374, 0.042508, -0.955052, -0.030631 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.000, START_PATH_ANIMATION, { "Cam_Mk_Orient", "Camera_Enter_Path" },
 		{
-			duration  =  3.875,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION + ORIENTATION,
-			param_curve  = 
+			duration = 3.875,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 0.397436, 0.092949, 0.352941, 0.375000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  0.397436,  0.092949,  0.352941,  0.375000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.312, START_SOUND, { "Character_trent_fs_ml_steel01_1" },
 		{
-			duration  =  0.708
+			duration = 0.708
 		}
 	},
 
 	{
 		1.000, START_SOUND, { "Character_trent_fs_mr_steel01_2" },
 		{
-			duration  =  0.731
+			duration = 0.731
 		}
 	},
 
 	{
 		1.687, START_SOUND, { "Character_trent_fs_ml_steel02_3" },
 		{
-			duration  =  0.742
+			duration = 0.742
 		}
 	},
 
 	{
 		2.187, START_SOUND, { "Character_trent_sfx_fstop_steel_male01_4" },
 		{
-			duration  =  0.173
+			duration = 0.173
 		}
 	},
 
 	{
 		2.400, START_MOTION, { "Character_trent" },
 		{
-			animation  =  "Sc_MLBODY_STND_IDLE_SMALL_000LV_xa_05",
-			duration  =  5.000,
-			time_scale  =  1,
-			weight  =  1,
-			heading  =  -1
+			animation = "Sc_MLBODY_STND_IDLE_SMALL_000LV_xa_05",
+			duration = 5.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	}
 };

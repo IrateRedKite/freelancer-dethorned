@@ -755,6 +755,7 @@ entities =
 			attenuation = 0,
 			pan = 0,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -784,6 +785,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -4391,6 +4393,7 @@ entities =
 		type = SOUND,
 		template_name = "mix_s072e",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -4406,10 +4409,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
 		}
 	},
 
@@ -4683,7 +4682,7 @@ events =
 	{
 		2.578, START_MOTION, { "Char_sinclair" },
 		{
-			animation = "Sc_FMHEAD_BASEPOSE_000LV_02_01",
+			animation = "Sc_FMHEAD_BASEPOSE_JUNI_000LV_01_01",
 			duration = 2.187,
 			time_scale = 1,
 			weight = 1,
@@ -4958,34 +4957,28 @@ events =
 	},
 
 	{
-		5.545, START_MOTION, { "Char_sinclair" },
+		5.545, START_IK, { "Char_orillion", "Char_sinclair" },
 		{
-			animation = "Sc_FMBODY_STND_GESTL_WHAT_000LV_XA_02",
-			duration = 2.700,
-			trans_time = 0.400,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
+			duration = 14.017,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.800,
+			event_flags = 128
 		}
 	},
 
 	{
-		5.545, START_MOTION, { "Char_orillion" },
+		5.545, START_MOTION, { "Char_jacobi" },
 		{
-			animation = "Sc_MLBODY_STND_CROSS_ARMS_000LV_xa_06",
-			duration = 3.832,
-			time_scale = 1,
-			weight = 1,
-			heading = -1,
-			event_flags = 2
-		}
-	},
-
-	{
-		5.545, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_MLBODY_STND_IDLE_000LV_xa_04",
-			duration = 12.375,
+			animation = "Sc_FMBODY_STND_IDLE_000LV_xa_05",
+			duration = 13.954,
 			time_scale = 1,
 			weight = 1,
 			heading = -1,
@@ -5012,10 +5005,10 @@ events =
 	},
 
 	{
-		5.545, START_MOTION, { "Char_jacobi" },
+		5.545, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_FMBODY_STND_IDLE_000LV_xa_05",
-			duration = 13.954,
+			animation = "Sc_MLBODY_STND_IDLE_000LV_xa_04",
+			duration = 12.375,
 			time_scale = 1,
 			weight = 1,
 			heading = -1,
@@ -5024,20 +5017,26 @@ events =
 	},
 
 	{
-		5.545, START_IK, { "Char_orillion", "Char_sinclair" },
+		5.545, START_MOTION, { "Char_orillion" },
 		{
-			duration = 14.017,
-			end_effector = "Body_Head",
-			count_to_root = 1,
-			target_part = "hp_head",
-			target_type = HARDPOINT,
-			damping = 1,
-			up = NEG_Y_AXIS,
-			front = Z_AXIS,
-			point_at = 1,
-			move_to = 0,
-			transition_duration = 0.800,
-			event_flags = 128
+			animation = "Sc_MLBODY_STND_CROSS_ARMS_000LV_xa_06",
+			duration = 3.832,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
+		}
+	},
+
+	{
+		5.545, START_MOTION, { "Char_sinclair" },
+		{
+			animation = "Sc_FMBODY_STND_GESTL_WHAT_000LV_XA_02",
+			duration = 2.700,
+			trans_time = 0.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -6030,6 +6029,24 @@ events =
 	},
 
 	{
+		34.236, START_IK, { "Char_quintaine", "Char_orillion" },
+		{
+			duration = 3.624,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "Body_Head",
+			target_type = PART,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 1.000,
+			event_flags = 128
+		}
+	},
+
+	{
 		34.250, START_MOTION, { "Char_sinclair" },
 		{
 			animation = "Sc_dx_s072a_0801_sinclair",
@@ -6518,7 +6535,7 @@ events =
 	{
 		44.617, START_IK, { "Char_orillion", "Char_sinclair" },
 		{
-			duration = 47.620,
+			duration = 47.693,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -7134,7 +7151,7 @@ events =
 	},
 
 	{
-		64.397, START_MOTION, { "Char_quintaine" },
+		64.697, START_MOTION, { "Char_quintaine" },
 		{
 			animation = "Sc_dx_s072a_1404_Quintaine",
 			duration = 3.164,
@@ -7351,7 +7368,7 @@ events =
 	},
 
 	{
-		67.898, START_MOTION, { "Char_sinclair" },
+		68.198, START_MOTION, { "Char_sinclair" },
 		{
 			animation = "Sc_dx_s072a_1501_sinclair",
 			duration = 5.333,
@@ -7434,7 +7451,7 @@ events =
 	},
 
 	{
-		73.200, START_MOTION, { "Char_jacobi" },
+		73.500, START_MOTION, { "Char_jacobi" },
 		{
 			animation = "Sc_dx_s072a_1601_jacobi",
 			duration = 5.466,
@@ -8214,7 +8231,7 @@ events =
 	{
 		83.165, START_IK, { "Char_sinclair", "Mk_Sinclair_IK_2" },
 		{
-			duration = 1.267,
+			duration = 1.827,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",
@@ -8633,7 +8650,7 @@ events =
 	{
 		87.810, START_IK, { "Char_jacobi", "Mk_Artifact_Position" },
 		{
-			duration = 1.489,
+			duration = 1.963,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",
@@ -15828,18 +15845,6 @@ events =
 	},
 
 	{
-		186.300, START_MOTION, { "Char_orillion" },
-		{
-			animation = "Sc_dx_s072a_2801_Orillion",
-			duration = 4.000,
-			trans_time = 0.100,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		186.970, START_MOTION, { "Char_orillion" },
 		{
 			animation = "Sc_MLBODY_STND_GEST_EXPE_000DN_A_07",
@@ -15874,6 +15879,18 @@ events =
 			{
 				pos = { -0.009444, 0.973156, -1.401736 }
 			}
+		}
+	},
+
+	{
+		187.000, START_MOTION, { "Char_orillion" },
+		{
+			animation = "Sc_dx_s072a_2801_Orillion",
+			duration = 4.000,
+			trans_time = 0.100,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -16011,7 +16028,7 @@ events =
 	},
 
 	{
-		191.850, START_MOTION, { "Char_orillion" },
+		192.550, START_MOTION, { "Char_orillion" },
 		{
 			animation = "Sc_dx_s072a_3001_Orillion",
 			duration = 1.000,
@@ -16051,17 +16068,6 @@ events =
 			animation = "Sc_MLHAND_NEUT_RGHT_000LV_A_00",
 			duration = 4.000,
 			trans_time = 0.500,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
-		192.800, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s072a_3101_Trent",
-			duration = 0.833,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -16131,6 +16137,17 @@ events =
 			{
 				on = N,
 			}
+		}
+	},
+
+	{
+		193.500, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_dx_s072a_3101_Trent",
+			duration = 0.833,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 

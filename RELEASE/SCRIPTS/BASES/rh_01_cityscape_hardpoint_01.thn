@@ -41,7 +41,7 @@ entities =
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
 		spatialprops =
 		{
-			pos = { -8.138763, 79.82896, 240.1803 },
+			pos = { -8.138763, 99.82896, 240.1803 },
 			orient = { {  0.998875,  0.000000, -0.047429 },
 					   { -0.002257,  0.998868, -0.047523 },
 					   {  0.047376,  0.047577,  0.997743 } }
@@ -49,7 +49,7 @@ entities =
 		cameraprops =
 		{
 			fovh = 30,
-			hvaspect = 1.32,
+			hvaspect = 1.33,
 			nearplane = 25,
 			farplane = 25000
 		}
@@ -251,7 +251,7 @@ entities =
 		cameraprops =
 		{
 			fovh = 30,
-			hvaspect = 1.32,
+			hvaspect = 1.33,
 			nearplane = 25,
 			farplane = 4000
 		}

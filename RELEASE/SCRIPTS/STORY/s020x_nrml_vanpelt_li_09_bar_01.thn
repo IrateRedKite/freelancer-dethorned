@@ -1473,6 +1473,7 @@ entities =
 			pan = -40,
 			dmin = 50,
 			dmax = 1000,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -5333,6 +5334,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -15,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -5363,6 +5365,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -7523,7 +7526,7 @@ events =
 	{
 		7.300, START_MOTION, { "Char_Trent" },
 		{
-			animation = "Sc_MLHEAD_MOTION_SHAKHEAD_YES_TRENT_000LV_XA_%",
+			animation = "Sc_MLHEAD_MOTION_SHAKHEAD_YES_000LV_XA_%",
 			duration = 3.000,
 			trans_time = 0.400,
 			time_scale = 1,
@@ -14754,6 +14757,24 @@ events =
 	},
 
 	{
+		77.800, START_IK, { "Char_Trent", "Char_T_Mk_IKhead" },
+		{
+			duration = 18.211,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 1.000,
+			event_flags = 128
+		}
+	},
+
+	{
 		77.800, START_SPATIAL_PROP_ANIM, { "Prop_artifact_crystal", "Prop_artifact_Mk_ort_01" },
 		{
 			duration = 4.000,
@@ -15116,10 +15137,6 @@ events =
 	},
 
 	{
-		79.000, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_07_PCS_T_artifact_A" }
-	},
-
-	{
 		79.000, START_SPATIAL_PROP_ANIM, { "Cam_07_PCS_T_artifact_A", "Cam_07_PCS_T_artifact_B" },
 		{
 			duration = 3.000,
@@ -15141,6 +15158,10 @@ events =
 			},
 			pcurve_period = -1000
 		}
+	},
+
+	{
+		79.000, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_07_PCS_T_artifact_A" }
 	},
 
 	{
@@ -15283,6 +15304,17 @@ events =
 	},
 
 	{
+		80.125, START_PSYS_PROP_ANIM, { "rtc_fadeblack_variable_1" },
+		{
+			duration = 0.000,
+			psysprops =
+			{
+				sparam = 1
+			}
+		}
+	},
+
+	{
 		80.125, ATTACH_ENTITY, { "rtc_fadeblack_variable_1", "Cam_07_PCS_T_artifact_B" },
 		{
 			duration = 2.968,
@@ -15292,17 +15324,6 @@ events =
 			target_part = "",
 			target_type = ROOT,
 			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
-		}
-	},
-
-	{
-		80.125, START_PSYS_PROP_ANIM, { "rtc_fadeblack_variable_1" },
-		{
-			duration = 0.000,
-			psysprops =
-			{
-				sparam = 1
-			}
 		}
 	},
 
@@ -15666,33 +15687,9 @@ events =
 	},
 
 	{
-		86.176, START_IK, { "Char_Juni", "Char_J_Mk_IKhead" },
+		86.176, START_PSYS, { "rtc_artifact_cushion_1" },
 		{
-			duration = 38.006,
-			end_effector = "Body_Head",
-			count_to_root = 1,
-			target_part = "",
-			target_type = ROOT,
-			damping = 1,
-			up = NEG_Y_AXIS,
-			front = Z_AXIS,
-			point_at = 1,
-			move_to = 0,
-			transition_duration = 1.000,
-			event_flags = 128
-		}
-	},
-
-	{
-		86.176, ATTACH_ENTITY, { "Char_Juni", "Char_J_Mk_loc_04_console" },
-		{
-			duration = 0.000,
-			offset = { 0, 0, 0 },
-			up = Y_AXIS,
-			front = NEG_Z_AXIS,
-			target_part = "",
-			target_type = ROOT,
-			flags = POSITION + ORIENTATION
+			duration = 55.589
 		}
 	},
 
@@ -15711,9 +15708,33 @@ events =
 	},
 
 	{
-		86.176, START_PSYS, { "rtc_artifact_cushion_1" },
+		86.176, ATTACH_ENTITY, { "Char_Juni", "Char_J_Mk_loc_04_console" },
 		{
-			duration = 55.589
+			duration = 0.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		86.176, START_IK, { "Char_Juni", "Char_J_Mk_IKhead" },
+		{
+			duration = 38.006,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 1.000,
+			event_flags = 128
 		}
 	},
 
@@ -15821,37 +15842,15 @@ events =
 	},
 
 	{
-		86.750, START_AUDIO_PROP_ANIM, { "snd_zone_badlands" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				attenuation = -15
-			}
-		}
-	},
-
-	{
-		86.750, ATTACH_ENTITY, { "Char_VanPelt", "Char_VP_Mk_loc_08_artifact" },
-		{
-			duration = 0.000,
-			offset = { 0, 0, 0 },
-			up = Y_AXIS,
-			front = NEG_Z_AXIS,
-			target_part = "",
-			target_type = ROOT,
-			flags = POSITION + ORIENTATION
-		}
-	},
-
-	{
 		86.750, START_MOTION, { "Char_VanPelt" },
 		{
-			animation = "Sc_SPCBODY_s020x_VanPelt_XC_CHRF_TYPE_000DN_06",
-			duration = 6.966,
+			animation = "Sc_MLHAND_HNEUT_GESTR_TYPING_000LV_XB",
+			duration = 7.459,
+			trans_time = 0.500,
 			time_scale = 1,
 			weight = 1,
-			heading = -1
+			heading = -1,
+			event_flags = 2
 		}
 	},
 
@@ -15871,13 +15870,35 @@ events =
 	{
 		86.750, START_MOTION, { "Char_VanPelt" },
 		{
-			animation = "Sc_MLHAND_HNEUT_GESTR_TYPING_000LV_XB",
-			duration = 7.459,
-			trans_time = 0.500,
+			animation = "Sc_SPCBODY_s020x_VanPelt_XC_CHRF_TYPE_000DN_06",
+			duration = 6.966,
 			time_scale = 1,
 			weight = 1,
-			heading = -1,
-			event_flags = 2
+			heading = -1
+		}
+	},
+
+	{
+		86.750, ATTACH_ENTITY, { "Char_VanPelt", "Char_VP_Mk_loc_08_artifact" },
+		{
+			duration = 0.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		86.750, START_AUDIO_PROP_ANIM, { "snd_zone_badlands" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				attenuation = -15
+			}
 		}
 	},
 
@@ -15920,42 +15941,15 @@ events =
 	},
 
 	{
-		87.347, START_LIGHT_PROP_ANIM, { "ambi_LtG01_Inf_Anomaly_Boost" },
+		87.347, START_SPATIAL_PROP_ANIM, { "ambi_starsphere_exclu_generic" },
 		{
 			duration = 0.000,
-			lightprops =
+			target_type = ROOT,
+			spatialprops =
 			{
-				on = Y,
-				diffuse = { 0.415686, 0.415686, 0.415686 },
+				pos = { 0, 0, 0 }
 			}
 		}
-	},
-
-	{
-		87.347, START_LIGHT_PROP_ANIM, { "ambi_LtG01_Inf_Anomaly" },
-		{
-			duration = 0.000,
-			lightprops =
-			{
-				on = N,
-			}
-		}
-	},
-
-	{
-		87.347, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_09_TCI_artifact" }
-	},
-
-	{
-		87.347, START_SOUND, { "sfx_dkv_map_crystal_1" },
-		{
-			duration = 54.388,
-			flags = LOOP
-		}
-	},
-
-	{
-		87.347, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_09_TCI_static_mon_01" }
 	},
 
 	{
@@ -15980,13 +15974,40 @@ events =
 	},
 
 	{
-		87.347, START_SPATIAL_PROP_ANIM, { "ambi_starsphere_exclu_generic" },
+		87.347, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_09_TCI_static_mon_01" }
+	},
+
+	{
+		87.347, START_SOUND, { "sfx_dkv_map_crystal_1" },
+		{
+			duration = 54.388,
+			flags = LOOP
+		}
+	},
+
+	{
+		87.347, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_09_TCI_artifact" }
+	},
+
+	{
+		87.347, START_LIGHT_PROP_ANIM, { "ambi_LtG01_Inf_Anomaly" },
 		{
 			duration = 0.000,
-			target_type = ROOT,
-			spatialprops =
+			lightprops =
 			{
-				pos = { 0, 0, 0 }
+				on = N,
+			}
+		}
+	},
+
+	{
+		87.347, START_LIGHT_PROP_ANIM, { "ambi_LtG01_Inf_Anomaly_Boost" },
+		{
+			duration = 0.000,
+			lightprops =
+			{
+				on = Y,
+				diffuse = { 0.415686, 0.415686, 0.415686 },
 			}
 		}
 	},
@@ -16653,13 +16674,6 @@ events =
 	},
 
 	{
-		101.926, START_SOUND, { "dx_s020x_1901_VanPelt_45" },
-		{
-			duration = 6.138
-		}
-	},
-
-	{
 		101.926, START_MOTION, { "Char_VanPelt" },
 		{
 			animation = "Sc_dx_s020x_1901_VanPelt",
@@ -16668,6 +16682,13 @@ events =
 			time_scale = 1,
 			weight = 1,
 			heading = -1
+		}
+	},
+
+	{
+		101.926, START_SOUND, { "dx_s020x_1901_VanPelt_45" },
+		{
+			duration = 6.138
 		}
 	},
 
@@ -16800,11 +16821,11 @@ events =
 	},
 
 	{
-		102.676, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_10_PC3_T_lean_overhead" }
+		102.676, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_10_PC3_T_lean_overhead" }
 	},
 
 	{
-		102.676, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_10_PC3_T_lean_overhead" }
+		102.676, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_10_PC3_T_lean_overhead" }
 	},
 
 	{
@@ -17185,14 +17206,14 @@ events =
 	},
 
 	{
-		113.734, START_SPATIAL_PROP_ANIM, { "Char_T_Mk_IKEye", "Char_Juni" },
+		113.734, START_SPATIAL_PROP_ANIM, { "Char_T_Mk_IKhead", "Char_Juni" },
 		{
 			duration = 1.000,
-			target_part = "hp_head",
-			target_type = HARDPOINT,
+			target_part = "Spine3",
+			target_type = PART,
 			spatialprops =
 			{
-				pos = { 5.371585, 1.600543, -0.94366 }
+				pos = { 5.376698, 1.434182, -0.959221 }
 			},
 			param_curve =
 			{
@@ -17208,14 +17229,14 @@ events =
 	},
 
 	{
-		113.734, START_SPATIAL_PROP_ANIM, { "Char_T_Mk_IKhead", "Char_Juni" },
+		113.734, START_SPATIAL_PROP_ANIM, { "Char_T_Mk_IKEye", "Char_Juni" },
 		{
 			duration = 1.000,
-			target_part = "Spine3",
-			target_type = PART,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
 			spatialprops =
 			{
-				pos = { 5.376698, 1.434182, -0.959221 }
+				pos = { 5.371585, 1.600543, -0.94366 }
 			},
 			param_curve =
 			{
@@ -18417,33 +18438,15 @@ events =
 	},
 
 	{
-		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKhand_artifact_grab" },
+		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKhead" },
 		{
-			duration = 1.200,
-			end_effector = "LLowArm",
+			duration = 9.574,
+			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "",
 			target_type = ROOT,
 			damping = 1,
-			up = Y_AXIS,
-			front = Z_AXIS,
-			point_at = 1,
-			move_to = 0,
-			transition_duration = 1.000,
-			event_flags = 128
-		}
-	},
-
-	{
-		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKelbow_artifact_grab" },
-		{
-			duration = 1.200,
-			end_effector = "LUpArm",
-			count_to_root = 1,
-			target_part = "",
-			target_type = ROOT,
-			damping = 1,
-			up = X_AXIS,
+			up = NEG_Y_AXIS,
 			front = Z_AXIS,
 			point_at = 1,
 			move_to = 0,
@@ -18471,15 +18474,33 @@ events =
 	},
 
 	{
-		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKhead" },
+		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKelbow_artifact_grab" },
 		{
-			duration = 9.574,
-			end_effector = "Body_Head",
+			duration = 1.200,
+			end_effector = "LUpArm",
 			count_to_root = 1,
 			target_part = "",
 			target_type = ROOT,
 			damping = 1,
-			up = NEG_Y_AXIS,
+			up = X_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 1.000,
+			event_flags = 128
+		}
+	},
+
+	{
+		132.270, START_IK, { "Char_Trent", "Char_T_Mk_IKhand_artifact_grab" },
+		{
+			duration = 1.200,
+			end_effector = "LLowArm",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = Y_AXIS,
 			front = Z_AXIS,
 			point_at = 1,
 			move_to = 0,
@@ -18573,7 +18594,7 @@ events =
 	},
 
 	{
-		133.238, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_14_PC2_T_static_mon" }
+		133.238, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_14_PC2_T_grab_artifact_A" }
 	},
 
 	{
@@ -18601,7 +18622,7 @@ events =
 	},
 
 	{
-		133.238, SET_CAMERA, { "Cam_Monitor_s020x", "Cam_14_PC2_T_grab_artifact_A" }
+		133.238, SET_CAMERA, { "Cam_Monitor_s020x_static", "Cam_14_PC2_T_static_mon" }
 	},
 
 	{
@@ -19899,13 +19920,6 @@ events =
 	},
 
 	{
-		152.300, START_SOUND, { "dx_s020x_2901_benford_cv_2" },
-		{
-			duration = 2.552
-		}
-	},
-
-	{
 		152.300, START_SPATIAL_PROP_ANIM, { "Char_T_Mk_IKhead", "Char_T_Mk_IKhead_console_screen" },
 		{
 			duration = 0.800,
@@ -19925,6 +19939,13 @@ events =
 				}
 			},
 			pcurve_period = -1000
+		}
+	},
+
+	{
+		152.300, START_SOUND, { "dx_s020x_2901_benford_cv_2" },
+		{
+			duration = 2.552
 		}
 	},
 
@@ -20074,6 +20095,29 @@ events =
 	},
 
 	{
+		153.520, START_SPATIAL_PROP_ANIM, { "Cam_16_Mrk_ort_follow", "Cam_16_Mrk_ort_overshoot" },
+		{
+			duration = 1.766,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
+			{
+				q_orient = { -0.927053, -0.36896, 0.066639, -0.320676 }
+			},
+			param_curve =
+			{
+				CLSID = "FreeFormPCurve",
+				points =
+				{
+					{  0.000000,  0.000000,  0.000000,  2.500000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
+				}
+			},
+			pcurve_period = -1000
+		}
+	},
+
+	{
 		153.520, START_SPATIAL_PROP_ANIM, { "Cam_16_AC3_J_JustGreat", "Cam_16_Mrk_ort_follow" },
 		{
 			duration = 2.733,
@@ -20090,29 +20134,6 @@ events =
 				{
 					{  0.000000,  0.000000,  0.000000,  0.000000 },
 					{  0.717949,  0.939103,  0.500000,  0.555556 },
-					{  1.000000,  1.000000,  0.000000,  0.000000 },
-				}
-			},
-			pcurve_period = -1000
-		}
-	},
-
-	{
-		153.520, START_SPATIAL_PROP_ANIM, { "Cam_16_Mrk_ort_follow", "Cam_16_Mrk_ort_overshoot" },
-		{
-			duration = 1.766,
-			target_part = "",
-			target_type = ROOT,
-			spatialprops =
-			{
-				q_orient = { -0.927053, -0.36896, 0.066639, -0.320676 }
-			},
-			param_curve =
-			{
-				CLSID = "FreeFormPCurve",
-				points =
-				{
-					{  0.000000,  0.000000,  0.000000,  2.500000 },
 					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},

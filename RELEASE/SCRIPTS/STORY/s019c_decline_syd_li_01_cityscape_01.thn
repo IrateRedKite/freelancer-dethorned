@@ -574,6 +574,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = 0,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -614,6 +615,7 @@ entities =
 		type = SOUND,
 		template_name = "mix_s019e",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -629,10 +631,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
 		}
 	},
 
@@ -649,6 +647,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -679,6 +678,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -794,7 +794,7 @@ events =
 	{
 		0.000, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_MLHEAD_BASEPOSE_TRENT_000LV_01_01",
+			animation = "Sc_FMHEAD_BASEPOSE_000LV_02_01",
 			duration = 13.333,
 			time_scale = 1,
 			weight = 1,

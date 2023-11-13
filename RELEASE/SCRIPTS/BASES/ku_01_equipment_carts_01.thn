@@ -1,937 +1,937 @@
-duration  =  10.312;
+duration = 10.312;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Layer_Ku_01_Equip_carts",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_Ku_01_Equip_carts",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "PathShip",
-		type  =  MOTION_PATH,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PathShip",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -1e-006, 5.329673, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -1e-006, 5.329673, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		pathprops  = 
+		pathprops =
 		{
-			path_type  =  "CV_CROrientationSplinePath",
-			path_data  =  "OPEN,{ 0.288354, 1.711815, 41.962036 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, { 0.000001, 1.711815, 0.000000 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, "
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{0.288354,1.711815,41.962036}, {1.000000,0.000000,0.000000,0.000000}, {0.000001,1.711815,0.000000}, {1.000000,0.000000,0.000000,0.000000}, "
 		}
 	},
 
 	{
-		entity_name  =  "PathEngineCart",
-		type  =  MOTION_PATH,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PathEngineCart",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -1.14435, -4.205389, -0.984949 },
-			orient  =  { { 0.555845, 0.000000, -0.831286 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.831286, 0.000000, 0.555845 } }
+			pos = { -1.14435, -4.205389, -0.984949 },
+			orient = { {  0.555845,  0.000000, -0.831286 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.831286,  0.000000,  0.555845 } }
 		},
-		pathprops  = 
+		pathprops =
 		{
-			path_type  =  "CV_CROrientationSplinePath",
-			path_data  =  "OPEN,{ -3.788841, 4.894753, -20.649315 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, { -3.723168, 4.894753, -19.459856 }, { 0.997367, 0.000000, 0.072517, 0.000000 }, { -3.314513, 4.894753, -15.228948 }, { 0.999990, 0.000000, -0.004363, 0.000000 }, { -4.187077, 4.894753, -8.389430 }, { 0.968461, 0.000000, -0.249165, 0.000000 }, { -8.114765, 4.894750, -4.153487 }, { 0.915442, 0.000000, -0.402450, 0.000000 }, "
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{-3.788841,4.894753,-20.649315}, {1.000000,0.000000,0.000000,0.000000}, {-3.723168,4.894753,-19.459856}, {0.997367,0.000000,0.072517,0.000000}, {-3.314513,4.894753,-15.228948}, {0.999990,0.000000,-0.004363,0.000000}, {-4.187077,4.894753,-8.389430}, {0.968461,0.000000,-0.249165,0.000000}, {-8.114765,4.894750,-4.153487}, {0.915442,0.000000,-0.402450,0.000000}, "
 		}
 	},
 
 	{
-		entity_name  =  "PathShieldThrust",
-		type  =  MOTION_PATH,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PathShieldThrust",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 4.890645, -6.196161, -0.663972 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 4.890645, -6.196161, -0.663972 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		pathprops  = 
+		pathprops =
 		{
-			path_type  =  "CV_CROrientationSplinePath",
-			path_data  =  "OPEN,{ 19.022694, 7.037862, 9.311801 }, { 0.554544, 0.000000, -0.832155, 0.000000 }, { 13.779212, 7.037863, 7.226138 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, { 9.662826, 7.037862, 6.714065 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, { 5.517230, 7.037865, 9.051873 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, { -0.166276, 7.037862, 12.202773 }, { 1.000000, 0.000000, 0.000000, 0.000000 }, "
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{19.022694,7.037862,9.311801}, {0.554544,0.000000,-0.832155,0.000000}, {13.779212,7.037863,7.226138}, {1.000000,0.000000,0.000000,0.000000}, {9.662826,7.037862,6.714065}, {1.000000,0.000000,0.000000,0.000000}, {5.517230,7.037865,9.051873}, {1.000000,0.000000,0.000000,0.000000}, {-0.166276,7.037862,12.202773}, {1.000000,0.000000,0.000000,0.000000}, "
 		}
 	},
 
 	{
-		entity_name  =  "PathGunCart",
-		type  =  MOTION_PATH,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PathGunCart",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, -1.712572, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, -1.712572, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		pathprops  = 
+		pathprops =
 		{
-			path_type  =  "CV_CROrientationSplinePath",
-			path_data  =  "OPEN,{ 21.459286, 2.261264, -8.818750 }, { 0.655303, 0.000000, 0.755366, 0.000000 }, { 18.569698, 2.261264, -7.554935 }, { 0.540832, 0.000000, 0.841131, 0.000000 }, { 14.016089, 2.261264, -6.008121 }, { 0.650282, 0.000000, 0.759693, 0.000000 }, { 8.747889, 2.261264, -6.902492 }, { 0.784481, 0.000000, 0.620153, 0.000000 }, { 3.065266, 2.261264, -11.025459 }, { 0.929223, 0.000000, 0.369520, 0.000000 }, "
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{21.459286,2.261264,-8.818750}, {0.655303,0.000000,0.755366,0.000000}, {18.569698,2.261264,-7.554935}, {0.540832,0.000000,0.841131,0.000000}, {14.016089,2.261264,-6.008121}, {0.650282,0.000000,0.759693,0.000000}, {8.747889,2.261264,-6.902492}, {0.784481,0.000000,0.620153,0.000000}, {3.065266,2.261264,-11.025459}, {0.929223,0.000000,0.369520,0.000000}, "
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip",
-		type  =  COMPOUND,
-		template_name  =  "PlayerShip",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "PlayerShip",
+		type = COMPOUND,
+		template_name = "PlayerShip",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 0.288353, 7.041488, 41.96204 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0.288353, 7.041488, 41.96204 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Spaceship",
-			running_lights  =  "true",
+			category = "Spaceship",
+			running_lights = "true",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Shield_Thrust",
-		type  =  COMPOUND,
-		template_name  =  "ku_booth",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Shield_Thrust",
+		type = COMPOUND,
+		template_name = "ku_booth",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 23.91334, 0.841702, 8.647829 },
-			orient  =  { { -0.384962, 0.000000, 0.922932 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.922932, 0.000000, -0.384962 } }
+			pos = { 23.91334, 0.841702, 8.647829 },
+			orient = { { -0.384962,  0.000000,  0.922932 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.922932,  0.000000, -0.384962 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment Cart",
-			Priority  =  "Equip_2",
+			category = "Equipment Cart",
+			Priority = "Equip_2",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Gun",
-		type  =  COMPOUND,
-		template_name  =  "ku_cart",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Gun",
+		type = COMPOUND,
+		template_name = "ku_cart",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 21.45929, 0.548692, -8.81875 },
-			orient  =  { { -0.141156, 0.000000, -0.989987 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.989987, 0.000000, -0.141156 } }
+			pos = { 21.45929, 0.548692, -8.81875 },
+			orient = { { -0.141156,  0.000000, -0.989987 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.989987,  0.000000, -0.141156 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment Cart",
-			Priority  =  "Equip_2",
+			category = "Equipment Cart",
+			Priority = "Equip_2",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Engine",
-		type  =  COMPOUND,
-		template_name  =  "ku_flat",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Engine",
+		type = COMPOUND,
+		template_name = "ku_flat",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { -20.41584, 0.689364, -9.313157 },
-			orient  =  { { 0.555845, 0.000000, -0.831286 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.831286, 0.000000, 0.555845 } }
+			pos = { -20.41584, 0.689364, -9.313157 },
+			orient = { {  0.555845,  0.000000, -0.831286 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.831286,  0.000000,  0.555845 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment Cart",
-			Priority  =  "Equip_2",
+			category = "Equipment Cart",
+			Priority = "Equip_2",
 		}
 	},
 
 	{
-		entity_name  =  "Cam_Monitor_Ku_01_Equip_carts",
-		type  =  MONITOR,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+		entity_name = "Cam_Monitor_Ku_01_Equip_carts",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
 	},
 
 	{
-		entity_name  =  "Equip_k_array01_1",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_ku_hornet_launcher",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_array01_1",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_ku_hornet_launcher",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 11.65687, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 11.65687, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_auto01_2",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_ku_auto_tesla",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_auto01_2",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_ku_auto_tesla",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 14.62198, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 14.62198, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_counter01_3",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_li_plasma_blaster",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_counter01_3",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_li_plasma_blaster",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 13.91455, 0, 0.454813 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 13.91455, 0, 0.454813 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_gun01_7",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_ku_ion_blaster",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_gun01_7",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_ku_ion_blaster",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 16.37389, 0, -1.900432 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 16.37389, 0, -1.900432 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_missile01_9",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_ku_recognizer_launcher",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_missile01_9",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_ku_recognizer_launcher",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 12.79809, 0, -0.006792 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 12.79809, 0, -0.006792 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_shield_gen01_10",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_st_ku_displacement_shield",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_shield_gen01_10",
+		type = COMPOUND,
+		template_name = "rtcprop_st_ku_displacement_shield",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 13.39305, 1.358863, -5.541364 },
-			orient  =  { { -0.905678, 0.000000, 0.423966 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.423966, 0.000000, -0.905678 } }
+			pos = { 13.39305, 1.358863, -5.541364 },
+			orient = { { -0.905678,  0.000000,  0.423966 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.423966,  0.000000, -0.905678 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_thruster01_11",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_st_ku_thruster",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_thruster01_11",
+		type = COMPOUND,
+		template_name = "rtcprop_st_ku_thruster",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 12.37368, 0, -3.186481 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 12.37368, 0, -3.186481 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_k_thruster02_12",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_st_ku_thruster",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_k_thruster02_12",
+		type = COMPOUND,
+		template_name = "rtcprop_st_ku_thruster",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 11.29434, 0, -3.10191 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 11.29434, 0, -3.10191 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_g_heavytractorbeam_20",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_hardware_ge_heavy_tractor_beam",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_g_heavytractorbeam_20",
+		type = COMPOUND,
+		template_name = "rtcprop_hardware_ge_heavy_tractor_beam",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 14.67507, 0, -1.759985 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 14.67507, 0, -1.759985 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_g_tractorbeam_25",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_hardware_ge_tractor_beam",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_g_tractorbeam_25",
+		type = COMPOUND,
+		template_name = "rtcprop_hardware_ge_tractor_beam",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 13.13355, 0, -1.684472 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 13.13355, 0, -1.684472 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Equip_ge_gun02_27",
-		type  =  COMPOUND,
-		template_name  =  "rtcprop_weapons_ge_shredder_shotgun",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Equip_ge_gun02_27",
+		type = COMPOUND,
+		template_name = "rtcprop_weapons_ge_shredder_shotgun",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 20.26208, 0, 1.473817 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 20.26208, 0, 1.473817 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Equipment",
-			Priority  =  "Equip_1",
+			category = "Equipment",
+			Priority = "Equip_1",
 		}
 	},
 
 	{
-		entity_name  =  "Char_Mk_Offscreen",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Char_Mk_Offscreen",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 23.89369, 0, -35.37372 },
-			orient  =  { { -0.695466, 0.000000, -0.718559 },
-					   { 0.046854, 0.997872, -0.045348 },
-					   { 0.717030, -0.065206, -0.693986 } }
+			pos = { 23.89369, 0, -35.37372 },
+			orient = { { -0.695466,  0.000000, -0.718559 },
+					   {  0.046854,  0.997872, -0.045348 },
+					   {  0.717030, -0.065206, -0.693986 } }
 		}
 	},
 
 	{
-		entity_name  =  "Char_Trent",
-		type  =  DEFORMABLE,
-		template_name  =  "trent",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Char_Trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 23.89369, 0, -35.37372 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 23.89369, 0, -35.37372 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		compoundprops  = 
+		compoundprops =
 		{
-			floor_height  =  0
+			floor_height = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Actor  =  "Player",
-			category  =  "Character",
+			Actor = "Player",
+			category = "Character",
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShipEngines_1",
-		type  =  PSYS,
-		template_name  =  "PlayerShipEngines",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "PlayerShipEngines_1",
+		type = PSYS,
+		template_name = "PlayerShipEngines",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip_Engine_Sound",
-		type  =  SOUND,
-		template_name  =  "engine_playership",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "PlayerShip_Engine_Sound",
+		type = SOUND,
+		template_name = "engine_playership",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  -6,
-			pan  =  0,
-			dmin  =  50,
-			dmax  =  1000,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = -6,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Carts_01_A",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Carts_01_A",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 16.60137, 11.27807, -14.48707 },
-			orient  =  { { -0.871440, 0.000000, 0.490502 },
-					   { 0.079451, 0.986794, 0.141156 },
-					   { -0.484024, 0.161980, -0.859932 } }
+			pos = { 16.60137, 11.27807, -14.48707 },
+			orient = { { -0.871440,  0.000000,  0.490502 },
+					   {  0.079451,  0.986794,  0.141156 },
+					   { -0.484024,  0.161980, -0.859932 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  25,
-			hvaspect  =  1.85,
-			nearplane  =  3,
-			farplane  =  200
+			fovh = 25,
+			hvaspect = 1.85,
+			nearplane = 3,
+			farplane = 200
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Carts_01_B",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Carts_01_B",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -8.13868, 23.71673, -19.57891 },
-			orient  =  { { -0.550994, 0.000000, 0.834509 },
-					   { 0.479048, 0.818822, 0.316297 },
-					   { -0.683315, 0.574047, -0.451166 } }
+			pos = { -8.13868, 23.71673, -19.57891 },
+			orient = { { -0.550994,  0.000000,  0.834509 },
+					   {  0.479048,  0.818822,  0.316297 },
+					   { -0.683315,  0.574047, -0.451166 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  25,
-			hvaspect  =  1.333333,
-			nearplane  =  0.3,
-			farplane  =  4000
+			fovh = 25,
+			hvaspect = 1.333333,
+			nearplane = 0.3,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Carts_02_A",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Carts_02_A",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 26.24885, 27.68768, -10.84471 },
-			orient  =  { { -0.702430, 0.000000, -0.711753 },
-					   { -0.267630, 0.926614, 0.264124 },
-					   { 0.659520, 0.376015, -0.650881 } }
+			pos = { 26.24885, 27.68768, -10.84471 },
+			orient = { { -0.702430,  0.000000, -0.711753 },
+					   { -0.267630,  0.926614,  0.264124 },
+					   {  0.659520,  0.376015, -0.650881 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  25,
-			hvaspect  =  1.85,
-			nearplane  =  3,
-			farplane  =  200
+			fovh = 25,
+			hvaspect = 1.85,
+			nearplane = 3,
+			farplane = 200
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Carts_02_B",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Carts_02_B",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 26.02119, 13.90704, -20.73444 },
-			orient  =  { { -0.559073, 0.000000, -0.829118 },
-					   { -0.201045, 0.970156, 0.135565 },
-					   { 0.804374, 0.242481, -0.542388 } }
+			pos = { 26.02119, 13.90704, -20.73444 },
+			orient = { { -0.559073,  0.000000, -0.829118 },
+					   { -0.201045,  0.970156,  0.135565 },
+					   {  0.804374,  0.242481, -0.542388 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  25,
-			hvaspect  =  1.333333,
-			nearplane  =  0.3,
-			farplane  =  4000
+			fovh = 25,
+			hvaspect = 1.333333,
+			nearplane = 0.3,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip_Mk_Follow",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PlayerShip_Mk_Follow",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip_Mk_Bump_2",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PlayerShip_Mk_Bump_2",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, -1.325856, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, -1.325856, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip_Mk_Bump_1",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "PlayerShip_Mk_Bump_1",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
 	{
-		entity_name  =  "PlayerShip_Shipcushion_Marker_A",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "PlayerShip_Shipcushion_Marker_A",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Engine_engine_loop_23",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_loop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Engine_engine_loop_23",
+		type = SOUND,
+		template_name = "equipment_cart_loop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { -20.41584, 0.689364, -9.313157 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -20.41584, 0.689364, -9.313157 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Engine_engine_start_24",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_start",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Engine_engine_start_24",
+		type = SOUND,
+		template_name = "equipment_cart_start",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { -20.41584, 0.689364, -9.313157 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -20.41584, 0.689364, -9.313157 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Engine_engine_stop_25",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_stop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Engine_engine_stop_25",
+		type = SOUND,
+		template_name = "equipment_cart_stop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { -20.41584, 0.689364, -9.313157 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -20.41584, 0.689364, -9.313157 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Gun_engiine_loop_23",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_loop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Gun_engiine_loop_23",
+		type = SOUND,
+		template_name = "equipment_cart_loop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 21.45929, 0.548692, -8.81875 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 21.45929, 0.548692, -8.81875 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Shield_Thrust_engine_loop_23",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_loop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Shield_Thrust_engine_loop_23",
+		type = SOUND,
+		template_name = "equipment_cart_loop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 23.91334, 0.841701, 8.647829 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 23.91334, 0.841701, 8.647829 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Gun_engine_start_24",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_start",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Gun_engine_start_24",
+		type = SOUND,
+		template_name = "equipment_cart_start",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 21.45929, 0.548692, -8.81875 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 21.45929, 0.548692, -8.81875 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Shield_Thrust_engnine_start_24",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_start",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Shield_Thrust_engnine_start_24",
+		type = SOUND,
+		template_name = "equipment_cart_start",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 23.91334, 0.841701, 8.647829 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 23.91334, 0.841701, 8.647829 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Gun_engine_stop_25",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_stop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Gun_engine_stop_25",
+		type = SOUND,
+		template_name = "equipment_cart_stop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 21.45929, 0.548692, -8.81875 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 21.45929, 0.548692, -8.81875 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	},
 
 	{
-		entity_name  =  "Cart_Ku_Shield_Thrust_engnine_stop_25",
-		type  =  SOUND,
-		template_name  =  "equipment_cart_stop",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  SPATIAL,
-		spatialprops  = 
+		entity_name = "Cart_Ku_Shield_Thrust_engnine_stop_25",
+		type = SOUND,
+		template_name = "equipment_cart_stop",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
 		{
-			pos  =  { 23.91334, 0.841701, 8.647829 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 23.91334, 0.841701, 8.647829 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		audioprops  = 
+		audioprops =
 		{
-			attenuation  =  0,
-			pan  =  0,
-			dmin  =  60,
-			dmax  =  250,
-			ain  =  360,
-			aout  =  360,
-			atout  =  0,
-			rmix  =  0,
+			attenuation = 0,
+			pan = 0,
+			dmin = 60,
+			dmax = 250,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Audio",
+			category = "Audio",
 		}
 	}
 };
 
-events  = 
+events =
 {
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_shield_gen01_10", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0.1, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0.1, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "PlayerShip", "PlayerShip_Mk_Follow" },
 		{
-			duration  =  9.718,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 9.718,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, 0, 0 }
+				pos = { 0, 0, 0 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1000
+			pcurve_period = -1000
 		}
 	},
 
 	{
 		0.000, START_PATH_ANIMATION, { "PlayerShip_Mk_Follow", "PathShip" },
 		{
-			duration  =  2.531,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION,
-			param_curve  = 
+			duration = 2.531,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1000
+			pcurve_period = -1000
 		}
 	},
 
 	{
 		0.000, START_PATH_ANIMATION, { "Cart_Ku_Shield_Thrust", "PathShieldThrust" },
 		{
-			duration  =  7.625,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION + ORIENTATION + LOOK_AT,
-			param_curve  = 
+			duration = 7.625,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION + LOOK_AT,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "PlayerShip_Shipcushion_Marker_A" },
 		{
-			duration  =  0.100,
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 0.100,
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, -3, 0 }
+				pos = { 0, -3, 0 }
 			}
 		}
 	},
@@ -939,295 +939,295 @@ events  =
 	{
 		0.000, ATTACH_ENTITY, { "Equip_ge_gun02_27", "Cart_Ku_Engine" },
 		{
-			duration  =  15.000,
-			offset  =  { 0, 0, 0.3 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect03",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 15.000,
+			offset = { 0, 0, 0.3 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect03",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_g_tractorbeam_25", "Cart_Ku_Engine" },
 		{
-			duration  =  15.000,
-			offset  =  { 0, 0.439, -0.1 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect02",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 15.000,
+			offset = { 0, 0.439, -0.1 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect02",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_g_heavytractorbeam_20", "Cart_Ku_Engine" },
 		{
-			duration  =  15.062,
-			offset  =  { 0, 0.575, -0.2 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 15.062,
+			offset = { 0, 0.575, -0.2 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_missile01_9", "Cart_Ku_Gun" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0, 0.4 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect05",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0, 0.4 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect05",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_gun01_7", "Cart_Ku_Gun" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0, 0.3 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0, 0.3 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_auto01_2", "Cart_Ku_Gun" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0.208, 0.4 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect02",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0.208, 0.4 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect02",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_array01_1", "Cart_Ku_Gun" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0, 0.4 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect06",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0, 0.4 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect06",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_thruster02_12", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0.273, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect04",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0.273, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect04",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_thruster01_11", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0.26, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect02",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0.26, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect02",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "PlayerShipEngines_1", "PlayerShip" },
 		{
-			duration  =  8.312,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpEngine01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION
+			duration = 8.312,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpEngine01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "PlayerShipEngines_1" },
 		{
-			duration  =  8.250
+			duration = 8.250
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Shield_Thrust_engnine_stop_25", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Shield_Thrust_engnine_start_24", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Shield_Thrust_engine_loop_23", "Cart_Ku_Shield_Thrust" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Gun_engine_stop_25", "Cart_Ku_Gun" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Gun_engine_start_24", "Cart_Ku_Gun" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Gun_engiine_loop_23", "Cart_Ku_Gun" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Engine_engine_stop_25", "Cart_Ku_Engine" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Engine_engine_start_24", "Cart_Ku_Engine" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Cart_Ku_Engine_engine_loop_23", "Cart_Ku_Engine" },
 		{
-			duration  =  10.310,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "hpconnect01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + PARENT_CHILD
+			duration = 10.310,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "hpconnect01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + PARENT_CHILD
 		}
 	},
 
 	{
 		0.000, START_SOUND, { "Cart_Ku_Shield_Thrust_engnine_start_24" },
 		{
-			duration  =  1.427
+			duration = 1.427
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Equip_k_counter01_3", "Cart_Ku_Engine" },
 		{
-			duration  =  20.000,
-			offset  =  { 0, 0, 0.5 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpConnect04",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION + ENTITY_RELATIVE
+			duration = 20.000,
+			offset = { 0, 0, 0.5 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpConnect04",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION + ENTITY_RELATIVE
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "PlayerShip_Engine_Sound", "PlayerShip" },
 		{
-			duration  =  8.186,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "HpEngine01",
-			target_type  =  HARDPOINT,
-			flags  =  POSITION + ORIENTATION
+			duration = 8.186,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "HpEngine01",
+			target_type = HARDPOINT,
+			flags = POSITION + ORIENTATION
 		}
 	},
 
 	{
 		0.000, START_SOUND, { "PlayerShip_Engine_Sound" },
 		{
-			duration  =  8.250,
-			flags  =  LOOP
+			duration = 8.250,
+			flags = LOOP
 		}
 	},
 
@@ -1238,136 +1238,136 @@ events  =
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "Camera_Carts_01_A", "Camera_Carts_01_B" },
 		{
-			duration  =  3.500,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 3.500,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { -8.13868, 23.71673, -19.57891 },
-				q_orient  =  { -0.550994, 0, 0.834509, 0.479048 }
+				pos = { -8.13868, 23.71673, -19.57891 },
+				q_orient = { -0.550994, 0, 0.834509, 0.479048 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Char_Trent", "Char_Mk_Offscreen" },
 		{
-			duration  =  0.000,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "",
-			target_type  =  ROOT,
-			flags  =  POSITION
+			duration = 0.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION
 		}
 	},
 
 	{
 		1.427, START_SOUND, { "Cart_Ku_Shield_Thrust_engine_loop_23" },
 		{
-			duration  =  4.539,
-			flags  =  LOOP
+			duration = 4.539,
+			flags = LOOP
 		}
 	},
 
 	{
 		1.531, START_PATH_ANIMATION, { "Cart_Ku_Gun", "PathGunCart" },
 		{
-			duration  =  4.906,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION + ORIENTATION,
-			param_curve  = 
+			duration = 4.906,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		1.531, START_SOUND, { "Cart_Ku_Gun_engine_start_24" },
 		{
-			duration  =  1.427
+			duration = 1.427
 		}
 	},
 
 	{
 		2.717, START_SOUND, { "Cart_Ku_Engine_engine_start_24" },
 		{
-			duration  =  1.427
+			duration = 1.427
 		}
 	},
 
 	{
 		2.718, START_PATH_ANIMATION, { "Cart_Ku_Engine", "PathEngineCart" },
 		{
-			duration  =  6.093,
-			start_percent  =  0,
-			stop_percent  =  1,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			flags  =  POSITION + ORIENTATION,
-			param_curve  = 
+			duration = 6.093,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION + ORIENTATION,
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
 	{
 		2.957, START_SOUND, { "Cart_Ku_Gun_engiine_loop_23" },
 		{
-			duration  =  1.820
+			duration = 1.820
 		}
 	},
 
 	{
 		3.625, START_SPATIAL_PROP_ANIM, { "Camera_Carts_02_A", "Camera_Carts_02_B" },
 		{
-			duration  =  2.812,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 2.812,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 26.02119, 13.90704, -20.73444 },
-				q_orient  =  { -0.559073, 0, -0.829118, -0.201045 }
+				pos = { 26.02119, 13.90704, -20.73444 },
+				q_orient = { -0.559073, 0, -0.829118, -0.201045 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1
+			pcurve_period = -1
 		}
 	},
 
@@ -1378,19 +1378,19 @@ events  =
 	{
 		4.145, START_SOUND, { "Cart_Ku_Engine_engine_loop_23" },
 		{
-			duration  =  3.005,
-			flags  =  LOOP
+			duration = 3.005,
+			flags = LOOP
 		}
 	},
 
 	{
 		4.500, START_SPATIAL_PROP_ANIM, { "PlayerShip_Shipcushion_Marker_A" },
 		{
-			duration  =  3.000,
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 3.000,
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, 0, 0 }
+				pos = { 0, 0, 0 }
 			}
 		}
 	},
@@ -1398,56 +1398,56 @@ events  =
 	{
 		4.778, START_SOUND, { "Cart_Ku_Gun_engine_stop_25" },
 		{
-			duration  =  1.659
+			duration = 1.659
 		}
 	},
 
 	{
 		5.966, START_SOUND, { "Cart_Ku_Shield_Thrust_engnine_stop_25" },
 		{
-			duration  =  1.659
+			duration = 1.659
 		}
 	},
 
 	{
 		6.062, START_SPATIAL_PROP_ANIM, { "PlayerShip_Mk_Follow", "PlayerShip_Mk_Bump_1" },
 		{
-			duration  =  3.625,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 3.625,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, 0, 0 }
+				pos = { 0, 0, 0 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1000
+			pcurve_period = -1000
 		}
 	},
 
 	{
 		7.151, START_SOUND, { "Cart_Ku_Engine_engine_stop_25" },
 		{
-			duration  =  1.659
+			duration = 1.659
 		}
 	},
 
 	{
 		8.250, START_SPATIAL_PROP_ANIM, { "PlayerShip_Mk_Follow", "PlayerShip_Mk_Bump_2" },
 		{
-			duration  =  0.687,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 0.687,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, -1.325856, 0 }
+				pos = { 0, -1.325856, 0 }
 			}
 		}
 	}

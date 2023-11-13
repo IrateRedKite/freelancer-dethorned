@@ -732,6 +732,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -12,
+			pan = 20,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -761,6 +762,7 @@ entities =
 			attenuation = -19,
 			pan = 27,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -790,6 +792,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -819,6 +822,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -1788,6 +1792,18 @@ events =
 	},
 
 	{
+		2.875, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_STND_WALK_TRNS_270LV_XA_02",
+			duration = 2.332,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		2.875, START_IK, { "Char_Juni", "Char_Juni_EyeIK_3sec" },
 		{
 			duration = 0.769,
@@ -1802,18 +1818,6 @@ events =
 			move_to = 0,
 			transition_duration = 0.550,
 			event_flags = 128
-		}
-	},
-
-	{
-		2.875, START_MOTION, { "Char_Juni" },
-		{
-			animation = "Sc_FMBODY_STND_WALK_TRNS_270LV_XA_02",
-			duration = 2.332,
-			trans_time = 1.000,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
 		}
 	},
 
@@ -2084,11 +2088,11 @@ events =
 	},
 
 	{
-		9.439, SET_CAMERA, { "Cam_Monitor_s045a_static", "Cam_03_AC2_B" }
+		9.439, SET_CAMERA, { "Cam_Monitor_s045a", "Cam_03_AC2_A" }
 	},
 
 	{
-		9.439, SET_CAMERA, { "Cam_Monitor_s045a", "Cam_03_AC2_A" }
+		9.439, SET_CAMERA, { "Cam_Monitor_s045a_static", "Cam_03_AC2_B" }
 	},
 
 	{
@@ -2302,6 +2306,17 @@ events =
 		18.250, START_SOUND, { "dx_s045a_0401_Trent" },
 		{
 			duration = 2.153
+		}
+	},
+
+	{
+		18.312, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_SAD_CONCERN_TRENT_000LV_XA_%",
+			duration = 3.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -2752,6 +2767,18 @@ events =
 	},
 
 	{
+		29.350, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_dx_s045a_0503_juni",
+			duration = 3.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		29.437, START_IK, { "Char_Juni", "Char_Trent" },
 		{
 			duration = 0.769,
@@ -2766,18 +2793,6 @@ events =
 			move_to = 0,
 			transition_duration = 0.550,
 			event_flags = 128
-		}
-	},
-
-	{
-		29.650, START_MOTION, { "Char_Juni" },
-		{
-			animation = "Sc_dx_s045a_0503_juni",
-			duration = 3.500,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
 		}
 	},
 
@@ -2892,6 +2907,18 @@ events =
 	},
 
 	{
+		32.700, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_dx_s045a_0504_juni",
+			duration = 4.000,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		32.875, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_CONV_RHND_CASL_000LV_xa_03",
@@ -2925,18 +2952,6 @@ events =
 		33.000, START_SOUND, { "Char_Trent_sfx_fturn_male04_17" },
 		{
 			duration = 0.405
-		}
-	},
-
-	{
-		33.100, START_MOTION, { "Char_Juni" },
-		{
-			animation = "Sc_dx_s045a_0504_juni",
-			duration = 4.000,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
 		}
 	},
 

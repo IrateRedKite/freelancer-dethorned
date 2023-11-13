@@ -1447,6 +1447,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -20,
 			pan = 50,
 			dmin = 50,
 			dmax = 300,
@@ -1475,6 +1476,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -20,
+			pan = -40,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1502,6 +1504,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -19,
+			pan = -45,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1529,6 +1532,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -20,
+			pan = -47,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1556,6 +1560,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -21,
+			pan = -50,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1583,6 +1588,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -25,
+			pan = -55,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1610,6 +1616,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -24,
+			pan = -52,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1638,6 +1645,7 @@ entities =
 		{
 			attenuation = -15,
 			pan = -20,
+			dmin = 50,
 			dmax = 300,
 			ain = 360,
 			aout = 360,
@@ -1667,6 +1675,7 @@ entities =
 			pan = 45,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -1696,6 +1705,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -2817,6 +2827,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -2846,6 +2857,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -3569,6 +3581,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -23,
 			pan = 45,
 			dmin = 50,
 			dmax = 300,
@@ -3599,6 +3612,7 @@ entities =
 			pan = 48,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -4001,6 +4015,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -8349,7 +8364,7 @@ events =
 	{
 		62.030, START_IK, { "Char_Trent", "Char_Juni" },
 		{
-			duration = 2.778,
+			duration = 2.779,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_neck",

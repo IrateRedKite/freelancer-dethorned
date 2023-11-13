@@ -4471,6 +4471,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -4498,6 +4499,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -4942,7 +4944,7 @@ entities =
 	},
 
 	{
-		entity_name = "ambi_LtG00_Deck_Ylw_North_Pnt",
+		entity_name = "ambi_LtG00_Deck_Ylw_12oc_Pnt",
 		type = LIGHT,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -5081,7 +5083,7 @@ entities =
 	},
 
 	{
-		entity_name = "ambi_LtG00_Deck_Ylw_East_Pnt",
+		entity_name = "ambi_LtG00_Deck_Ylw_03oc_Pnt",
 		type = LIGHT,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -7513,7 +7515,7 @@ events =
 	{
 		13.178, START_IK, { "Char_Orillion", "Char_Trent" },
 		{
-			duration = 1.771,
+			duration = 2.000,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -8655,7 +8657,7 @@ events =
 	{
 		28.750, START_IK, { "Char_Orillion", "Char_rh_female_pilot_1" },
 		{
-			duration = 2.569,
+			duration = 2.786,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -10918,7 +10920,7 @@ events =
 	},
 
 	{
-		50.966, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Deck_Ylw_East_Pnt" },
+		50.966, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Deck_Ylw_03oc_Pnt" },
 		{
 			duration = 0.000,
 			lightprops =
@@ -10929,7 +10931,7 @@ events =
 	},
 
 	{
-		50.966, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Deck_Ylw_North_Pnt" },
+		50.966, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Deck_Ylw_12oc_Pnt" },
 		{
 			duration = 0.000,
 			lightprops =
@@ -11703,7 +11705,7 @@ events =
 	{
 		62.217, START_MOTION, { "Char_Trent" },
 		{
-			animation = "Sc_MLHEAD_MOTION_SHAKHEAD_YES_TRENT_000LV_XA_%",
+			animation = "Sc_MLHEAD_MOTION_SHAKHEAD_YES_000LV_XA_%",
 			duration = 3.000,
 			trans_time = 0.600,
 			time_scale = 1,
@@ -11867,7 +11869,7 @@ events =
 	{
 		66.436, START_MOTION, { "Char_Juni" },
 		{
-			animation = "Sc_FMHEAD_MOTION_SHAKHEAD_YES_JUNI_000LV_XA_%",
+			animation = "Sc_FMHEAD_MOTION_SHAKHEAD_YES_000LV_XA_%",
 			duration = 3.000,
 			trans_time = 0.400,
 			time_scale = 1,

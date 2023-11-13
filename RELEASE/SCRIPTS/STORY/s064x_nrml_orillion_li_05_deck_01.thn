@@ -10740,7 +10740,7 @@ events =
 	{
 		27.600, START_IK, { "char_trent_2", "char_akira" },
 		{
-			duration = 1.278,
+			duration = 1.279,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Body_Head",
@@ -12484,6 +12484,23 @@ events =
 	},
 
 	{
+		50.859, START_IK, { "char_trent_2", "char_trent_Mrk_IK_Head_Right" },
+		{
+			duration = 3.636,
+			end_effector = "Body_Neck",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.700
+		}
+	},
+
+	{
 		50.900, START_MOTION, { "char_juni_1" },
 		{
 			animation = "Sc_dx_s064x_1501_juni",
@@ -12699,18 +12716,6 @@ events =
 	},
 
 	{
-		52.756, START_MOTION, { "char_vonclaussen_6" },
-		{
-			animation = "Sc_MLBODY_STND_HOLD_ARMS_CROSSED_000LV_XA_02",
-			duration = 2.500,
-			trans_time = 0.500,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		52.756, START_IK, { "char_vonclaussen_6", "char_vonclaussen_Mrk_IK_Head_Left_Up" },
 		{
 			duration = 3.608,
@@ -12725,6 +12730,18 @@ events =
 			move_to = 0,
 			transition_duration = 2.000,
 			event_flags = 128
+		}
+	},
+
+	{
+		52.756, START_MOTION, { "char_vonclaussen_6" },
+		{
+			animation = "Sc_MLBODY_STND_HOLD_ARMS_CROSSED_000LV_XA_02",
+			duration = 2.500,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -12863,7 +12880,7 @@ events =
 	{
 		54.497, START_IK, { "char_trent_2", "char_trent_Mrk_IK_Eyes_Center" },
 		{
-			duration = 3.000,
+			duration = 3.328,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",
@@ -19970,7 +19987,7 @@ events =
 	{
 		115.500, START_IK, { "char_orillion_3", "char_orillion_Mrk_IK_Eyes_Divert_01" },
 		{
-			duration = 1.199,
+			duration = 1.200,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",
@@ -20291,7 +20308,7 @@ events =
 	{
 		118.629, START_IK, { "char_juni_1", "char_trent_2" },
 		{
-			duration = 9.540,
+			duration = 9.541,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Head_End",
@@ -21417,7 +21434,7 @@ events =
 	{
 		140.912, START_IK, { "char_trent_2", "char_orillion_3" },
 		{
-			duration = 1.397,
+			duration = 1.399,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Body_Head",

@@ -1,60 +1,60 @@
-duration  =  10000.000;
+duration = 10000.000;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Ambi_Layer_Pl_05_Deck",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Ambi_Layer_Pl_05_Deck",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "ambi_starsphere_Ku07",
-		type  =  COMPOUND,
-		template_name  =  "starsphere_Ku07",
-		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  1,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "ambi_starsphere_Ku07",
+		type = COMPOUND,
+		template_name = "starsphere_Ku07",
+		lt_grp = 23, srt_grp = -100, usr_flg = 1,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Prop",
-			NoFog  =  "y",
+			category = "Prop",
+			NoFog = "y",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_starsphere_Ku07_stars",
-		type  =  COMPOUND,
-		template_name  =  "starsphere_Ku07_stars",
-		lt_grp  =  23, srt_grp  =  -101, usr_flg  =  1,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "ambi_starsphere_Ku07_stars",
+		type = COMPOUND,
+		template_name = "starsphere_Ku07_stars",
+		lt_grp = 23, srt_grp = -101, usr_flg = 1,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Prop",
-			NoFog  =  "y",
+			category = "Prop",
+			NoFog = "y",
 		}
 	}
 };
 
-events  = 
+events =
 {
 };

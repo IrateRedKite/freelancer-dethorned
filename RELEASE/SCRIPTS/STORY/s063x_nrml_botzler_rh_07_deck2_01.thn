@@ -1036,6 +1036,7 @@ entities =
 		{
 			attenuation = -26,
 			pan = -3,
+			dmin = 50,
 			dmax = 300,
 			ain = 360,
 			aout = 360,
@@ -1065,6 +1066,7 @@ entities =
 			pan = -3,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -1094,6 +1096,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -2766,6 +2769,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -3651,7 +3655,7 @@ events =
 	{
 		5.860, START_IK, { "Char_botzler", "Char_vonclaussen" },
 		{
-			duration = 3.068,
+			duration = 3.069,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -5567,7 +5571,7 @@ events =
 	{
 		39.039, START_IK, { "Char_vonclaussen", "Char_trent" },
 		{
-			duration = 5.910,
+			duration = 9.949,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",

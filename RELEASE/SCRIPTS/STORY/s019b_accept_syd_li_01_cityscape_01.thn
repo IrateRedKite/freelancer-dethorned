@@ -5854,6 +5854,7 @@ entities =
 		type = SOUND,
 		template_name = "mix_s019e",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -5869,10 +5870,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
 		}
 	},
 
@@ -5912,6 +5909,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -9288,7 +9286,7 @@ events =
 	{
 		54.243, START_IK, { "Char_syd", "Char_Syd_Head_Look_Left" },
 		{
-			duration = 1.500,
+			duration = 2.000,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "UpperTorso",
@@ -9965,7 +9963,7 @@ events =
 	},
 
 	{
-		61.998, START_MOTION, { "Char_trent" },
+		62.298, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019b_1801_Trent",
 			duration = 2.664,
@@ -10112,7 +10110,7 @@ events =
 	},
 
 	{
-		64.099, START_MOTION, { "Char_drake" },
+		64.400, START_MOTION, { "Char_drake" },
 		{
 			animation = "Sc_dx_s019b_1901_Drake",
 			duration = 5.065,
@@ -10175,18 +10173,6 @@ events =
 	},
 
 	{
-		68.366, START_MOTION, { "Char_drake" },
-		{
-			animation = "Sc_dx_s019b_1902_Drake",
-			duration = 2.032,
-			trans_time = 0.300,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		68.416, START_SPATIAL_PROP_ANIM, { "Char_juni", "Marker_Juni_To_Drake" },
 		{
 			duration = 0.008,
@@ -10197,6 +10183,18 @@ events =
 				pos = { 65.6452, 0.9601, -53.45452 },
 				q_orient = { 0.261006, 0, 0.965337, 0 }
 			}
+		}
+	},
+
+	{
+		68.666, START_MOTION, { "Char_drake" },
+		{
+			animation = "Sc_dx_s019b_1902_Drake",
+			duration = 2.032,
+			trans_time = 0.300,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -10234,7 +10232,7 @@ events =
 	},
 
 	{
-		69.500, START_MOTION, { "Char_juni" },
+		69.800, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_2001_juni",
 			duration = 3.664,
@@ -10394,18 +10392,6 @@ events =
 	},
 
 	{
-		73.161, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019b_2101_juni",
-			duration = 2.802,
-			trans_time = 0.200,
-			time_scale = 0.98,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		73.444, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sky_LoAngle_Fill" },
 		{
 			duration = 0.000,
@@ -10422,6 +10408,18 @@ events =
 
 	{
 		73.444, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_15_c_FREEZE" }
+	},
+
+	{
+		73.461, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019b_2101_juni",
+			duration = 2.802,
+			trans_time = 0.200,
+			time_scale = 0.98,
+			weight = 1,
+			heading = -1
+		}
 	},
 
 	{
@@ -10540,10 +10538,11 @@ events =
 	},
 
 	{
-		75.500, START_MOTION, { "Char_drake" },
+		75.605, START_MOTION, { "Char_drake" },
 		{
-			animation = "Sc_dx_s019b_2201_Drake",
-			duration = 3.500,
+			animation = "Sc_SPCBODY_s019b_Drake_XB_STND_000LV_13",
+			duration = 13.100,
+			trans_time = 1.000,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -10551,11 +10550,10 @@ events =
 	},
 
 	{
-		75.605, START_MOTION, { "Char_drake" },
+		75.800, START_MOTION, { "Char_drake" },
 		{
-			animation = "Sc_SPCBODY_s019b_Drake_XB_STND_000LV_13",
-			duration = 13.100,
-			trans_time = 1.000,
+			animation = "Sc_dx_s019b_2201_Drake",
+			duration = 3.500,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -10714,7 +10712,7 @@ events =
 	},
 
 	{
-		78.000, START_MOTION, { "Char_juni" },
+		78.300, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_2301_juni",
 			duration = 1.595,
@@ -10773,17 +10771,6 @@ events =
 	},
 
 	{
-		79.099, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s019b_2401_Trent",
-			duration = 1.166,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		79.254, START_MOTION, { "Char_drake" },
 		{
 			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
@@ -10796,23 +10783,22 @@ events =
 	},
 
 	{
-		79.346, SET_CAMERA, { "cam_Monitor_1", "Cam_15_d_WHAT" }
-	},
-
-	{
-		79.346, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_15_d_WHAT" }
-	},
-
-	{
-		79.707, START_MOTION, { "Char_drake" },
+		79.399, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_dx_s019b_2501_Drake",
-			duration = 2.500,
-			trans_time = 0.200,
+			animation = "Sc_dx_s019b_2401_Trent",
+			duration = 1.166,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
 		}
+	},
+
+	{
+		79.646, SET_CAMERA, { "cam_Monitor_1", "Cam_15_d_WHAT" }
+	},
+
+	{
+		79.646, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_15_d_WHAT" }
 	},
 
 	{
@@ -10830,6 +10816,18 @@ events =
 			move_to = 0,
 			transition_duration = 0.500,
 			event_flags = 128
+		}
+	},
+
+	{
+		80.007, START_MOTION, { "Char_drake" },
+		{
+			animation = "Sc_dx_s019b_2501_Drake",
+			duration = 2.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -10911,7 +10909,7 @@ events =
 	},
 
 	{
-		81.298, START_MOTION, { "Char_juni" },
+		81.598, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_2601_juni",
 			duration = 4.833,
@@ -11129,7 +11127,7 @@ events =
 	},
 
 	{
-		86.130, START_MOTION, { "Char_juni" },
+		86.430, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_2602_juni",
 			duration = 5.000,
@@ -11337,7 +11335,7 @@ events =
 	},
 
 	{
-		91.018, START_MOTION, { "Char_drake" },
+		91.318, START_MOTION, { "Char_drake" },
 		{
 			animation = "Sc_dx_s019b_2701_Drake",
 			duration = 1.832,
@@ -11947,7 +11945,7 @@ events =
 	{
 		97.127, START_IK, { "Char_trent", "Char_Trent_Head_Look_Left_FD" },
 		{
-			duration = 5.165,
+			duration = 5.497,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "",
@@ -12756,7 +12754,7 @@ events =
 	},
 
 	{
-		111.590, START_MOTION, { "Char_juni" },
+		112.290, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_2801_juni",
 			duration = 1.666,
@@ -12792,18 +12790,6 @@ events =
 	},
 
 	{
-		112.489, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s019b_2901_Trent",
-			duration = 2.000,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		113.075, START_IK, { "Char_trent", "Char_juni" },
 		{
 			duration = 3.233,
@@ -12822,10 +12808,6 @@ events =
 	},
 
 	{
-		113.125, SET_CAMERA, { "cam_Monitor_1", "Cam_25_what_do_you_mean" }
-	},
-
-	{
 		113.125, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sky_LoAngle_Fill" },
 		{
 			duration = 0.000,
@@ -12833,6 +12815,22 @@ events =
 			{
 				on = N,
 			}
+		}
+	},
+
+	{
+		113.125, SET_CAMERA, { "cam_Monitor_1", "Cam_25_what_do_you_mean" }
+	},
+
+	{
+		113.189, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_dx_s019b_2901_Trent",
+			duration = 2.000,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -12881,18 +12879,6 @@ events =
 	},
 
 	{
-		114.287, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019b_3301_juni",
-			duration = 2.332,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		114.413, START_SPATIAL_PROP_ANIM, { "Cam_26_he_was_going_to_kill", "Cam_26_kill_both_END" },
 		{
 			duration = 1.500,
@@ -12933,6 +12919,18 @@ events =
 
 	{
 		114.597, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_26_kill_both_END" }
+	},
+
+	{
+		114.987, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019b_3301_juni",
+			duration = 2.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
 	},
 
 	{
@@ -13038,7 +13036,18 @@ events =
 	},
 
 	{
-		117.374, START_MOTION, { "Char_juni" },
+		117.972, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_SPCBODY_s019b_Trent_XD_STND_000DN_05",
+			duration = 9.666,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		118.074, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019b_3101_juni",
 			duration = 1.000,
@@ -13051,22 +13060,11 @@ events =
 	},
 
 	{
-		117.856, START_MOTION, { "Char_trent" },
+		118.556, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019b_3201_Trent",
 			duration = 2.332,
 			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
-		117.972, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_SPCBODY_s019b_Trent_XD_STND_000DN_05",
-			duration = 9.666,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -13121,7 +13119,11 @@ events =
 	},
 
 	{
-		120.189, START_MOTION, { "Char_trent" },
+		120.562, SET_CAMERA, { "cam_Monitor_1", "Cam_29_gotta_leave" }
+	},
+
+	{
+		120.889, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019b_3202_Trent",
 			duration = 3.332,
@@ -13130,10 +13132,6 @@ events =
 			weight = 1,
 			heading = -1
 		}
-	},
-
-	{
-		120.562, SET_CAMERA, { "cam_Monitor_1", "Cam_29_gotta_leave" }
 	},
 
 	{
@@ -13161,18 +13159,6 @@ events =
 		{
 			animation = "Sc_MLHAND_NEUT_WALK_RGHT_000LV_XB_%",
 			duration = 1.666,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
-		122.689, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019b_3301_juni",
-			duration = 2.332,
-			trans_time = 0.200,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -13238,6 +13224,18 @@ events =
 			move_to = 0,
 			transition_duration = 1.000,
 			event_flags = 128
+		}
+	},
+
+	{
+		123.389, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019b_3301_juni",
+			duration = 2.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -13321,7 +13319,7 @@ events =
 	},
 
 	{
-		124.189, START_MOTION, { "Char_trent" },
+		124.889, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019b_3401_Trent",
 			duration = 2.289,
@@ -13365,7 +13363,7 @@ events =
 	{
 		126.170, START_IK, { "Char_trent", "Char_Trent_mrk_seethisman" },
 		{
-			duration = 3.122,
+			duration = 3.421,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "UpperTorso",
@@ -13377,19 +13375,6 @@ events =
 			move_to = 0,
 			transition_duration = 1.500,
 			event_flags = 128
-		}
-	},
-
-	{
-		126.706, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s019b_3401_Trent",
-			duration = 5.000,
-			start_time = 2.000,
-			trans_time = 0.300,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
 		}
 	},
 
@@ -13410,6 +13395,20 @@ events =
 	{
 		126.976, START_MOTION, { "Char_juni" },
 		{
+			animation = "Sc_FMHEAD_NEUT_FREEZE_000LV_A_00",
+			locked_bone = "Head01",
+			duration = 8.378,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
+		}
+	},
+
+	{
+		126.976, START_MOTION, { "Char_juni" },
+		{
 			animation = "Sc_FMBODY_STND_IDLE_SMALL_000LV_xa_05",
 			duration = 8.378,
 			trans_time = 0.200,
@@ -13421,16 +13420,15 @@ events =
 	},
 
 	{
-		126.976, START_MOTION, { "Char_juni" },
+		127.406, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_FMHEAD_NEUT_FREEZE_000LV_A_00",
-			locked_bone = "Head01",
-			duration = 8.378,
-			trans_time = 0.500,
+			animation = "Sc_dx_s019b_3401_Trent",
+			duration = 5.000,
+			start_time = 2.000,
+			trans_time = 0.300,
 			time_scale = 1,
 			weight = 1,
-			heading = -1,
-			event_flags = 2
+			heading = -1
 		}
 	},
 
@@ -13665,18 +13663,6 @@ events =
 	},
 
 	{
-		129.889, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s019b_3402_Trent",
-			duration = 4.333,
-			trans_time = 0.700,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		130.235, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
@@ -13730,6 +13716,18 @@ events =
 			animation = "Sc_MLHEAD_NEUT_FREEZE_000LV_A_00",
 			locked_bone = "Head01",
 			duration = 4.329,
+			trans_time = 0.700,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		130.589, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_dx_s019b_3402_Trent",
+			duration = 4.333,
 			trans_time = 0.700,
 			time_scale = 1,
 			weight = 1,
@@ -13827,10 +13825,10 @@ events =
 	},
 
 	{
-		134.139, START_MOTION, { "Char_juni" },
+		134.645, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_dx_s019b_3501_juni",
-			duration = 3.000,
+			animation = "Sc_MLHAND_HNEUT_HOLDD_LEFT_000LV_00",
+			duration = 10.000,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -13838,10 +13836,10 @@ events =
 	},
 
 	{
-		134.645, START_MOTION, { "Char_trent" },
+		134.839, START_MOTION, { "Char_juni" },
 		{
-			animation = "Sc_MLHAND_HNEUT_HOLDD_LEFT_000LV_00",
-			duration = 10.000,
+			animation = "Sc_dx_s019b_3501_juni",
+			duration = 3.000,
 			time_scale = 1,
 			weight = 1,
 			heading = -1

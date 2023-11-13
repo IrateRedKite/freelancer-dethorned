@@ -1,70 +1,70 @@
-duration  =  10000.000;
+duration = 10000.000;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "ambi_Layer_Terrain_Distant",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_Layer_Terrain_Distant",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "Ambi_Key_DistantRoids_Mkr",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "Ambi_Key_DistantRoids_Mkr",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 0.129145, 0.019569, 0.991433 },
-					   { 0.057018, 0.998005, -0.027126 },
-					   { -0.989985, 0.060033, 0.127772 } }
+			pos = { 0, 0, 0 },
+			orient = { {  0.129145,  0.019569,  0.991433 },
+					   {  0.057018,  0.998005, -0.027126 },
+					   { -0.989985,  0.060033,  0.127772 } }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_distant_roids",
-		type  =  COMPOUND,
-		template_name  =  "distant_roids_lt",
-		lt_grp  =  21, srt_grp  =  -80, usr_flg  =  2,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "ambi_distant_roids",
+		type = COMPOUND,
+		template_name = "distant_roids_lt",
+		lt_grp = 21, srt_grp = -80, usr_flg = 2,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 0.000000, 0.000000, 1.000000 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -1.000000, 0.000000, 0.000000 } }
+			pos = { 0, 0, 0 },
+			orient = { {  0.000000,  0.000000,  1.000000 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -1.000000,  0.000000,  0.000000 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Prop",
+			category = "Prop",
 		}
 	}
 };
 
-events  = 
+events =
 {
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "ambi_distant_roids", "Ambi_Key_DistantRoids_Mkr" },
 		{
-			duration  =  0.000,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 0.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { 0, 0, 0 },
-				q_orient  =  { 0.959934, -0.020013, 0.279512, 0.021739 }
+				pos = { 0, 0, 0 },
+				q_orient = { 0.959934, -0.020013, 0.279512, 0.021739 }
 			}
 		}
 	}

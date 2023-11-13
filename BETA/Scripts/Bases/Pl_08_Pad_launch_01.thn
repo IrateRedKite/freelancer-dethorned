@@ -194,6 +194,7 @@ entities =
 			attenuation = 0,
 			pan = 0,
 			dmin = 30,
+			dmax = 500,
 			ain = 260,
 			aout = 621,
 			atout = 0,

@@ -197,6 +197,7 @@ entities =
 		{
 			attenuation = 0,
 			pan = 0,
+			dmin = 100,
 			dmax = 0,
 			ain = 360,
 			aout = 360,
@@ -2691,7 +2692,7 @@ events =
 	{
 		20.750, START_IK, { "Char_orillion", "Char_jacobi" },
 		{
-			duration = 1.388,
+			duration = 1.390,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",

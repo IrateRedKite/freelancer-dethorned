@@ -1715,6 +1715,7 @@ entities =
 			dmin = 100,
 			dmax = 1000,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -1740,6 +1741,7 @@ entities =
 		{
 			attenuation = 0,
 			pan = 0,
+			dmin = 100,
 			dmax = 1000,
 			ain = 360,
 			aout = 360,
@@ -1766,6 +1768,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = 0,
 			pan = 0,
 			dmin = 100,
 			dmax = 1000,
@@ -1794,6 +1797,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -23,
+			pan = 12,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1823,6 +1827,7 @@ entities =
 			attenuation = -22,
 			pan = 21,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -1852,6 +1857,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -1881,6 +1887,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -3677,7 +3684,7 @@ entities =
 		userprops =
 		{
 			category = "Audio",
-			Priority = "RTC_Music_1",
+			Priority = "Music_1",
 		}
 	},
 
@@ -6035,6 +6042,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 1000,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -6062,6 +6070,7 @@ entities =
 			pan = 0,
 			dmin = 30,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -6087,6 +6096,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 20,
 			dmax = 400,
 			ain = 360,
@@ -6375,6 +6385,7 @@ entities =
 			dmin = 20,
 			dmax = 400,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -6402,6 +6413,7 @@ entities =
 			pan = 0,
 			dmin = 150,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -6459,6 +6471,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -6484,6 +6497,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 1000,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -6509,6 +6523,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 50,
 			dmax = 1000,
 			ain = 360,

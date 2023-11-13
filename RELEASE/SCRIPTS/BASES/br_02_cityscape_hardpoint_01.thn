@@ -1,284 +1,284 @@
-duration  =  20.000;
+duration = 20.000;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Set_Br_02_Cityscape",
-		type  =  COMPOUND,
-		template_name  =  "br_02_cityscape",
-		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Set_Br_02_Cityscape",
+		type = COMPOUND,
+		template_name = "br_02_cityscape",
+		lt_grp = 9, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Room",
+			category = "Room",
 		}
 	},
 
 	{
-		entity_name  =  "Camera_0",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_0",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 19.00151, 85.4094, 289.4519 },
-			orient  =  { { 0.999444, 0.000000, -0.033339 },
-					   { -0.001635, 0.998796, -0.049023 },
-					   { 0.033299, 0.049050, 0.998241 } }
+			pos = { 19.00151, 95.4094, 289.4519 },
+			orient = { {  0.999444,  0.000000, -0.033339 },
+					   { -0.001635,  0.998796, -0.049023 },
+					   {  0.033299,  0.049050,  0.998241 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  27,
-			hvaspect  =  1.31,
-			nearplane  =  25,
-			farplane  =  4000
+			fovh = 27,
+			hvaspect = 1.333333,
+			nearplane = 25,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "X/Shipcentre/01",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 17.0944, 0, 1.943222 },
-			orient  =  { { -0.846908, 0.000000, 0.531739 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.531739, 0.000000, -0.846908 } }
+			pos = { 17.0944, 0, 1.943222 },
+			orient = { { -0.846908,  0.000000,  0.531739 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.531739,  0.000000, -0.846908 } }
 		}
 	},
 
 	{
-		entity_name  =  "Layer_br_02_City_Hardpoint",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_br_02_City_Hardpoint",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "Zg/PC/Player/01/A/Stand",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Zg/PC/Player/01/A/Stand",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 31.55807, 0, -0.348818 },
-			orient  =  { { -0.868055, 0.000000, -0.496468 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.496468, 0.000000, -0.868055 } }
+			pos = { 31.55807, 0, -0.348818 },
+			orient = { { -0.868055,  0.000000, -0.496468 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.496468,  0.000000, -0.868055 } }
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Ex_Bar_Zin",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Ex_Bar_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 26.58219, 58.0802, -37.69929 },
-			orient  =  { { 0.999816, 0.000000, 0.019185 },
-					   { 0.003352, 0.984619, -0.174681 },
-					   { -0.018890, 0.174713, 0.984438 } }
+			pos = { 26.58219, 58.0802, -37.69929 },
+			orient = { {  0.999816,  0.000000,  0.019185 },
+					   {  0.003352,  0.984619, -0.174681 },
+					   { -0.018890,  0.174713,  0.984438 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  27,
-			hvaspect  =  1.85,
-			nearplane  =  25,
-			farplane  =  4000
+			fovh = 27,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Ex_Equip_Zin",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Ex_Equip_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -59.16007, 62.7334, 151.5018 },
-			orient  =  { { 0.999812, 0.000000, -0.019414 },
-					   { 0.003930, 0.979295, 0.202400 },
-					   { 0.019012, -0.202438, 0.979110 } }
+			pos = { -59.16007, 62.7334, 151.5018 },
+			orient = { {  0.999812,  0.000000, -0.019414 },
+					   {  0.003930,  0.979295,  0.202400 },
+					   {  0.019012, -0.202438,  0.979110 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  27,
-			hvaspect  =  1.85,
-			nearplane  =  25,
-			farplane  =  4000
+			fovh = 27,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Ex_Trade_Zin",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Ex_Trade_Zin",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 144.9124, 125.2919, 135.4174 },
-			orient  =  { { 0.998690, 0.000000, -0.051169 },
-					   { 0.002621, 0.998687, 0.051157 },
-					   { 0.051102, -0.051224, 0.997379 } }
+			pos = { 144.9124, 125.2919, 135.4174 },
+			orient = { {  0.998690,  0.000000, -0.051169 },
+					   {  0.002621,  0.998687,  0.051157 },
+					   {  0.051102, -0.051224,  0.997379 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  27,
-			hvaspect  =  1.85,
-			nearplane  =  25,
-			farplane  =  4000
+			fovh = 27,
+			hvaspect = 1.85,
+			nearplane = 25,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "X/Marker_Weather",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "X/Marker_Weather",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 19.00151, 95.4094, 289.4519 },
-			orient  =  { { 0.999444, 0.000000, -0.033339 },
-					   { -0.001635, 0.998796, -0.049023 },
-					   { 0.033299, 0.049050, 0.998241 } }
+			pos = { 19.00151, 95.4094, 289.4519 },
+			orient = { {  0.999444,  0.000000, -0.033339 },
+					   { -0.001635,  0.998796, -0.049023 },
+					   {  0.033299,  0.049050,  0.998241 } }
 		}
 	},
 
 	{
-		entity_name  =  "LtShadowSource",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "LtShadowSource",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1.000000, 0.000000, 0.000000 },
-					   { 0.000000, 0.000000, 1.000000 },
-					   { 0.000000, -1.000000, 0.000000 } }
+			pos = { 0, 0, 0 },
+			orient = { {  1.000000,  0.000000,  0.000000 },
+					   {  0.000000,  0.000000,  1.000000 },
+					   {  0.000000, -1.000000,  0.000000 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  N,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0, 0, 0 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  98.99998,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = N,
+			color = { 255, 255, 255 },
+			diffuse = { 0, 0, 0 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 98.99998,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "LtGlareSource",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "LtGlareSource",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 19.00151, 105.4094, 289.4519 },
-			orient  =  { { 0.999444, 0.000000, -0.033339 },
-					   { -0.001635, 0.998796, -0.049023 },
-					   { 0.033299, 0.049050, 0.998241 } }
+			pos = { 19.00151, 105.4094, 289.4519 },
+			orient = { {  0.999444,  0.000000, -0.033339 },
+					   { -0.001635,  0.998796, -0.049023 },
+					   {  0.033299,  0.049050,  0.998241 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  N,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.082353, 0.082353, 0.082353 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  98.99998,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = N,
+			color = { 255, 255, 255 },
+			diffuse = { 0.082353, 0.082353, 0.082353 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 98.99998,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "Set_Cityscape_Background",
-		type  =  COMPOUND,
-		template_name  =  "br_02_cityscape_bg",
-		lt_grp  =  11, srt_grp  =  -50, usr_flg  =  2,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "Set_Cityscape_Background",
+		type = COMPOUND,
+		template_name = "br_02_cityscape_bg",
+		lt_grp = 11, srt_grp = -50, usr_flg = 2,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { 2746.458, 771.8861, -15327.35 },
-			orient  =  { { 0.988607, 0.012529, 0.149999 },
-					   { 0.149758, 0.018382, -0.988552 },
-					   { -0.015143, 0.999753, 0.016297 } }
+			pos = { 2746.458, 771.8861, -15327.35 },
+			orient = { {  0.988607,  0.012529,  0.149999 },
+					   {  0.149758,  0.018382, -0.988552 },
+					   { -0.015143,  0.999753,  0.016297 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Prop",
+			category = "Prop",
 		}
 	},
 
 	{
-		entity_name  =  "Camera_0_rc",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_0_rc",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -51.69371, 22.33619, 175.152 },
-			orient  =  { { 0.983291, 0.000000, 0.182040 },
-					   { -0.011160, 0.998119, 0.060280 },
-					   { -0.181697, -0.061304, 0.981442 } }
+			pos = { -51.69371, 22.33619, 175.152 },
+			orient = { {  0.983291,  0.000000,  0.182040 },
+					   { -0.011160,  0.998119,  0.060280 },
+					   { -0.181697, -0.061304,  0.981442 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  27,
-			hvaspect  =  1.31,
-			nearplane  =  25,
-			farplane  =  4000
+			fovh = 27,
+			hvaspect = 1.333333,
+			nearplane = 25,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_3",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_3",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -101.0688, 7.21137, 100.5464 },
-			orient  =  { { 0.963633, 0.000000, 0.267231 },
-					   { -0.024834, 0.995673, 0.089550 },
-					   { -0.266074, -0.092930, 0.959463 } }
+			pos = { -101.0688, 7.21137, 100.5464 },
+			orient = { {  0.963633,  0.000000,  0.267231 },
+					   { -0.024834,  0.995673,  0.089550 },
+					   { -0.266074, -0.092930,  0.959463 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  45,
-			hvaspect  =  1.31,
-			nearplane  =  0.3,
-			farplane  =  4000
+			fovh = 45,
+			hvaspect = 1.333333,
+			nearplane = 0.3,
+			farplane = 4000
 		}
 	}
 };
 
-events  = 
+events =
 {
 };

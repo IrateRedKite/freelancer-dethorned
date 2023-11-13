@@ -209,6 +209,7 @@ entities =
 		{
 			attenuation = 0,
 			pan = 0,
+			dmin = 1.333333,
 			dmax = 6.978912e+022,
 			ain = 808542052,
 			aout = 697,

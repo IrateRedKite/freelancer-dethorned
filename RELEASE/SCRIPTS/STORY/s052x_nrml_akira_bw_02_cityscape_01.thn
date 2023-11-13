@@ -1364,6 +1364,7 @@ entities =
 			pan = -35,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -1393,6 +1394,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -2490,6 +2492,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -12,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -2517,6 +2520,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -20,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -5015,7 +5019,7 @@ events =
 	{
 		43.750, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_MLHEAD_SAD_CONCERN_TRENT_000LV_XA_%",
+			animation = "Sc_MLHEAD_SAD_DISAPPNTMNT_000LV_XA_%",
 			duration = 4.283,
 			trans_time = 0.300,
 			time_scale = 0.7,
@@ -5432,7 +5436,7 @@ events =
 	{
 		52.161, START_IK, { "Char_trent", "Mrk_trent_look6" },
 		{
-			duration = 4.789,
+			duration = 7.217,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "Body_Head",

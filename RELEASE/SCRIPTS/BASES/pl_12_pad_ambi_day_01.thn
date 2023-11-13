@@ -57,7 +57,7 @@ entities =
 		flags = LIT_DYNAMIC + LIT_AMBIENT,
 		spatialprops =
 		{
-			pos = { -48.63807, 0.13297, -64.80627 },
+			pos = { -43.63807, 0.13297, -61.80627 },
 			orient = { { -0.080083,  0.000000, -0.996788 },
 					   {  0.000000,  1.000000,  0.000000 },
 					   {  0.996788,  0.000000, -0.080083 } }
@@ -357,7 +357,7 @@ entities =
 			cutoff = 180,
 			type = L_POINT,
 			theta = 20.99999,
-			atten = { 1, 0, 0 }
+			atten = { 1, 0, 6e-009 }
 		}
 	},
 
@@ -405,7 +405,7 @@ entities =
 			cutoff = 19.99999,
 			type = L_SPOT,
 			theta = 9.999996,
-			atten = { 0.5, 0, 0 }
+			atten = { 0.5, 0, 3e-007 }
 		}
 	},
 
@@ -433,7 +433,7 @@ entities =
 			cutoff = 19.99999,
 			type = L_SPOT,
 			theta = 9.999996,
-			atten = { 0.5, 0, 0 }
+			atten = { 0.5, 0, 3e-007 }
 		}
 	},
 
@@ -461,7 +461,7 @@ entities =
 			cutoff = 19.99999,
 			type = L_SPOT,
 			theta = 9.999996,
-			atten = { 0.5, 0, 0 }
+			atten = { 0.5, 0, 3e-007 }
 		}
 	},
 
@@ -642,7 +642,7 @@ entities =
 			cutoff = 79.99997,
 			type = L_DIRECT,
 			theta = 20.99999,
-			atten = { 1, 0, 0 }
+			atten = { 1, 0, 6e-007 }
 		}
 	},
 
@@ -768,14 +768,14 @@ entities =
 			cutoff = 45,
 			type = L_SPOT,
 			theta = 39.99998,
-			atten = { 1, 0, 0 }
+			atten = { 1, 0, 6e-007 }
 		}
 	},
 
 	{
-		entity_name = "ambi_rtc_rh03_sun_3",
+		entity_name = "ambi_rtc_ku03_sun_3",
 		type = PSYS,
-		template_name = "rtc_rh03_sun",
+		template_name = "rtc_ku03_sun",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
 		flags = LIT_DYNAMIC + LIT_AMBIENT,
 		spatialprops =
@@ -820,7 +820,7 @@ events =
 	},
 
 	{
-		0.000, START_PSYS, { "ambi_rtc_rh03_sun_3" },
+		0.000, START_PSYS, { "ambi_rtc_ku03_sun_3" },
 		{
 			duration = 10000.000
 		}

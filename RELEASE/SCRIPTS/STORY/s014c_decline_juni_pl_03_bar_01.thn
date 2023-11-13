@@ -816,7 +816,7 @@ events =
 	{
 		0.001, START_IK, { "Char_Trent", "Char_Trent_Mrk_LookAtJuni" },
 		{
-			duration = 11.374,
+			duration = 11.375,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_neck",

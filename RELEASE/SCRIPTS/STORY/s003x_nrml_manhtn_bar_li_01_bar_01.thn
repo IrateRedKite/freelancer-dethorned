@@ -2027,6 +2027,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -30,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -2057,6 +2058,7 @@ entities =
 			attenuation = -30,
 			pan = 0,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -2087,6 +2089,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -7698,7 +7701,7 @@ events =
 	{
 		31.129, START_IK, { "Char_trent", "Char_bartender" },
 		{
-			duration = 2.426,
+			duration = 3.026,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Body_Neck",

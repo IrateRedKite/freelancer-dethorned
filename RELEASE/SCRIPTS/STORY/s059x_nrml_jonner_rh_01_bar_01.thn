@@ -2974,6 +2974,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -20,
 			pan = 55,
 			dmin = 50,
 			dmax = 300,

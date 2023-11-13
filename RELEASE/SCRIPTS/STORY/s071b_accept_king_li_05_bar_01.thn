@@ -1423,6 +1423,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -12,
+			pan = 0,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -1687,7 +1688,7 @@ events =
 	{
 		0.001, START_IK, { "Char_King", "Char_Trent" },
 		{
-			duration = 12.186,
+			duration = 12.187,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_neck",

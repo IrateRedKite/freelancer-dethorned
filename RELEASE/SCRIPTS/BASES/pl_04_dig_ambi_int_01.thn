@@ -1,24 +1,24 @@
-duration  =  450.000;
+duration = 450.000;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Layer_pl_04_dig_ambi_int",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_pl_04_dig_ambi_int",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 7, 7, 101 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 7, 7, 101 }
 	}
 };
 
-events  = 
+events =
 {
 };

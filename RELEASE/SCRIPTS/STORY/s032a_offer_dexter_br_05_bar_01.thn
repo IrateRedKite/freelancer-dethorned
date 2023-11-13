@@ -1492,6 +1492,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = 0,
 			pan = 0,
 			dmin = 150,
 			dmax = 1500,
@@ -1521,6 +1522,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 150,
 			dmax = 1500,
 			ain = 360,
@@ -2681,6 +2683,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,

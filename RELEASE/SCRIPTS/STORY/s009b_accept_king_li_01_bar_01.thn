@@ -4359,7 +4359,7 @@ events =
 	{
 		0.001, START_IK, { "Char_Juni", "Char_Juni_AMrk_Head_MOVEMENT" },
 		{
-			duration = 10.028,
+			duration = 20.028,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "",
@@ -4394,7 +4394,7 @@ events =
 	{
 		0.001, START_IK, { "Char_Trent", "Char_Trent_Mrk_Head_MOVEMENT" },
 		{
-			duration = 9.404,
+			duration = 10.404,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "",
@@ -4421,6 +4421,24 @@ events =
 		{
 			duration = 11.601,
 			end_effector = "Eye IK Left",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.100,
+			event_flags = 128
+		}
+	},
+
+	{
+		0.093, START_IK, { "Char_King", "Mrk_King_Eyes_Center" },
+		{
+			duration = 11.601,
+			end_effector = "Eye IK Right",
 			count_to_root = 1,
 			target_part = "",
 			target_type = ROOT,
@@ -4834,7 +4852,7 @@ events =
 	{
 		10.312, START_IK, { "Char_Juni", "Char_Juni_AMrk_Head_MOVEMENT" },
 		{
-			duration = 25.812,
+			duration = 35.812,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "",
@@ -4996,7 +5014,7 @@ events =
 	{
 		11.706, START_IK, { "Char_Trent", "Char_King" },
 		{
-			duration = 7.070,
+			duration = 7.170,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Eye IK Left",
@@ -6550,7 +6568,7 @@ events =
 	{
 		38.062, START_IK, { "Char_Juni", "Char_King" },
 		{
-			duration = 0.779,
+			duration = 0.781,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_neck",
@@ -7603,6 +7621,24 @@ events =
 		55.954, START_SOUND, { "Char_Juni_sfx_fstop_female01" },
 		{
 			duration = 0.081
+		}
+	},
+
+	{
+		55.992, START_IK, { "Char_King", "Char_Juni" },
+		{
+			duration = 0.671,
+			end_effector = "Eye IK Left",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = HARDPOINT,
+			damping = 1,
+			up = Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.100,
+			event_flags = 128
 		}
 	},
 

@@ -906,7 +906,7 @@ entities =
 	},
 
 	{
-		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAgents",
+		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAngents",
 		type = CAMERA,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -1157,7 +1157,7 @@ entities =
 	},
 
 	{
-		entity_name = "Char_Trent_Mrk_TurnToAgents",
+		entity_name = "Char_Trent_Mrk_TurnToAngents",
 		type = MARKER,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -4418,7 +4418,7 @@ entities =
 	},
 
 	{
-		entity_name = "Char_Trent_Tilt_head_confusion",
+		entity_name = "Char_Trent_Titlt_head_confusion",
 		type = MARKER,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -5671,7 +5671,7 @@ entities =
 	},
 
 	{
-		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAgents_end",
+		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAngents_end",
 		type = CAMERA,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -5910,7 +5910,7 @@ entities =
 	},
 
 	{
-		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAgents_Static",
+		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAngents_Static",
 		type = CAMERA,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -5932,7 +5932,7 @@ entities =
 	},
 
 	{
-		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAgents_end_Static",
+		entity_name = "Cam_1V_2Shot_Lonnigan_SeeingAngents_end_Static",
 		type = CAMERA,
 		template_name = "",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
@@ -6014,6 +6014,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -8643,7 +8644,7 @@ events =
 	},
 
 	{
-		49.101, START_IK, { "Char_Lonnigan", "Char_Lonnigan_Mrk_eyes_right" },
+		49.110, START_IK, { "Char_Lonnigan", "Char_Lonnigan_Mrk_eyes_right" },
 		{
 			duration = 0.699,
 			end_effector = "Eye IK Left",
@@ -8679,7 +8680,7 @@ events =
 	},
 
 	{
-		50.200, START_MOTION, { "Char_Trent" },
+		50.500, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_0901_Trent",
 			duration = 2.000,
@@ -8922,7 +8923,7 @@ events =
 	{
 		58.831, START_IK, { "Char_Lonnigan", "Char_Lonnigan_Mrk_eyes_left" },
 		{
-			duration = 0.700,
+			duration = 0.740,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",
@@ -9068,7 +9069,7 @@ events =
 	{
 		61.619, START_IK, { "Char_Lonnigan", "Char_Trent" },
 		{
-			duration = 5.967,
+			duration = 5.968,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Body_Head",
@@ -9165,7 +9166,15 @@ events =
 	},
 
 	{
-		66.600, START_MOTION, { "Char_Lonnigan" },
+		66.679, SET_CAMERA, { "cam_Monitor", "Cam_1O_CU_Lonnigan_IHadTo" }
+	},
+
+	{
+		66.679, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1O_CU_Lonnigan_IHadTo" }
+	},
+
+	{
+		66.900, START_MOTION, { "Char_Lonnigan" },
 		{
 			animation = "Sc_dx_s010x_1201_Lonnigan",
 			duration = 4.333,
@@ -9174,14 +9183,6 @@ events =
 			weight = 1,
 			heading = -1
 		}
-	},
-
-	{
-		66.679, SET_CAMERA, { "cam_Monitor", "Cam_1O_CU_Lonnigan_IHadTo" }
-	},
-
-	{
-		66.679, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1O_CU_Lonnigan_IHadTo" }
 	},
 
 	{
@@ -9327,7 +9328,7 @@ events =
 	},
 
 	{
-		70.700, START_MOTION, { "Char_Lonnigan" },
+		71.000, START_MOTION, { "Char_Lonnigan" },
 		{
 			animation = "Sc_dx_s010x_1202_Lonnigan",
 			duration = 5.000,
@@ -9352,7 +9353,7 @@ events =
 	},
 
 	{
-		71.821, START_IK, { "Char_Trent", "Char_Trent_Tilt_head_confusion" },
+		71.821, START_IK, { "Char_Trent", "Char_Trent_Titlt_head_confusion" },
 		{
 			duration = 1.855,
 			end_effector = "Eye IK Left",
@@ -9370,7 +9371,7 @@ events =
 	},
 
 	{
-		72.041, START_IK, { "Char_Trent", "Char_Trent_Tilt_head_confusion" },
+		72.041, START_IK, { "Char_Trent", "Char_Trent_Titlt_head_confusion" },
 		{
 			duration = 4.106,
 			end_effector = "Body_Head",
@@ -9567,7 +9568,7 @@ events =
 	},
 
 	{
-		76.000, START_MOTION, { "Char_Lonnigan" },
+		76.300, START_MOTION, { "Char_Lonnigan" },
 		{
 			animation = "Sc_dx_s010x_1301_Lonnigan",
 			duration = 6.333,
@@ -9704,18 +9705,6 @@ events =
 	},
 
 	{
-		81.106, START_MOTION, { "Char_Trent" },
-		{
-			animation = "Sc_dx_s010x_1401_Trent",
-			duration = 2.332,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		81.293, START_SPATIAL_PROP_ANIM, { "Cam_1S_2Shot_Trent_Dolly_Start", "Cam_1S_2Shot_Trent_Dolly_End" },
 		{
 			duration = 2.703,
@@ -9736,6 +9725,18 @@ events =
 				}
 			},
 			pcurve_period = -1000
+		}
+	},
+
+	{
+		81.406, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_dx_s010x_1401_Trent",
+			duration = 2.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -9782,7 +9783,7 @@ events =
 	},
 
 	{
-		83.201, START_MOTION, { "Char_Lonnigan" },
+		83.401, START_MOTION, { "Char_Lonnigan" },
 		{
 			animation = "Sc_dx_s010x_1501_Lonnigan",
 			duration = 5.500,
@@ -9999,7 +10000,7 @@ events =
 	},
 
 	{
-		88.351, START_MOTION, { "Char_Lonnigan" },
+		88.651, START_MOTION, { "Char_Lonnigan" },
 		{
 			animation = "Sc_dx_s010x_1502_Lonnigan",
 			duration = 2.500,
@@ -10011,11 +10012,11 @@ events =
 	},
 
 	{
-		88.704, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1V_2Shot_Lonnigan_SeeingAgents_Static" }
+		88.704, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1V_2Shot_Lonnigan_SeeingAngents_Static" }
 	},
 
 	{
-		88.809, SET_CAMERA, { "cam_Monitor", "Cam_1V_2Shot_Lonnigan_SeeingAgents" }
+		88.809, SET_CAMERA, { "cam_Monitor", "Cam_1V_2Shot_Lonnigan_SeeingAngents" }
 	},
 
 	{
@@ -10055,7 +10056,7 @@ events =
 	},
 
 	{
-		88.958, START_SPATIAL_PROP_ANIM, { "Cam_1V_2Shot_Lonnigan_SeeingAgents", "Cam_1V_2Shot_Lonnigan_SeeingAgents_end" },
+		88.958, START_SPATIAL_PROP_ANIM, { "Cam_1V_2Shot_Lonnigan_SeeingAngents", "Cam_1V_2Shot_Lonnigan_SeeingAngents_end" },
 		{
 			duration = 1.840,
 			target_part = "",
@@ -10079,7 +10080,7 @@ events =
 	},
 
 	{
-		89.007, START_CAMERA_PROP_ANIM, { "Cam_1V_2Shot_Lonnigan_SeeingAgents", "Cam_1V_2Shot_Lonnigan_SeeingAgents_end" },
+		89.007, START_CAMERA_PROP_ANIM, { "Cam_1V_2Shot_Lonnigan_SeeingAngents", "Cam_1V_2Shot_Lonnigan_SeeingAngents_end" },
 		{
 			duration = 1.687,
 			cameraprops =
@@ -10275,7 +10276,7 @@ events =
 	},
 
 	{
-		90.910, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1V_2Shot_Lonnigan_SeeingAgents_end_Static" }
+		90.910, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1V_2Shot_Lonnigan_SeeingAngents_end_Static" }
 	},
 
 	{
@@ -10338,7 +10339,7 @@ events =
 	},
 
 	{
-		91.485, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_Mrk_TurnToAgents" },
+		91.485, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_Mrk_TurnToAngents" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -10670,7 +10671,15 @@ events =
 	},
 
 	{
-		93.379, START_MOTION, { "Char_Trent" },
+		93.485, SET_CAMERA, { "cam_Monitor", "Cam_1Z_Wide_RunnLonnigan_Trent" }
+	},
+
+	{
+		93.485, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1Z_Wide_RunnLonnigan" }
+	},
+
+	{
+		93.679, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_1601_Trent",
 			duration = 2.332,
@@ -10679,14 +10688,6 @@ events =
 			weight = 1,
 			heading = -1
 		}
-	},
-
-	{
-		93.485, SET_CAMERA, { "cam_Monitor", "Cam_1Z_Wide_RunnLonnigan_Trent" }
-	},
-
-	{
-		93.485, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_1Z_Wide_RunnLonnigan" }
 	},
 
 	{
@@ -12267,7 +12268,7 @@ events =
 	},
 
 	{
-		113.401, START_MOTION, { "Char_Juni" },
+		114.401, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_SPCBODY_s010x_juni_XA_CROUCHNG_000LV_11",
 			duration = 14.873,
@@ -12279,7 +12280,7 @@ events =
 	},
 
 	{
-		114.150, START_MOTION, { "Char_Juni" },
+		115.150, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_2201_juni",
 			duration = 2.164,
@@ -12291,7 +12292,7 @@ events =
 	},
 
 	{
-		114.499, START_MOTION, { "Char_Juni" },
+		115.499, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_Freeze_Female_Head_Facial",
 			locked_bone = "Head01",
@@ -12305,7 +12306,7 @@ events =
 	},
 
 	{
-		114.508, START_MOTION, { "Char_King" },
+		115.508, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_CROUCHNG_IDLE_000DN_XA_03",
 			duration = 6.400,
@@ -12317,14 +12318,14 @@ events =
 	},
 
 	{
-		115.066, START_PSYS, { "Cam_2F_POV_rtc_fadewhite_negative" },
+		116.066, START_PSYS, { "Cam_2F_POV_rtc_fadewhite_negative" },
 		{
 			duration = 0.123
 		}
 	},
 
 	{
-		115.066, START_PSYS_PROP_ANIM, { "Cam_2F_POV_rtc_fadewhite_negative" },
+		116.066, START_PSYS_PROP_ANIM, { "Cam_2F_POV_rtc_fadewhite_negative" },
 		{
 			duration = 0.300,
 			psysprops =
@@ -12346,7 +12347,7 @@ events =
 	},
 
 	{
-		115.072, START_SPATIAL_PROP_ANIM, { "Cam_2F_POV_Juni_Slaping", "Cam_2F_POV_Juni_Slaping_Left_Wham" },
+		116.072, START_SPATIAL_PROP_ANIM, { "Cam_2F_POV_Juni_Slaping", "Cam_2F_POV_Juni_Slaping_Left_Wham" },
 		{
 			duration = 0.312,
 			target_part = "",
@@ -12370,7 +12371,7 @@ events =
 	},
 
 	{
-		115.178, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Point_Juni_Spcl" },
+		116.178, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Point_Juni_Spcl" },
 		{
 			duration = 0.000,
 			lightprops =
@@ -12381,11 +12382,11 @@ events =
 	},
 
 	{
-		115.190, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2H_Wide_Trent_GettingUp" }
+		116.190, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2H_Wide_Trent_GettingUp" }
 	},
 
 	{
-		115.190, ATTACH_ENTITY, { "Char_Juni", "Char_Juni_Mrk_Ajust" },
+		116.190, ATTACH_ENTITY, { "Char_Juni", "Char_Juni_Mrk_Ajust" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -12398,7 +12399,7 @@ events =
 	},
 
 	{
-		115.190, START_IK, { "Char_Juni", "Char_Trent_1_Mrk_Head_OffsetforJuni" },
+		116.190, START_IK, { "Char_Juni", "Char_Trent_1_Mrk_Head_OffsetforJuni" },
 		{
 			duration = 8.265,
 			end_effector = "Body_Head",
@@ -12415,11 +12416,11 @@ events =
 	},
 
 	{
-		115.190, SET_CAMERA, { "cam_Monitor", "Cam_2H_Wide_Trent_GettingUp" }
+		116.190, SET_CAMERA, { "cam_Monitor", "Cam_2H_Wide_Trent_GettingUp" }
 	},
 
 	{
-		115.190, ATTACH_ENTITY, { "Cam_2F_POV_rtc_fadewhite_negative", "Cam_2H_Wide_Trent_GettingUp" },
+		116.190, ATTACH_ENTITY, { "Cam_2F_POV_rtc_fadewhite_negative", "Cam_2H_Wide_Trent_GettingUp" },
 		{
 			duration = 116.190,
 			offset = { 0, 0, -0.1 },
@@ -12432,7 +12433,7 @@ events =
 	},
 
 	{
-		115.500, START_MOTION, { "Char_King" },
+		116.500, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_dx_s010x_2301_King",
 			duration = 4.000,
@@ -12444,7 +12445,7 @@ events =
 	},
 
 	{
-		115.690, ATTACH_ENTITY, { "Cam_2F_POV_rtc_fadewhite", "Cam_2H_Wide_Trent_GettingUp" },
+		116.690, ATTACH_ENTITY, { "Cam_2F_POV_rtc_fadewhite", "Cam_2H_Wide_Trent_GettingUp" },
 		{
 			duration = 115.690,
 			offset = { 0, 0, -0.1 },
@@ -12457,7 +12458,7 @@ events =
 	},
 
 	{
-		117.968, START_PATH_ANIMATION, { "Cam_2I_CU_King_helpingTrentUp", "Cam_2I_CU_King_helpingTrentUp_Path" },
+		118.968, START_PATH_ANIMATION, { "Cam_2I_CU_King_helpingTrentUp", "Cam_2I_CU_King_helpingTrentUp_Path" },
 		{
 			duration = 6.000,
 			start_percent = 0,
@@ -12480,7 +12481,7 @@ events =
 	},
 
 	{
-		118.333, START_MOTION, { "Char_Trent" },
+		119.333, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLHAND_HNEUT_DNTGO_LEFT_000LV_B_00",
 			duration = 6.664,
@@ -12492,7 +12493,7 @@ events =
 	},
 
 	{
-		118.400, START_SPATIAL_PROP_ANIM, { "Char_Trent_1_Mrk_Head_OffsetforJuni", "Char_Trent_SnapTo" },
+		119.400, START_SPATIAL_PROP_ANIM, { "Char_Trent_1_Mrk_Head_OffsetforJuni", "Char_Trent_SnapTo" },
 		{
 			duration = 2.000,
 			target_part = "",
@@ -12515,7 +12516,7 @@ events =
 	},
 
 	{
-		118.432, ATTACH_ENTITY, { "Char_li_male_elite_2_B_Prop_baton_stun_2", "Z_Mrk_OffScreen" },
+		119.432, ATTACH_ENTITY, { "Char_li_male_elite_2_B_Prop_baton_stun_2", "Z_Mrk_OffScreen" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -12528,7 +12529,7 @@ events =
 	},
 
 	{
-		118.622, START_MOTION, { "Char_Juni" },
+		119.622, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMHAND_HNEUT_GUN_RGHT_000LV_00",
 			duration = 2.500,
@@ -12539,7 +12540,7 @@ events =
 	},
 
 	{
-		119.000, START_MOTION, { "Char_Trent" },
+		120.000, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2401_Trent",
 			duration = 1.674,
@@ -12551,7 +12552,7 @@ events =
 	},
 
 	{
-		119.290, START_MOTION, { "Char_King" },
+		120.290, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_SPCBODY_s010x_King_XC_CROUCHNG_000DN_16",
 			duration = 8.399,
@@ -12562,7 +12563,7 @@ events =
 	},
 
 	{
-		120.400, ATTACH_ENTITY, { "Char_Trent_1_Mrk_Head_OffsetforJuni", "Char_Trent" },
+		121.400, ATTACH_ENTITY, { "Char_Trent_1_Mrk_Head_OffsetforJuni", "Char_Trent" },
 		{
 			duration = 5.578,
 			offset = { 0, 0, 0 },
@@ -12575,7 +12576,7 @@ events =
 	},
 
 	{
-		120.500, START_MOTION, { "Char_Juni" },
+		121.500, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_TURN_045LV_XA_03",
 			duration = 3.832,
@@ -12587,7 +12588,7 @@ events =
 	},
 
 	{
-		120.597, START_MOTION, { "Char_Trent" },
+		121.597, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2601_Trent",
 			duration = 2.887,
@@ -12599,7 +12600,7 @@ events =
 	},
 
 	{
-		121.027, START_MOTION, { "Char_Juni" },
+		122.027, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_Freeze_Female_Head_Facial",
 			locked_bone = "Head01",
@@ -12613,7 +12614,7 @@ events =
 	},
 
 	{
-		121.263, START_SPATIAL_PROP_ANIM, { "Cam_2H_Wide_Trent_GettingUp", "Cam_2I_CU_King_helpingTrentUp_static_cam" },
+		122.263, START_SPATIAL_PROP_ANIM, { "Cam_2H_Wide_Trent_GettingUp", "Cam_2I_CU_King_helpingTrentUp_static_cam" },
 		{
 			duration = 2.016,
 			target_part = "",
@@ -12637,11 +12638,11 @@ events =
 	},
 
 	{
-		121.781, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2I_CU_King_helpingTrentUp_static_cam" }
+		122.781, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2I_CU_King_helpingTrentUp_static_cam" }
 	},
 
 	{
-		121.899, START_MOTION, { "Char_Trent" },
+		122.899, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLHAND_HNEUT_EDGE_RGHT_000LV_00",
 			duration = 10.000,
@@ -12653,7 +12654,7 @@ events =
 	},
 
 	{
-		122.250, START_MOTION, { "Char_Trent" },
+		123.250, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_SPCBODY_s010x_Trent_XFA_PRONE_000UP_09",
 			duration = 9.199,
@@ -12665,7 +12666,7 @@ events =
 	},
 
 	{
-		122.522, START_MOTION, { "Char_King" },
+		123.522, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_STND_IDLE_000LV_xa_04",
 			duration = 9.718,
@@ -12677,7 +12678,7 @@ events =
 	},
 
 	{
-		123.400, START_MOTION, { "Char_Trent" },
+		124.400, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2701_Trent",
 			duration = 2.618,
@@ -12690,7 +12691,7 @@ events =
 	},
 
 	{
-		123.611, START_IK, { "Char_Juni", "Char_Trent" },
+		124.611, START_IK, { "Char_Juni", "Char_Trent" },
 		{
 			duration = 3.055,
 			end_effector = "Body_Head",
@@ -12708,7 +12709,7 @@ events =
 	},
 
 	{
-		124.333, START_MOTION, { "Char_Juni" },
+		125.333, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_IDLE_000LV_xa_05",
 			duration = 5.000,
@@ -12719,7 +12720,7 @@ events =
 	},
 
 	{
-		125.446, START_MOTION, { "Char_Trent" },
+		126.446, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_SHAKHEAD_NO_EMPH_000LV_XA_02",
 			duration = 4.164,
@@ -12733,7 +12734,7 @@ events =
 	},
 
 	{
-		126.424, START_MOTION, { "Char_Trent" },
+		127.424, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2701_Trent",
 			duration = 1.360,
@@ -12746,7 +12747,7 @@ events =
 	},
 
 	{
-		126.650, START_MOTION, { "Char_Juni" },
+		127.650, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_2801_juni",
 			duration = 2.332,
@@ -12758,15 +12759,15 @@ events =
 	},
 
 	{
-		127.056, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2K_CU_Juni_Whathappenedtoyou" }
+		128.056, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2K_CU_Juni_Whathappenedtoyou" }
 	},
 
 	{
-		127.056, SET_CAMERA, { "cam_Monitor", "Cam_2K_CU_Juni_Whathappenedtoyou" }
+		128.056, SET_CAMERA, { "cam_Monitor", "Cam_2K_CU_Juni_Whathappenedtoyou" }
 	},
 
 	{
-		127.919, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_1_Mrk_Ajust_1" },
+		128.919, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_1_Mrk_Ajust_1" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -12779,7 +12780,7 @@ events =
 	},
 
 	{
-		127.919, ATTACH_ENTITY, { "Char_King", "Char_King_Mrk_EndAjust" },
+		128.919, ATTACH_ENTITY, { "Char_King", "Char_King_Mrk_EndAjust" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -12792,7 +12793,7 @@ events =
 	},
 
 	{
-		128.292, START_MOTION, { "Char_King" },
+		129.292, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_STND_LEAN_LLEG_000LV_XA_02",
 			duration = 2.164,
@@ -12804,7 +12805,7 @@ events =
 	},
 
 	{
-		128.311, START_MOTION, { "Char_Trent" },
+		129.311, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_HOLD_CHIN_RLEASE_000LV_XA_01",
 			duration = 3.664,
@@ -12815,7 +12816,7 @@ events =
 	},
 
 	{
-		128.800, START_MOTION, { "Char_Trent" },
+		129.800, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2701_Trent",
 			duration = 1.360,
@@ -12827,7 +12828,7 @@ events =
 	},
 
 	{
-		129.145, START_SPATIAL_PROP_ANIM, { "Cam_2M_3Shot_They_must_have_Dolly", "Cam_2M_3Shot_They_must_have_End" },
+		130.145, START_SPATIAL_PROP_ANIM, { "Cam_2M_3Shot_They_must_have_Dolly", "Cam_2M_3Shot_They_must_have_End" },
 		{
 			duration = 9.100,
 			target_part = "",
@@ -12851,15 +12852,15 @@ events =
 	},
 
 	{
-		129.151, SET_CAMERA, { "cam_Monitor", "Cam_2M_3Shot_They_must_have_Dolly" }
+		130.151, SET_CAMERA, { "cam_Monitor", "Cam_2M_3Shot_They_must_have_Dolly" }
 	},
 
 	{
-		129.151, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2M_3Shot_They_must_have_Start" }
+		130.151, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2M_3Shot_They_must_have_Start" }
 	},
 
 	{
-		129.233, START_IK, { "Char_Juni", "Char_Trent" },
+		130.233, START_IK, { "Char_Juni", "Char_Trent" },
 		{
 			duration = 5.934,
 			end_effector = "Body_Head",
@@ -12877,7 +12878,7 @@ events =
 	},
 
 	{
-		129.496, START_MOTION, { "Char_Juni" },
+		130.496, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_1STEP_FRWD_TRNS_000LV_XA_03",
 			duration = 3.664,
@@ -12890,7 +12891,7 @@ events =
 	},
 
 	{
-		129.699, START_MOTION, { "Char_Juni" },
+		130.699, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_2802_juni",
 			duration = 4.333,
@@ -12902,7 +12903,7 @@ events =
 	},
 
 	{
-		130.457, START_MOTION, { "Char_King" },
+		131.457, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_STND_LEAN_LLEG_SWAY_000LV_XA_03",
 			duration = 3.098,
@@ -12913,7 +12914,7 @@ events =
 	},
 
 	{
-		130.764, START_MOTION, { "Char_Trent" },
+		131.764, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_LOOK_AROU_000LV_XA_09",
 			duration = 9.666,
@@ -12925,7 +12926,7 @@ events =
 	},
 
 	{
-		132.429, START_SPATIAL_PROP_ANIM, { "Cam_2J_TrentGettingUp_Dolly", "Cam_2J_TrentGettingUp_2" },
+		133.429, START_SPATIAL_PROP_ANIM, { "Cam_2J_TrentGettingUp_Dolly", "Cam_2J_TrentGettingUp_2" },
 		{
 			duration = 3.000,
 			target_part = "",
@@ -12949,7 +12950,7 @@ events =
 	},
 
 	{
-		133.164, START_MOTION, { "Char_Juni" },
+		134.164, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_IDLE_000LV_xa_05",
 			duration = 4.946,
@@ -12960,7 +12961,7 @@ events =
 	},
 
 	{
-		133.557, START_MOTION, { "Char_King" },
+		134.557, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_STND_RETURNL_NEUT_000LV_XA_02",
 			duration = 2.000,
@@ -12971,7 +12972,7 @@ events =
 	},
 
 	{
-		133.776, START_MOTION, { "Char_Trent" },
+		134.776, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_NOD_YES_EMPH_000LV_XA_01",
 			duration = 3.000,
@@ -12984,7 +12985,7 @@ events =
 	},
 
 	{
-		134.205, START_MOTION, { "Char_Trent" },
+		135.205, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_2901_Trent",
 			duration = 1.332,
@@ -12996,7 +12997,7 @@ events =
 	},
 
 	{
-		134.358, START_MOTION, { "Char_Trent" },
+		135.358, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_GRABR_CHIN_RLEASE_000LV_XA_01",
 			duration = 2.914,
@@ -13008,7 +13009,7 @@ events =
 	},
 
 	{
-		134.800, START_MOTION, { "Char_King" },
+		135.800, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_dx_s010x_3001_King",
 			duration = 3.332,
@@ -13020,7 +13021,7 @@ events =
 	},
 
 	{
-		135.621, START_MOTION, { "Char_King" },
+		136.621, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_SPCBODY_s010x_King_XB_STND_000LV_04",
 			duration = 4.032,
@@ -13032,7 +13033,7 @@ events =
 	},
 
 	{
-		136.511, START_MOTION, { "Char_Trent" },
+		137.511, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_SPCBODY_s010x_Trent_XG_STND_000LV_03",
 			duration = 3.565,
@@ -13044,7 +13045,7 @@ events =
 	},
 
 	{
-		137.110, START_MOTION, { "Char_Juni" },
+		138.110, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_IDLE_000LV_xa_05",
 			duration = 6.618,
@@ -13056,7 +13057,7 @@ events =
 	},
 
 	{
-		137.714, START_IK, { "Char_Juni", "Char_Trent" },
+		138.714, START_IK, { "Char_Juni", "Char_Trent" },
 		{
 			duration = 2.125,
 			end_effector = "Body_Head",
@@ -13074,7 +13075,7 @@ events =
 	},
 
 	{
-		138.000, START_MOTION, { "Char_Juni" },
+		139.000, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_3101_juni",
 			duration = 1.500,
@@ -13086,7 +13087,7 @@ events =
 	},
 
 	{
-		138.656, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_1_Mrk_Ajust_2_OnCut" },
+		139.656, ATTACH_ENTITY, { "Char_Trent", "Char_Trent_1_Mrk_Ajust_2_OnCut" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -13099,11 +13100,11 @@ events =
 	},
 
 	{
-		138.656, SET_CAMERA, { "cam_Monitor", "Cam_2N_2Shot_Areyousure_Push" }
+		139.656, SET_CAMERA, { "cam_Monitor", "Cam_2N_2Shot_Areyousure_Push" }
 	},
 
 	{
-		138.656, START_SPATIAL_PROP_ANIM, { "Cam_2N_2Shot_Areyousure_Push", "Cam_2N_2Shot_Areyousure_End" },
+		139.656, START_SPATIAL_PROP_ANIM, { "Cam_2N_2Shot_Areyousure_Push", "Cam_2N_2Shot_Areyousure_End" },
 		{
 			duration = 5.064,
 			target_part = "",
@@ -13127,11 +13128,11 @@ events =
 	},
 
 	{
-		138.656, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2N_2Shot_Areyousure_static_cam" }
+		139.656, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_2N_2Shot_Areyousure_static_cam" }
 	},
 
 	{
-		138.684, START_MOTION, { "Char_King" },
+		139.684, START_MOTION, { "Char_King" },
 		{
 			animation = "Sc_MLBODY_WLKG_000LV_XA_01",
 			duration = 4.000,
@@ -13144,7 +13145,7 @@ events =
 	},
 
 	{
-		139.248, START_MOTION, { "Char_Trent" },
+		140.248, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_TURN_090LV_XA_02",
 			duration = 2.500,
@@ -13156,7 +13157,7 @@ events =
 	},
 
 	{
-		139.300, START_MOTION, { "Char_Trent" },
+		140.300, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_dx_s010x_3201_Trent",
 			duration = 2.000,
@@ -13168,7 +13169,7 @@ events =
 	},
 
 	{
-		140.300, START_MOTION, { "Char_Juni" },
+		141.300, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_3301_juni",
 			duration = 1.399,
@@ -13180,7 +13181,16 @@ events =
 	},
 
 	{
-		140.613, START_IK, { "Char_Juni", "Char_Trent" },
+		141.589, CONNECT_HARDPOINTS, { "Char_Syd_cigarette_3", "Char_Syd" },
+		{
+			duration = 29.111,
+			hardpoint = "hprightconnect_cigarette",
+			parent_hardpoint = "hprightconnect"
+		}
+	},
+
+	{
+		141.613, START_IK, { "Char_Juni", "Char_Trent" },
 		{
 			duration = 2.878,
 			end_effector = "Body_Head",
@@ -13194,15 +13204,6 @@ events =
 			move_to = 0,
 			transition_duration = 1.000,
 			event_flags = 128
-		}
-	},
-
-	{
-		141.589, CONNECT_HARDPOINTS, { "Char_Syd_cigarette_3", "Char_Syd" },
-		{
-			duration = 29.111,
-			hardpoint = "hprightconnect_cigarette",
-			parent_hardpoint = "hprightconnect"
 		}
 	},
 
@@ -13234,7 +13235,18 @@ events =
 	},
 
 	{
-		141.748, START_MOTION, { "Char_Trent" },
+		141.860, START_MOTION, { "Char_Syd" },
+		{
+			animation = "Sc_MLHAND_HNEUT_BATON_LEFT_000LV_00",
+			duration = 0.119,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		142.748, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_IDLE_SMALL_000LV_xa_05",
 			duration = 2.842,
@@ -13246,7 +13258,7 @@ events =
 	},
 
 	{
-		141.800, START_MOTION, { "Char_Juni" },
+		142.800, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_dx_s010x_3302_juni",
 			duration = 1.000,
@@ -13259,18 +13271,7 @@ events =
 	},
 
 	{
-		141.860, START_MOTION, { "Char_Syd" },
-		{
-			animation = "Sc_MLHAND_HNEUT_BATON_LEFT_000LV_00",
-			duration = 0.119,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
-		142.542, ATTACH_ENTITY, { "Char_King", "Z_Mrk_OffScreen" },
+		143.542, ATTACH_ENTITY, { "Char_King", "Z_Mrk_OffScreen" },
 		{
 			duration = 0.000,
 			offset = { 0, 0, 0 },
@@ -13283,7 +13284,7 @@ events =
 	},
 
 	{
-		143.276, START_MOTION, { "Char_Juni" },
+		144.276, START_MOTION, { "Char_Juni" },
 		{
 			animation = "Sc_FMBODY_STND_WALK_TRNS_180LV_XA_02",
 			duration = 2.466,
@@ -13294,7 +13295,7 @@ events =
 	},
 
 	{
-		143.647, START_IK, { "Char_Trent", "Char_Juni" },
+		144.647, START_IK, { "Char_Trent", "Char_Juni" },
 		{
 			duration = 2.766,
 			end_effector = "Body_Head",
@@ -13312,23 +13313,11 @@ events =
 	},
 
 	{
-		144.589, START_MOTION, { "Char_Trent" },
+		145.589, START_MOTION, { "Char_Trent" },
 		{
 			animation = "Sc_MLBODY_STND_IDLE_SMALL_000LV_xa_05",
 			duration = 2.842,
 			trans_time = 0.800,
-			time_scale = 1,
-			weight = 1,
-			heading = -1,
-			event_flags = 2
-		}
-	},
-
-	{
-		145.742, START_MOTION, { "Char_Juni" },
-		{
-			animation = "Sc_FMBODY_WLKG_000LV_XA_01",
-			duration = 6.500,
 			time_scale = 1,
 			weight = 1,
 			heading = -1,
@@ -13390,6 +13379,18 @@ events =
 			time_scale = 1,
 			weight = 1,
 			heading = -1
+		}
+	},
+
+	{
+		146.742, START_MOTION, { "Char_Juni" },
+		{
+			animation = "Sc_FMBODY_WLKG_000LV_XA_01",
+			duration = 6.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
 		}
 	},
 

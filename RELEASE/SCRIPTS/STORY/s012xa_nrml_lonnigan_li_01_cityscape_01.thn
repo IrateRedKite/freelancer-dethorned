@@ -2826,6 +2826,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 40,
 			dmax = 400,
 			ain = 360,
@@ -2856,6 +2857,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -5679,7 +5681,7 @@ events =
 	{
 		21.625, START_IK, { "Char_Trent", "Char_Tr_Mk_IKeyes" },
 		{
-			duration = 4.000,
+			duration = 15.541,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -6884,7 +6886,7 @@ events =
 	{
 		42.950, START_MOTION, { "Char_Trent" },
 		{
-			animation = "Sc_MLHEAD_CONCNTRTE_TRENT_000LV_XA_%",
+			animation = "Sc_MLHEAD_CONCNTRTE_000LV_XA_%",
 			duration = 3.890,
 			trans_time = 0.300,
 			time_scale = 1,

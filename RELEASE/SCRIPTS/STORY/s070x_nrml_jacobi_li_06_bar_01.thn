@@ -2515,6 +2515,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -2543,6 +2544,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -5205,6 +5207,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -30,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -9750,7 +9753,7 @@ events =
 	{
 		50.561, START_IK, { "char_orillion_1", "char_jacobi_3" },
 		{
-			duration = 1.043,
+			duration = 1.044,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "Body_Head",

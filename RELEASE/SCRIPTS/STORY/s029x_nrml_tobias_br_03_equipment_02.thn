@@ -1867,6 +1867,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -2342,6 +2343,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -4712,7 +4714,7 @@ events =
 	{
 		8.272, START_IK, { "Char_Tobias", "Char_Trent" },
 		{
-			duration = 1.728,
+			duration = 2.256,
 			end_effector = "Body_Head",
 			count_to_root = 2,
 			target_part = "hp_head",
@@ -5802,7 +5804,7 @@ events =
 	{
 		23.937, START_IK, { "Char_Tobias", "Char_Trent" },
 		{
-			duration = 1.892,
+			duration = 1.893,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",

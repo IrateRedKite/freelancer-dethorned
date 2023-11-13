@@ -772,6 +772,7 @@ entities =
 		type = SOUND,
 		template_name = "rtc_music_anticipation_more_forboding",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -779,19 +780,14 @@ entities =
 		},
 		audioprops =
 		{
-			attenuation = -12,
+			attenuation = 0,
 			pan = 0,
-			dmin = 50,
-			dmax = 300,
+			dmin = 1,
+			dmax = 1e+009,
 			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
-			Priority = "rtc_music_1",
 		}
 	},
 

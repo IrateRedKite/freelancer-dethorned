@@ -135,6 +135,7 @@ entities =
 			dmax = 1000,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -449,6 +450,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -10,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -478,6 +480,7 @@ entities =
 		{
 			attenuation = -25,
 			pan = -41,
+			dmin = 50,
 			dmax = 300,
 			ain = 360,
 			aout = 360,
@@ -507,6 +510,7 @@ entities =
 			pan = -36,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -536,6 +540,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -564,6 +569,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{

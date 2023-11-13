@@ -141,7 +141,7 @@ entities =
 		cameraprops =
 		{
 			fovh = 27,
-			hvaspect = 1.31,
+			hvaspect = 1.333333,
 			nearplane = 25,
 			farplane = 4000
 		}
@@ -253,7 +253,7 @@ entities =
 		cameraprops =
 		{
 			fovh = 27,
-			hvaspect = 1.31,
+			hvaspect = 1.333333,
 			nearplane = 25,
 			farplane = 4000
 		}

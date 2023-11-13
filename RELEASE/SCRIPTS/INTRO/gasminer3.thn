@@ -64,7 +64,7 @@ entities =
 		flags = LIT_DYNAMIC,
 		spatialprops =
 		{
-			pos = { 7760.896, 612.4628, -4250 },
+			pos = { 7760.896, 612.4628, -4181.624 },
 			orient = { { -0.955097,  0.000000, -0.296293 },
 					   {  0.000000,  1.000000,  0.000000 },
 					   {  0.296293,  0.000000, -0.955097 } }
@@ -469,7 +469,7 @@ entities =
 		pathprops =
 		{
 			path_type = "CV_CROrientationSplinePath",
-			path_data = "OPEN,{7760.895996,612.463013,-4181.623535}, {1.000000,0.000000,0.000000,0.000000}, {7220.000000,612.463013,-1500.000000}, {1.000000,0.000000,0.000000,0.000000}, "
+			path_data = "OPEN,{7760.895996,612.463013,-4181.623535}, {1.000000,0.000000,0.000000,0.000000}, {6997.041504,612.463013,-1500.000000}, {1.000000,0.000000,0.000000,0.000000}, "
 		}
 	},
 
@@ -493,7 +493,7 @@ entities =
 		flags = LIT_DYNAMIC,
 		spatialprops =
 		{
-			pos = { 7760.896, 612.4628, -4250 },
+			pos = { 7760.896, 612.4628, -4181.624 },
 			orient = { { -0.955097,  0.000000, -0.296293 },
 					   {  0.000000,  1.000000,  0.000000 },
 					   {  0.296293,  0.000000, -0.955097 } }
@@ -1723,7 +1723,7 @@ events =
 	{
 		0.000, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1755,7 +1755,7 @@ events =
 	{
 		7.500, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 10, 0, 0 },
@@ -1781,7 +1781,7 @@ events =
 	{
 		132.500, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1807,7 +1807,7 @@ events =
 	{
 		275.625, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1820,7 +1820,7 @@ events =
 	{
 		371.250, START_PATH_ANIMATION, { "Ships_li_elite_12", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1833,7 +1833,20 @@ events =
 	{
 		388.527, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
+			start_percent = 0,
+			stop_percent = 1,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			flags = POSITION
+		}
+	},
+
+	{
+		425.937, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
+		{
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1846,7 +1859,7 @@ events =
 	{
 		570.312, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1859,7 +1872,7 @@ events =
 	{
 		577.187, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1885,7 +1898,7 @@ events =
 	{
 		799.382, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1911,7 +1924,7 @@ events =
 	{
 		986.611, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1937,7 +1950,7 @@ events =
 	{
 		1078.219, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -1963,7 +1976,7 @@ events =
 	{
 		1282.281, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -2015,7 +2028,7 @@ events =
 	{
 		1571.656, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -2067,7 +2080,7 @@ events =
 	{
 		1907.281, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_copy_1", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -2119,7 +2132,7 @@ events =
 	{
 		2217.500, START_PATH_ANIMATION, { "Ships_ge_large_transport_12_", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },
@@ -2132,7 +2145,7 @@ events =
 	{
 		2238.750, START_PATH_ANIMATION, { "Ships_li_elite_12", "Path_1" },
 		{
-			duration = 80.000,
+			duration = 60.000,
 			start_percent = 0,
 			stop_percent = 1,
 			offset = { 0, 0, 0 },

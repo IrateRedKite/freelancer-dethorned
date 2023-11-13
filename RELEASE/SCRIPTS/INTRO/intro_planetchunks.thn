@@ -463,7 +463,7 @@ entities =
 	{
 		entity_name = "Intro_planetchunk_touristdust_2",
 		type = PSYS,
-		template_name = "touristdust",
+		template_name = "Intro_planetchunk_touristdust",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
 		flags = LIT_DYNAMIC + LIT_AMBIENT,
 		spatialprops =

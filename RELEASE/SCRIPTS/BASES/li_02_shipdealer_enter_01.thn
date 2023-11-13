@@ -1,151 +1,151 @@
-duration  =  9.468;
+duration = 9.468;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Layer_Li_02_Shipdlr_enter",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_Li_02_Shipdlr_enter",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "X/Shipcentre/01",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { 11.70315, -0.169109, -1.092582 },
-			orient  =  { { -0.510416, 0.000000, -0.859928 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.859928, 0.000000, -0.510416 } }
+			pos = { 11.70315, -0.169109, -1.092582 },
+			orient = { { -0.510416,  0.000000, -0.859928 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.859928,  0.000000, -0.510416 } }
 		}
 	},
 
 	{
-		entity_name  =  "Camera_0",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "Camera_0",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { -10.44385, 1.3235, -1.116158 },
-			orient  =  { { 0.021841, 0.000000, 0.999761 },
-					   { -0.137597, 0.990484, 0.003006 },
-					   { -0.990247, -0.137630, 0.021634 } }
+			pos = { -10.44385, 1.3235, -1.116158 },
+			orient = { {  0.021841,  0.000000,  0.999761 },
+					   { -0.137597,  0.990484,  0.003006 },
+					   { -0.990247, -0.137630,  0.021634 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  60,
-			hvaspect  =  1.333333,
-			nearplane  =  0.1,
-			farplane  =  100000
+			fovh = 60,
+			hvaspect = 1.333333,
+			nearplane = 0.1,
+			farplane = 100000
 		}
 	},
 
 	{
-		entity_name  =  "Camera_Enter",
-		type  =  CAMERA,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Camera_Enter",
+		type = CAMERA,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 14.1869, 12.2583, 12.80187 },
-			orient  =  { { 0.246309, 0.000000, 0.969191 },
-					   { -0.012177, 0.999921, 0.003095 },
-					   { -0.969115, -0.012564, 0.246289 } }
+			pos = { 14.1869, 12.2583, 12.80187 },
+			orient = { {  0.246309,  0.000000,  0.969191 },
+					   { -0.012177,  0.999921,  0.003095 },
+					   { -0.969115, -0.012564,  0.246289 } }
 		},
-		cameraprops  = 
+		cameraprops =
 		{
-			fovh  =  30,
-			hvaspect  =  1.85,
-			nearplane  =  0.3,
-			farplane  =  4000
+			fovh = 30,
+			hvaspect = 1.85,
+			nearplane = 0.3,
+			farplane = 4000
 		}
 	},
 
 	{
-		entity_name  =  "char_trent",
-		type  =  DEFORMABLE,
-		template_name  =  "trent",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "char_trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { -9.775178, 0, 5.305009 },
-			orient  =  { { 0.734315, 0.006535, 0.678777 },
-					   { -0.006674, 0.999975, -0.002408 },
-					   { -0.678776, -0.002762, 0.734340 } }
+			pos = { -9.775178, 0, 5.305009 },
+			orient = { {  0.734315,  0.006535,  0.678777 },
+					   { -0.006674,  0.999975, -0.002408 },
+					   { -0.678776, -0.002762,  0.734340 } }
 		},
-		compoundprops  = 
+		compoundprops =
 		{
-			floor_height  =  0
+			floor_height = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Actor  =  "Player",
-			category  =  "Character",
+			Actor = "Player",
+			category = "Character",
 		}
 	},
 
 	{
-		entity_name  =  "Zg/PC/Player/01/A/Stand",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "Zg/PC/Player/01/A/Stand",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { -4.601497, 0, -0.119783 },
-			orient  =  { { 0.695437, 0.000000, 0.718587 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.718587, 0.000000, 0.695437 } }
+			pos = { -4.601497, 0, -0.119783 },
+			orient = { {  0.695437,  0.000000,  0.718587 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.718587,  0.000000,  0.695437 } }
 		}
 	},
 
 	{
-		entity_name  =  "Monitor_1",
-		type  =  MONITOR,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0
+		entity_name = "Monitor_1",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
 	}
 };
 
-events  = 
+events =
 {
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "Camera_Enter", "Camera_0" },
 		{
-			duration  =  7.000,
-			target_part  =  "",
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 7.000,
+			target_part = "",
+			target_type = ROOT,
+			spatialprops =
 			{
-				pos  =  { -10.44385, 1.3235, -1.116158 },
-				q_orient  =  { 0.021842, 0, 0.999761, -0.137597 }
+				pos = { -10.44385, 1.3235, -1.116158 },
+				q_orient = { 0.021842, 0, 0.999761, -0.137597 }
 			},
-			param_curve  = 
+			param_curve =
 			{
-				CLSID  =  "FreeFormPCurve",
-				points  = 
+				CLSID = "FreeFormPCurve",
+				points =
 				{
-					{ 0.000000, 0.000000, 0.000000, 0.000000 },
-					{ 1.000000, 1.000000, 0.000000, 0.000000 },
+					{  0.000000,  0.000000,  0.000000,  0.000000 },
+					{  1.000000,  1.000000,  0.000000,  0.000000 },
 				}
 			},
-			pcurve_period  =  -1000
+			pcurve_period = -1000
 		}
 	},
 
@@ -156,34 +156,34 @@ events  =
 	{
 		1.437, START_MOTION, { "char_trent" },
 		{
-			animation  =  "Sc_MLBODY_WLKG_000LV_XA_01",
-			duration  =  5.255,
-			time_scale  =  1,
-			weight  =  1,
-			heading  =  -1,
-			event_flags  =  2
+			animation = "Sc_MLBODY_WLKG_000LV_XA_01",
+			duration = 5.255,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
 		}
 	},
 
 	{
 		6.656, START_MOTION, { "char_trent" },
 		{
-			animation  =  "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
-			duration  =  2.400,
-			time_scale  =  1,
-			weight  =  1,
-			heading  =  -1
+			animation = "Sc_MLBODY_WALK_STND_TRNS_000LV_XA_02",
+			duration = 2.400,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
 	{
 		8.906, START_MOTION, { "char_trent" },
 		{
-			animation  =  "Sc_MLBODY_STND_IDLE_000LV_xa_04",
-			duration  =  7.466,
-			time_scale  =  1,
-			weight  =  1,
-			heading  =  -1
+			animation = "Sc_MLBODY_STND_IDLE_000LV_xa_04",
+			duration = 7.466,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	}
 };

@@ -1833,6 +1833,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -3217,6 +3218,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -5118,7 +5120,7 @@ events =
 	{
 		20.968, START_IK, { "Char_trent", "Char_Tr_Mk_IKeyes_Left" },
 		{
-			duration = 1.000,
+			duration = 2.000,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "",

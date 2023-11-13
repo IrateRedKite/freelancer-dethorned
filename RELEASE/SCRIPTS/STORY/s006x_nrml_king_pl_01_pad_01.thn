@@ -1889,6 +1889,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -2036,6 +2037,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -2846,6 +2848,7 @@ entities =
 		audioprops =
 		{
 			attenuation = 0,
+			pan = 0,
 			dmin = 60,
 			dmax = 200,
 			ain = 360,
@@ -3089,6 +3092,7 @@ entities =
 			dmax = 1000,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -4888,13 +4892,6 @@ events =
 	},
 
 	{
-		21.125, START_SOUND, { "ship_l_elite_engine_li_land_turbine_snd" },
-		{
-			duration = 10.251
-		}
-	},
-
-	{
 		21.125, ATTACH_ENTITY, { "ship_l_elite_engine_li_land_turbine_snd", "Ship_l_elite" },
 		{
 			duration = 10.187,
@@ -4904,6 +4901,13 @@ events =
 			target_part = "hpengine01",
 			target_type = HARDPOINT,
 			flags = POSITION + ORIENTATION
+		}
+	},
+
+	{
+		21.125, START_SOUND, { "ship_l_elite_engine_li_land_turbine_snd" },
+		{
+			duration = 10.251
 		}
 	},
 
@@ -5055,7 +5059,7 @@ events =
 	{
 		23.999, START_MOTION, { "Char_Trent" },
 		{
-			animation = "Sc_MLHAND_HNEUT_GESTR_FIST_000LV_00",
+			animation = "Sc_MLHAND_HNEUT_GESTL_FIST_000LV_00",
 			duration = 10.000,
 			time_scale = 1,
 			weight = 1,
@@ -5067,7 +5071,7 @@ events =
 	{
 		23.999, START_MOTION, { "Char_Trent" },
 		{
-			animation = "Sc_MLHAND_HNEUT_GESTL_FIST_000LV_00",
+			animation = "Sc_MLHAND_HNEUT_GESTR_FIST_000LV_00",
 			duration = 10.000,
 			time_scale = 1,
 			weight = 1,
@@ -5469,62 +5473,7 @@ events =
 	},
 
 	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
-		{
-			duration = 2.000,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel03_3" },
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel01_1" },
 		{
 			duration = 2.000,
 			audioprops =
@@ -5546,7 +5495,62 @@ events =
 	},
 
 	{
-		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel01_1" },
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel03_3" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
+		{
+			duration = 2.000,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		31.249, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
 		{
 			duration = 2.000,
 			audioprops =
@@ -5828,51 +5832,7 @@ events =
 	},
 
 	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel03_3" },
-		{
-			duration = 0.100,
-			audioprops =
-			{
-				pan = -70
-			}
-		}
-	},
-
-	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
-		{
-			duration = 0.100,
-			audioprops =
-			{
-				pan = -70
-			}
-		}
-	},
-
-	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
-		{
-			duration = 0.100,
-			audioprops =
-			{
-				pan = -70
-			}
-		}
-	},
-
-	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
-		{
-			duration = 0.100,
-			audioprops =
-			{
-				pan = -70
-			}
-		}
-	},
-
-	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
 		{
 			duration = 0.100,
 			audioprops =
@@ -5894,12 +5854,56 @@ events =
 	},
 
 	{
-		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
 		{
 			duration = 0.100,
 			audioprops =
 			{
 				pan = 70
+			}
+		}
+	},
+
+	{
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
+		{
+			duration = 0.100,
+			audioprops =
+			{
+				pan = -70
+			}
+		}
+	},
+
+	{
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
+		{
+			duration = 0.100,
+			audioprops =
+			{
+				pan = -70
+			}
+		}
+	},
+
+	{
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
+		{
+			duration = 0.100,
+			audioprops =
+			{
+				pan = -70
+			}
+		}
+	},
+
+	{
+		40.874, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel03_3" },
+		{
+			duration = 0.100,
+			audioprops =
+			{
+				pan = -70
 			}
 		}
 	},
@@ -5917,51 +5921,14 @@ events =
 	},
 
 	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
+		41.062, START_SOUND, { "Z_dx_s006x_0101_King_2" },
 		{
-			duration = 3.598,
-			audioprops =
-			{
-				pan = 0
-			}
+			duration = 6.625
 		}
 	},
 
 	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
-		{
-			duration = 3.598,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
-		{
-			duration = 3.598,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
-		{
-			duration = 3.598,
-			audioprops =
-			{
-				pan = 0
-			}
-		}
-	},
-
-	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel02_2" },
 		{
 			duration = 3.598,
 			audioprops =
@@ -5983,7 +5950,7 @@ events =
 	},
 
 	{
-		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel02_2" },
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_ml_steel04_4" },
 		{
 			duration = 3.598,
 			audioprops =
@@ -5994,9 +5961,46 @@ events =
 	},
 
 	{
-		41.062, START_SOUND, { "Z_dx_s006x_0101_King_2" },
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel01_5" },
 		{
-			duration = 6.625
+			duration = 3.598,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel02_6" },
+		{
+			duration = 3.598,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel03_7" },
+		{
+			duration = 3.598,
+			audioprops =
+			{
+				pan = 0
+			}
+		}
+	},
+
+	{
+		41.062, START_AUDIO_PROP_ANIM, { "snd_fs_mr_steel04_8" },
+		{
+			duration = 3.598,
+			audioprops =
+			{
+				pan = 0
+			}
 		}
 	},
 
@@ -6044,7 +6048,7 @@ events =
 	{
 		41.625, START_IK, { "Char_Trent", "Char_king" },
 		{
-			duration = 5.653,
+			duration = 13.653,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -6334,6 +6338,19 @@ events =
 	},
 
 	{
+		45.566, START_MOTION, { "Char_king" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
+		}
+	},
+
+	{
 		45.625, START_MOTION, { "Char_king" },
 		{
 			animation = "Sc_MLBODY_STND_TALK_SMALL_000LV_A_16",
@@ -6473,14 +6490,6 @@ events =
 	},
 
 	{
-		51.718, START_SOUND, { "snd_music_anticipation_motivated_5" },
-		{
-			duration = 48.006,
-			start_time = 5000
-		}
-	},
-
-	{
 		51.718, START_AUDIO_PROP_ANIM, { "snd_music_anticipation_motivated_5" },
 		{
 			duration = 4.000,
@@ -6488,6 +6497,14 @@ events =
 			{
 				attenuation = -6
 			}
+		}
+	},
+
+	{
+		51.718, START_SOUND, { "snd_music_anticipation_motivated_5" },
+		{
+			duration = 48.006,
+			start_time = 5000
 		}
 	},
 
@@ -6513,6 +6530,19 @@ events =
 			time_scale = 0.4,
 			weight = 1,
 			heading = -1
+		}
+	},
+
+	{
+		51.965, START_MOTION, { "Char_king" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
 		}
 	},
 
@@ -6582,6 +6612,19 @@ events =
 		53.687, START_SOUND, { "Z_dx_s006x_0501_King_4" },
 		{
 			duration = 4.875
+		}
+	},
+
+	{
+		54.000, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
 		}
 	},
 
@@ -7111,6 +7154,19 @@ events =
 	},
 
 	{
+		64.598, START_MOTION, { "Char_king" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
+		}
+	},
+
+	{
 		64.681, START_IK, { "Char_king", "Char_Hand_Mk2" },
 		{
 			duration = 1.000,
@@ -7304,6 +7360,19 @@ events =
 		70.431, START_SOUND, { "Z_dx_s006x_0701_King_7" },
 		{
 			duration = 6.934
+		}
+	},
+
+	{
+		70.717, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
 		}
 	},
 
@@ -7991,6 +8060,19 @@ events =
 			time_scale = 1,
 			weight = 1,
 			heading = -1
+		}
+	},
+
+	{
+		84.831, START_MOTION, { "Char_king" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_000LV_02_01",
+			duration = 1.100,
+			trans_time = 1.000,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 128
 		}
 	},
 

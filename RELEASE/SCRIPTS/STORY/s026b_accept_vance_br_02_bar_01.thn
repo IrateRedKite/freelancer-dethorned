@@ -1949,6 +1949,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -3947,7 +3948,7 @@ events =
 	{
 		18.239, START_IK, { "Char_Vance", "Mk_Table_Vance_Look_Juni" },
 		{
-			duration = 1.546,
+			duration = 7.546,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_neck",

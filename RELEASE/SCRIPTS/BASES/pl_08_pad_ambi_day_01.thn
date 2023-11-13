@@ -1,1284 +1,1284 @@
-duration  =  4500.000;
+duration = 4500.000;
 
-entities  = 
+entities =
 {
 
 	{
-		entity_name  =  "Layer_Pl_08_Pad_ambi_day",
-		type  =  SCENE,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Layer_Pl_08_Pad_ambi_day",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0, 0, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		up  =  Y_AXIS,
-		front  =  Z_AXIS,
-		ambient  =  { 0, 0, 0 }
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 0, 0, 0 }
 	},
 
 	{
-		entity_name  =  "AMBI_LT09_INF01",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT09_INF01",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 9, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -14.65846, 57.91419, -10.58909 },
-			orient  =  { { -0.171958, 0.748941, -0.639936 },
-					   { 0.837299, -0.231129, -0.495490 },
+			pos = { -14.65846, 57.91419, -10.58909 },
+			orient = { { -0.171958,  0.748941, -0.639936 },
+					   {  0.837299, -0.231129, -0.495490 },
 					   { -0.519001, -0.621021, -0.587343 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0.043137, 0.094118, 0.156863 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0.043137, 0.094118, 0.156863 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT09_INF03",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT09_INF03",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 9, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -161.2007, 219.8175, 14.22388 },
-			orient  =  { { -0.553199, -0.831968, -0.042437 },
-					   { -0.780720, 0.535546, -0.321973 },
-					   { 0.290598, -0.144984, -0.945797 } }
+			pos = { -161.2007, 219.8175, 14.22388 },
+			orient = { { -0.553199, -0.831968, -0.042437 },
+					   { -0.780720,  0.535546, -0.321973 },
+					   {  0.290598, -0.144984, -0.945797 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.607843, 0.537255, 0.647059 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  1000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.607843, 0.537255, 0.647059 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 1000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "X/Shipcentre/01",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "X/Shipcentre/01",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { -0.119165, 0.14, 0.442568 },
-			orient  =  { { -0.371335, 0.000000, 0.928499 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.928499, 0.000000, -0.371335 } }
+			pos = { -0.119165, 0.14, 0.442568 },
+			orient = { { -0.371335,  0.000000,  0.928499 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.928499,  0.000000, -0.371335 } }
 		}
 	},
 
 	{
-		entity_name  =  "Prop_PlayerShip_gf_rtc_shipcushion",
-		type  =  PSYS,
-		template_name  =  "gf_rtc_shipcushion",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "Prop_PlayerShip_gf_rtc_shipcushion",
+		type = PSYS,
+		template_name = "gf_rtc_shipcushion",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { 0.012363, 0, 0.010679 },
-			orient  =  { { -0.371335, 0.000000, 0.928499 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.928499, 0.000000, -0.371335 } }
+			pos = { 0.012363, 0, 0.010679 },
+			orient = { { -0.371335,  0.000000,  0.928499 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.928499,  0.000000, -0.371335 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		}
 	},
 
 	{
-		entity_name  =  "X/Shipcentre/02",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  REFERENCE,
-		spatialprops  = 
+		entity_name = "X/Shipcentre/02",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
 		{
-			pos  =  { -45.5373, 1.460696, 26.36188 },
-			orient  =  { { -0.343524, 0.000000, 0.939144 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.939144, 0.000000, -0.343524 } }
+			pos = { -45.5373, 1.460696, 26.36188 },
+			orient = { { -0.343524,  0.000000,  0.939144 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.939144,  0.000000, -0.343524 } }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_skydome_sky_storm_snow_23",
-		type  =  COMPOUND,
-		template_name  =  "skydome_sky_storm_snow",
-		lt_grp  =  23, srt_grp  =  -100, usr_flg  =  2,
-		flags  =  HIDDEN + LIT_DYNAMIC,
-		spatialprops  = 
+		entity_name = "ambi_skydome_sky_storm_snow_23",
+		type = COMPOUND,
+		template_name = "skydome_sky_storm_snow",
+		lt_grp = 23, srt_grp = -100, usr_flg = 2,
+		flags = HIDDEN + LIT_DYNAMIC,
+		spatialprops =
 		{
-			pos  =  { -114.9229, -704.5161, 0 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -114.9229, -704.5161, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		userprops  = 
+		userprops =
 		{
-			category  =  "Prop",
-			NoFog  =  "y",
+			category = "Prop",
+			NoFog = "y",
 		}
 	},
 
 	{
-		entity_name  =  "Prop_PlayerShip_Shipcushion_Marker_A",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Prop_PlayerShip_Shipcushion_Marker_A",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -0.119165, 0.14, 0.442568 },
-			orient  =  { { -0.371335, 0.000000, 0.928499 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.928499, 0.000000, -0.371335 } }
+			pos = { -0.119165, 0.14, 0.442568 },
+			orient = { { -0.371335,  0.000000,  0.928499 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.928499,  0.000000, -0.371335 } }
 		}
 	},
 
 	{
-		entity_name  =  "Prop_PlayerShip_gf_rtc_shipcushion_02",
-		type  =  PSYS,
-		template_name  =  "gf_rtc_shipcushion",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "Prop_PlayerShip_gf_rtc_shipcushion_02",
+		type = PSYS,
+		template_name = "gf_rtc_shipcushion",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { 0.012363, 0, 0.010679 },
-			orient  =  { { -0.371335, 0.000000, 0.928499 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { -0.928499, 0.000000, -0.371335 } }
+			pos = { 0.012363, 0, 0.010679 },
+			orient = { { -0.371335,  0.000000,  0.928499 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   { -0.928499,  0.000000, -0.371335 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		}
 	},
 
 	{
-		entity_name  =  "Prop_PlayerShip_Shipcushion_Marker_B",
-		type  =  MARKER,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "Prop_PlayerShip_Shipcushion_Marker_B",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -45.5373, 0.14, 26.36188 },
-			orient  =  { { -0.894252, 0.000000, -0.447564 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.447564, 0.000000, -0.894252 } }
+			pos = { -45.5373, 0.14, 26.36188 },
+			orient = { { -0.894252,  0.000000, -0.447564 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.447564,  0.000000, -0.894252 } }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT23_INF01",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT23_INF01",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 23, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -14.65846, 57.91419, -10.58909 },
-			orient  =  { { -0.237415, -0.856850, -0.457649 },
-					   { 0.648092, -0.490656, 0.582437 },
-					   { -0.723609, -0.158320, 0.671807 } }
+			pos = { -14.65846, 57.91419, -10.58909 },
+			orient = { { -0.237415, -0.856850, -0.457649 },
+					   {  0.648092, -0.490656,  0.582437 },
+					   { -0.723609, -0.158320,  0.671807 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.658824, 0.686275, 0.784314 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.658824, 0.686275, 0.784314 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT23_INF02",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT23_INF02",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 23, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -14.65846, 57.91419, -10.58909 },
-			orient  =  { { 0.172873, 0.367693, -0.913738 },
-					   { -0.682869, 0.713286, 0.157836 },
-					   { 0.709792, 0.596678, 0.374394 } }
+			pos = { -14.65846, 57.91419, -10.58909 },
+			orient = { {  0.172873,  0.367693, -0.913738 },
+					   { -0.682869,  0.713286,  0.157836 },
+					   {  0.709792,  0.596678,  0.374394 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.658824, 0.686275, 0.784314 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.658824, 0.686275, 0.784314 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT23_INF03",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  23, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT23_INF03",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 23, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -14.65846, 57.91419, -10.58909 },
-			orient  =  { { -0.731698, 0.367693, 0.573951 },
-					   { 0.617907, 0.713286, 0.330778 },
-					   { -0.287766, 0.596678, -0.749110 } }
+			pos = { -14.65846, 57.91419, -10.58909 },
+			orient = { { -0.731698,  0.367693,  0.573951 },
+					   {  0.617907,  0.713286,  0.330778 },
+					   { -0.287766,  0.596678, -0.749110 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.658824, 0.686275, 0.784314 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.658824, 0.686275, 0.784314 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_mid01",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_mid01",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -182.3166, 18.84971, -149.4357 },
-			orient  =  { { 0.735415, -0.021129, -0.677288 },
-					   { 0.052014, 0.998325, 0.025334 },
-					   { 0.675618, -0.053859, 0.735282 } }
+			pos = { -182.3166, 18.84971, -149.4357 },
+			orient = { {  0.735415, -0.021129, -0.677288 },
+					   {  0.052014,  0.998325,  0.025334 },
+					   {  0.675618, -0.053859,  0.735282 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_mid02",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_mid02",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -261.8315, 20.60485, -149.0636 },
-			orient  =  { { 0.733426, -0.014749, 0.679609 },
-					   { 0.022058, 0.999754, -0.002108 },
-					   { -0.679411, 0.016537, 0.733571 } }
+			pos = { -261.8315, 20.60485, -149.0636 },
+			orient = { {  0.733426, -0.014749,  0.679609 },
+					   {  0.022058,  0.999754, -0.002108 },
+					   { -0.679411,  0.016537,  0.733571 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_mid03",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_mid03",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -182.1591, 21.37172, -223.5474 },
-			orient  =  { { -0.733977, -0.014293, -0.679024 },
-					   { -0.014573, 0.999880, -0.005293 },
-					   { 0.679018, 0.006010, -0.734097 } }
+			pos = { -182.1591, 21.37172, -223.5474 },
+			orient = { { -0.733977, -0.014293, -0.679024 },
+					   { -0.014573,  0.999880, -0.005293 },
+					   {  0.679018,  0.006010, -0.734097 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Rgt01",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Rgt01",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -213.4396, 88.02804, -1135.592 },
-			orient  =  { { 0.240261, 0.012113, -0.970633 },
-					   { 0.052014, 0.998325, 0.025334 },
-					   { 0.969314, -0.056573, 0.239229 } }
+			pos = { -213.4396, 88.02804, -1135.592 },
+			orient = { {  0.240261,  0.012113, -0.970633 },
+					   {  0.052014,  0.998325,  0.025334 },
+					   {  0.969314, -0.056573,  0.239229 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Rgt02",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Rgt02",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -272.6989, 89.43645, -1087.728 },
-			orient  =  { { 0.984598, -0.021357, 0.173524 },
-					   { 0.022058, 0.999754, -0.002108 },
-					   { -0.173436, 0.005903, 0.984827 } }
+			pos = { -272.6989, 89.43645, -1087.728 },
+			orient = { {  0.984598, -0.021357,  0.173524 },
+					   {  0.022058,  0.999754, -0.002108 },
+					   { -0.173436,  0.005903,  0.984827 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Rgt03",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Rgt03",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -254.447, 89.1112, -1199.421 },
-			orient  =  { { -0.977766, -0.015358, -0.209136 },
-					   { -0.014573, 0.999880, -0.005293 },
-					   { 0.209193, -0.002128, -0.977872 } }
+			pos = { -254.447, 89.1112, -1199.421 },
+			orient = { { -0.977766, -0.015358, -0.209136 },
+					   { -0.014573,  0.999880, -0.005293 },
+					   {  0.209193, -0.002128, -0.977872 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Lft01",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Lft01",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -923.3833, 11.67302, -137.9676 },
-			orient  =  { { 0.240261, 0.012113, -0.970633 },
-					   { 0.052014, 0.998325, 0.025334 },
-					   { 0.969314, -0.056573, 0.239229 } }
+			pos = { -923.3833, 11.67302, -137.9676 },
+			orient = { {  0.240261,  0.012113, -0.970633 },
+					   {  0.052014,  0.998325,  0.025334 },
+					   {  0.969314, -0.056573,  0.239229 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Lft02",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Lft02",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -986.6058, 13.14954, -99.25764 },
-			orient  =  { { 0.984598, -0.021357, 0.173524 },
-					   { 0.022058, 0.999754, -0.002108 },
-					   { -0.173436, 0.005903, 0.984827 } }
+			pos = { -986.6058, 13.14954, -99.25764 },
+			orient = { {  0.984598, -0.021357,  0.173524 },
+					   {  0.022058,  0.999754, -0.002108 },
+					   { -0.173436,  0.005903,  0.984827 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Lft03",
-		type  =  PSYS,
-		template_name  =  "rtc_atmospheric",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Lft03",
+		type = PSYS,
+		template_name = "rtc_atmospheric",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -963.7074, 12.91664, -206.2954 },
-			orient  =  { { -0.977766, -0.015358, -0.209136 },
-					   { -0.014573, 0.999880, -0.005293 },
-					   { 0.209193, -0.002128, -0.977872 } }
+			pos = { -963.7074, 12.91664, -206.2954 },
+			orient = { { -0.977766, -0.015358, -0.209136 },
+					   { -0.014573,  0.999880, -0.005293 },
+					   {  0.209193, -0.002128, -0.977872 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Lft_sucker",
-		type  =  PSYS,
-		template_name  =  "rtc_sucker",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Lft_sucker",
+		type = PSYS,
+		template_name = "rtc_sucker",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -979.7747, 227.7184, -152.4946 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -979.7747, 227.7184, -152.4946 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Rgt_sucker",
-		type  =  PSYS,
-		template_name  =  "rtc_sucker",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Rgt_sucker",
+		type = PSYS,
+		template_name = "rtc_sucker",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -263.1575, 286.3331, -1143.974 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -263.1575, 286.3331, -1143.974 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_rtc_atmospheric_Mid_sucker",
-		type  =  PSYS,
-		template_name  =  "rtc_sucker",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		flags  =  LIT_DYNAMIC + LIT_AMBIENT,
-		spatialprops  = 
+		entity_name = "ambi_rtc_atmospheric_Mid_sucker",
+		type = PSYS,
+		template_name = "rtc_sucker",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
 		{
-			pos  =  { -222.0689, 217.6763, -184.002 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -222.0689, 217.6763, -184.002 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		psysprops  = 
+		psysprops =
 		{
-			sparam  =  0
+			sparam = 0
 		},
-		userprops  = 
+		userprops =
 		{
-			Priority  =  "Weather_FX_1",
+			Priority = "Weather_FX_1",
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT03_PT",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT03_PT",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -33.9922, 55.77982, 1.860486 },
-			orient  =  { { 0.993716, -0.101890, 0.046336 },
-					   { -0.023282, 0.216757, 0.975948 },
-					   { -0.109483, -0.970894, 0.213023 } }
+			pos = { -33.9922, 55.77982, 1.860486 },
+			orient = { {  0.993716, -0.101890,  0.046336 },
+					   { -0.023282,  0.216757,  0.975948 },
+					   { -0.109483, -0.970894,  0.213023 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.87451, 0.87451, 0.87451 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  6000,
-			cutoff  =  2,
-			type  =  L_POINT,
-			theta  =  2,
-			atten  =  { 1, 0, 9e-007 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.87451, 0.87451, 0.87451 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 6000,
+			cutoff = 2,
+			type = L_POINT,
+			theta = 2,
+			atten = { 1, 0, 9e-007 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT03_INF02",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT03_INF02",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -0.394806, 10, -4.443428 },
-			orient  =  { { 0.938501, 0.000000, 0.345276 },
-					   { -0.203083, 0.808733, 0.552004 },
-					   { -0.279236, -0.588176, 0.758997 } }
+			pos = { -0.394806, 10, -4.443428 },
+			orient = { {  0.938501,  0.000000,  0.345276 },
+					   { -0.203083,  0.808733,  0.552004 },
+					   { -0.279236, -0.588176,  0.758997 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.909804, 0.921569, 0.968628 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  10000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 0 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.909804, 0.921569, 0.968628 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 10000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 0 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT03_INF01",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT03_INF01",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -0.551477, 10, -3.253244 },
-			orient  =  { { -0.939078, 0.080410, 0.334166 },
-					   { 0.244871, 0.838776, 0.486306 },
-					   { -0.241187, 0.538507, -0.807366 } }
+			pos = { -0.551477, 10, -3.253244 },
+			orient = { { -0.939078,  0.080410,  0.334166 },
+					   {  0.244871,  0.838776,  0.486306 },
+					   { -0.241187,  0.538507, -0.807366 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.203922, 0.207843, 0.211765 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  1000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 0 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.203922, 0.207843, 0.211765 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 1000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 0 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT10",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT10",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 10.915, 2.032075, 9.443442 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 10.915, 2.032075, 9.443442 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.882353, 0.882353, 0.882353 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 3.5 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.882353, 0.882353, 0.882353 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 3.5 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT09",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT09",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 10.0783, 2.176269, 9.544846 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 10.0783, 2.176269, 9.544846 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.952941, 0.941177, 0.956863 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 4 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.952941, 0.941177, 0.956863 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 4 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT08",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT08",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 11.46356, 2.425122, -6.222338 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 11.46356, 2.425122, -6.222338 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  8,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.2 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 8,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.2 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT07",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT07",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 13.75237, 2.425122, -5.472064 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 13.75237, 2.425122, -5.472064 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  6,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.4 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 6,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.4 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT04",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT04",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 20.55867, 2.425122, 1.370567 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 20.55867, 2.425122, 1.370567 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  8,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.2 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 8,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.2 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT06",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT06",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 20.55867, 2.425122, 3.952302 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 20.55867, 2.425122, 3.952302 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.878431, 0.858824, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  8,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.06 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.878431, 0.858824, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 8,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.06 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT05",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT05",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 22.9561, 2.425122, 3.952302 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 22.9561, 2.425122, 3.952302 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.878431, 0.858824, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  4,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.6 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.878431, 0.858824, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 4,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.6 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT03",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT03",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -45.98762, 1.556506, 34.02342 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -45.98762, 1.556506, 34.02342 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.580392, 0.521569, 0.611765 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  8,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.5 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.580392, 0.521569, 0.611765 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 8,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.5 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT02",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT02",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -46.06225, 2.389986, 32.82121 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -46.06225, 2.389986, 32.82121 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.466667, 0.54902, 0.654902 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  9,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.19 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.466667, 0.54902, 0.654902 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 9,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.19 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT01",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT01",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -47.639, 0.98263, 33.19362 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -47.639, 0.98263, 33.19362 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.901961, 0.901961, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  10,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.4 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.901961, 0.901961, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 10,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.4 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_INF_fill",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_INF_fill",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 0.21212, 10, -0.932207 },
-			orient  =  { { 0.938501, 0.000000, 0.345276 },
-					   { -0.256065, 0.670817, 0.696014 },
-					   { -0.231617, -0.741623, 0.629562 } }
+			pos = { 0.21212, 10, -0.932207 },
+			orient = { {  0.938501,  0.000000,  0.345276 },
+					   { -0.256065,  0.670817,  0.696014 },
+					   { -0.231617, -0.741623,  0.629562 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.992157, 0.992157, 0.992157 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0.019608, 0.011765, 0.031373 },
-			direction  =  { 0, 0, 1 },
-			range  =  10000,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 0 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.992157, 0.992157, 0.992157 },
+			specular = { 0, 0, 0 },
+			ambient = { 0.019608, 0.011765, 0.031373 },
+			direction = { 0, 0, 1 },
+			range = 10000,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 0 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT11",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT11",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 11.46356, 2.425122, -10.40628 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 11.46356, 2.425122, -10.40628 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2.5,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 2 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2.5,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 2 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT12",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT12",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 10.58995, 1.786464, -9.414042 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 10.58995, 1.786464, -9.414042 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.737255, 0.690196, 0.619608 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2.5,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 2 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.737255, 0.690196, 0.619608 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2.5,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 2 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT10_back",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT10_back",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 10.6168, 1.937259, 11.40042 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 10.6168, 1.937259, 11.40042 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.792157, 0.792157, 0.792157 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  3.5,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 2 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.792157, 0.792157, 0.792157 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 3.5,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 2 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT10_INF01",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT10_INF01",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 10, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -14.65846, 57.91419, -10.58909 },
-			orient  =  { { -0.093360, 0.417197, 0.904008 },
-					   { -0.392906, -0.849721, 0.351566 },
-					   { 0.914827, -0.322368, 0.243250 } }
+			pos = { -14.65846, 57.91419, -10.58909 },
+			orient = { { -0.093360,  0.417197,  0.904008 },
+					   { -0.392906, -0.849721,  0.351566 },
+					   {  0.914827, -0.322368,  0.243250 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  200,
-			cutoff  =  90,
-			type  =  L_DIRECT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 200,
+			cutoff = 90,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT09_SPOT",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT09_SPOT",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 9, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 156.1884, 993.8945, -513.4773 },
-			orient  =  { { -0.345251, -0.456514, -0.819998 },
-					   { 0.928752, -0.291860, -0.228554 },
-					   { -0.134987, -0.840484, 0.524753 } }
+			pos = { 156.1884, 993.8945, -513.4773 },
+			orient = { { -0.345251, -0.456514, -0.819998 },
+					   {  0.928752, -0.291860, -0.228554 },
+					   { -0.134987, -0.840484,  0.524753 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  1500,
-			cutoff  =  4,
-			type  =  L_SPOT,
-			theta  =  2,
-			atten  =  { 1, 0, 6.4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 1500,
+			cutoff = 4,
+			type = L_SPOT,
+			theta = 2,
+			atten = { 1, 0, 6.4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT10_PT",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  10, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT10_PT",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 10, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -0.779234, 25.67565, 61.67623 },
-			orient  =  { { -0.093360, 0.417197, 0.904008 },
-					   { -0.392906, -0.849721, 0.351566 },
-					   { 0.914827, -0.322368, 0.243250 } }
+			pos = { -0.779234, 25.67565, 61.67623 },
+			orient = { { -0.093360,  0.417197,  0.904008 },
+					   { -0.392906, -0.849721,  0.351566 },
+					   {  0.914827, -0.322368,  0.243250 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.545098, 0.545098, 0.545098 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  2000,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 4e-006 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.545098, 0.545098, 0.545098 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 2000,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 4e-006 }
 		}
 	},
 
 	{
-		entity_name  =  "AMBI_LT09_PT",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  9, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "AMBI_LT09_PT",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 9, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 7.737573, 8.125426, 14.81533 },
-			orient  =  { { 0.998742, 0.005618, -0.049826 },
-					   { 0.001883, 0.988799, 0.149239 },
-					   { 0.050107, -0.149145, 0.987545 } }
+			pos = { 7.737573, 8.125426, 14.81533 },
+			orient = { {  0.998742,  0.005618, -0.049826 },
+					   {  0.001883,  0.988799,  0.149239 },
+					   {  0.050107, -0.149145,  0.987545 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 1, 1, 1 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  30,
-			cutoff  =  8,
-			type  =  L_POINT,
-			theta  =  6,
-			atten  =  { 1, 0, 0.01000001 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 1, 1, 1 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 30,
+			cutoff = 8,
+			type = L_POINT,
+			theta = 6,
+			atten = { 1, 0, 0.01000001 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT13",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT13",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -57.23726, 1.85748, 21.16946 },
-			orient  =  { { -0.744912, 0.000000, -0.667163 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.667163, 0.000000, -0.744912 } }
+			pos = { -57.23726, 1.85748, 21.16946 },
+			orient = { { -0.744912,  0.000000, -0.667163 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.667163,  0.000000, -0.744912 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.901961, 0.901961, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  3,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 1.8 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.901961, 0.901961, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 3,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 1.8 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT14",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT14",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -55.78859, 1.85748, 20.49026 },
-			orient  =  { { -0.744912, 0.000000, -0.667163 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.667163, 0.000000, -0.744912 } }
+			pos = { -55.78859, 1.85748, 20.49026 },
+			orient = { { -0.744912,  0.000000, -0.667163 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.667163,  0.000000, -0.744912 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.901961, 0.901961, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  3,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 1.8 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.901961, 0.901961, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 3,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 1.8 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT15",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT15",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -57.32894, 1.85748, 18.85531 },
-			orient  =  { { -0.744912, 0.000000, -0.667163 },
-					   { 0.000000, 1.000000, 0.000000 },
-					   { 0.667163, 0.000000, -0.744912 } }
+			pos = { -57.32894, 1.85748, 18.85531 },
+			orient = { { -0.744912,  0.000000, -0.667163 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.667163,  0.000000, -0.744912 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.901961, 0.901961, 0.901961 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  6,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.5 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.901961, 0.901961, 0.901961 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 6,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.5 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT16",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT16",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { 1.658546, 2.349566, 3.966694 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { 1.658546, 2.349566, 3.966694 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.882353, 0.882353, 0.882353 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  6,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.5 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.882353, 0.882353, 0.882353 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 6,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.5 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT00_PT17",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT00_PT17",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -0.103813, 2.483027, 6.059575 },
-			orient  =  { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+			pos = { -0.103813, 2.483027, 6.059575 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.956863, 0.956863, 0.956863 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  6,
-			cutoff  =  90,
-			type  =  L_POINT,
-			theta  =  90,
-			atten  =  { 1, 0, 0.38 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.956863, 0.956863, 0.956863 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 6,
+			cutoff = 90,
+			type = L_POINT,
+			theta = 90,
+			atten = { 1, 0, 0.38 }
 		}
 	},
 
 	{
-		entity_name  =  "ambi_LT03_PT_copy_1",
-		type  =  LIGHT,
-		template_name  =  "",
-		lt_grp  =  3, srt_grp  =  0, usr_flg  =  0,
-		spatialprops  = 
+		entity_name = "ambi_LT03_PT_copy_1",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 3, srt_grp = 0, usr_flg = 0,
+		spatialprops =
 		{
-			pos  =  { -705.6285, 40.84049, 484.1416 },
-			orient  =  { { 0.993716, -0.101890, 0.046336 },
-					   { -0.023282, 0.216757, 0.975948 },
-					   { -0.109483, -0.970894, 0.213023 } }
+			pos = { -705.6285, 40.84049, 484.1416 },
+			orient = { {  0.993716, -0.101890,  0.046336 },
+					   { -0.023282,  0.216757,  0.975948 },
+					   { -0.109483, -0.970894,  0.213023 } }
 		},
-		lightprops  = 
+		lightprops =
 		{
-			on  =  Y,
-			color  =  { 255, 255, 255 },
-			diffuse  =  { 0.733333, 0.709804, 0.623529 },
-			specular  =  { 0, 0, 0 },
-			ambient  =  { 0, 0, 0 },
-			direction  =  { 0, 0, 1 },
-			range  =  400,
-			cutoff  =  2,
-			type  =  L_POINT,
-			theta  =  2,
-			atten  =  { 1, 0, 0.0001 }
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0.733333, 0.709804, 0.623529 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 400,
+			cutoff = 2,
+			type = L_POINT,
+			theta = 2,
+			atten = { 1, 0, 0.0001 }
 		}
 	}
 };
 
-events  = 
+events =
 {
 	{
 		0.000, START_SPATIAL_PROP_ANIM, { "ambi_skydome_sky_storm_snow_23" },
 		{
-			duration  =  4500.000,
-			target_type  =  ROOT,
-			spatialprops  = 
+			duration = 4500.000,
+			target_type = ROOT,
+			spatialprops =
 			{
-				axisrot  =  { 360, Y_AXIS }
+				axisrot = { 360, Y_AXIS }
 			}
 		}
 	},
@@ -1286,138 +1286,138 @@ events  =
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Mid_sucker" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "Prop_PlayerShip_gf_rtc_shipcushion" },
 		{
-			duration  =  120.000
+			duration = 120.000
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Prop_PlayerShip_gf_rtc_shipcushion", "Prop_PlayerShip_Shipcushion_Marker_A" },
 		{
-			duration  =  300.000,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "",
-			target_type  =  ROOT,
-			flags  =  POSITION + ORIENTATION
+			duration = 300.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION + ORIENTATION
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "Prop_PlayerShip_gf_rtc_shipcushion_02" },
 		{
-			duration  =  120.000
+			duration = 120.000
 		}
 	},
 
 	{
 		0.000, ATTACH_ENTITY, { "Prop_PlayerShip_gf_rtc_shipcushion_02", "Prop_PlayerShip_Shipcushion_Marker_B" },
 		{
-			duration  =  120.000,
-			offset  =  { 0, 0, 0 },
-			up  =  Y_AXIS,
-			front  =  NEG_Z_AXIS,
-			target_part  =  "",
-			target_type  =  ROOT,
-			flags  =  POSITION + ORIENTATION
+			duration = 120.000,
+			offset = { 0, 0, 0 },
+			up = Y_AXIS,
+			front = NEG_Z_AXIS,
+			target_part = "",
+			target_type = ROOT,
+			flags = POSITION + ORIENTATION
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_mid01" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_mid02" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_mid03" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Rgt01" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Rgt02" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Rgt03" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Lft01" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Lft02" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Lft03" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Lft_sucker" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_PSYS, { "ambi_rtc_atmospheric_Rgt_sucker" },
 		{
-			duration  =  45000.000
+			duration = 45000.000
 		}
 	},
 
 	{
 		0.000, START_FOG_PROP_ANIM, { "Layer_Pl_08_Pad_ambi_day" },
 		{
-			duration  =  0.000,
-			fogprops  = 
+			duration = 0.000,
+			fogprops =
 			{
-				fogon  =  Y,
-				fogcolor  =  { 46, 38, 51 },
-				fogmode  =  F_LINEAR,
-				fogstart  =  800,
-				fogend  =  2500.1,
+				fogon = Y,
+				fogcolor = { 46, 38, 51 },
+				fogmode = F_LINEAR,
+				fogstart = 800,
+				fogend = 2500.1,
 			}
 		}
 	}

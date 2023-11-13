@@ -4315,6 +4315,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -11056,7 +11057,7 @@ events =
 	},
 
 	{
-		93.218, START_MOTION, { "char_neimann_6" },
+		93.218, START_MOTION, { "char_neimann_worm" },
 		{
 			animation = "Sc_SPCBODY_s069x_niemann_XC_STND_000LV_08",
 			duration = 15.699,
@@ -11068,7 +11069,7 @@ events =
 	},
 
 	{
-		93.218, START_MOTION, { "char_neimann_worm" },
+		93.218, START_MOTION, { "char_neimann_6" },
 		{
 			animation = "Sc_SPCBODY_s069x_niemann_XC_STND_000LV_08",
 			duration = 15.699,
@@ -11178,7 +11179,7 @@ events =
 	{
 		96.024, START_IK, { "char_rh_agent_2", "char_neimann_6" },
 		{
-			duration = 0.531,
+			duration = 0.532,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "Body_Head",
@@ -11417,6 +11418,17 @@ events =
 			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
 			duration = 0.342,
 			time_scale = 0.1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		98.194, START_MOTION, { "char_neimann_worm" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.666,
+			time_scale = 0.8,
 			weight = 1,
 			heading = -1
 		}
@@ -15490,18 +15502,6 @@ events =
 	},
 
 	{
-		125.301, START_MOTION, { "char_trent" },
-		{
-			animation = "Sc_dx_s069x_1501_Trent",
-			duration = 2.000,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		125.458, START_MOTION, { "char_jacobi_torture_1" },
 		{
 			animation = "Sc_SPCBODY_s069x_Jacobi_XC_STND_000DN_03",
@@ -15517,6 +15517,18 @@ events =
 		{
 			animation = "Sc_SPCBODY_s069x_Jacobi_XD_STND_000DN_48",
 			duration = 18.677,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		125.801, START_MOTION, { "char_trent" },
+		{
+			animation = "Sc_dx_s069x_1501_Trent",
+			duration = 2.000,
+			trans_time = 0.200,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -15605,18 +15617,6 @@ events =
 	},
 
 	{
-		126.369, START_MOTION, { "char_juni" },
-		{
-			animation = "Sc_dx_s069x_1901_juni",
-			duration = 2.266,
-			trans_time = 0.300,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		126.444, SET_CAMERA, { "cam_Monitor_s069x_static", "Cam_39_Just_Shoot" }
 	},
 
@@ -15635,6 +15635,18 @@ events =
 				pos = { -1.646, 2.286748, 7.186334 },
 				q_orient = { 0.64465, 0.422657, 0.637014, -0.422657 }
 			}
+		}
+	},
+
+	{
+		126.869, START_MOTION, { "char_juni" },
+		{
+			animation = "Sc_dx_s069x_1901_juni",
+			duration = 2.266,
+			trans_time = 0.300,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -15682,7 +15694,18 @@ events =
 	},
 
 	{
-		127.271, SET_CAMERA, { "cam_Monitor_s069x", "Cam_40_PCO_Neimann" }
+		127.271, SET_CAMERA, { "cam_Monitor_s069x_static", "Cam_40_PCO_Neimann" }
+	},
+
+	{
+		127.271, START_LIGHT_PROP_ANIM, { "Ambi_LtG00_Cell_Edge_Spot_Trent02" },
+		{
+			duration = 0.000,
+			lightprops =
+			{
+				on = Y,
+			}
+		}
 	},
 
 	{
@@ -15700,18 +15723,7 @@ events =
 	},
 
 	{
-		127.271, START_LIGHT_PROP_ANIM, { "Ambi_LtG00_Cell_Edge_Spot_Trent02" },
-		{
-			duration = 0.000,
-			lightprops =
-			{
-				on = Y,
-			}
-		}
-	},
-
-	{
-		127.271, SET_CAMERA, { "cam_Monitor_s069x_static", "Cam_40_PCO_Neimann" }
+		127.271, SET_CAMERA, { "cam_Monitor_s069x", "Cam_40_PCO_Neimann" }
 	},
 
 	{
@@ -16811,18 +16823,6 @@ events =
 	},
 
 	{
-		146.990, START_MOTION, { "char_jacobi_5" },
-		{
-			animation = "Sc_dx_s069x_1701_Jacobi",
-			duration = 3.500,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		147.029, START_SPATIAL_PROP_ANIM, { "char_jacobi_5", "char_jacobi_Mk_loc_01_Freed" },
 		{
 			duration = 0.000,
@@ -16847,6 +16847,18 @@ events =
 				pos = { -3.083509, 0.958579, -4.515103 },
 				q_orient = { 0.226907, 3e-006, 0.973917, 1.2e-005 }
 			}
+		}
+	},
+
+	{
+		147.490, START_MOTION, { "char_jacobi_5" },
+		{
+			animation = "Sc_dx_s069x_1701_Jacobi",
+			duration = 3.500,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -17113,7 +17125,7 @@ events =
 	},
 
 	{
-		154.442, START_MOTION, { "char_trent" },
+		154.942, START_MOTION, { "char_trent" },
 		{
 			animation = "Sc_dx_s069x_1801_Trent",
 			duration = 4.333,
@@ -17388,18 +17400,6 @@ events =
 	},
 
 	{
-		158.645, START_MOTION, { "char_juni" },
-		{
-			animation = "Sc_dx_s069x_1901_juni",
-			duration = 2.266,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		158.921, START_IK, { "char_juni", "char_trent" },
 		{
 			duration = 2.453,
@@ -17423,6 +17423,18 @@ events =
 			duration = 20.000,
 			hardpoint = "hp_fem_rhand_rifle",
 			parent_hardpoint = "hprightconnect"
+		}
+	},
+
+	{
+		159.145, START_MOTION, { "char_juni" },
+		{
+			animation = "Sc_dx_s069x_1901_juni",
+			duration = 2.266,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -17578,17 +17590,6 @@ events =
 	},
 
 	{
-		161.382, START_MOTION, { "char_juni" },
-		{
-			animation = "Sc_dx_s069x_2101_juni",
-			duration = 1.332,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		161.389, START_IK, { "char_juni", "char_juni_Mk_IKeyes_worm" },
 		{
 			duration = 0.929,
@@ -17638,6 +17639,17 @@ events =
 			duration = 1.450,
 			trans_time = 0.400,
 			time_scale = 2,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		161.882, START_MOTION, { "char_juni" },
+		{
+			animation = "Sc_dx_s069x_2101_juni",
+			duration = 1.332,
+			time_scale = 1,
 			weight = 1,
 			heading = -1
 		}
@@ -18464,18 +18476,6 @@ events =
 	},
 
 	{
-		166.850, START_MOTION, { "char_jacobi_5" },
-		{
-			animation = "Sc_dx_s069x_2201_Jacobi",
-			duration = 3.164,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		166.910, START_MOTION, { "char_jacobi_5" },
 		{
 			animation = "Sc_FMHAND_HNEUT_GUN_RGHT_000LV_XB_00",
@@ -18506,6 +18506,18 @@ events =
 
 	{
 		166.968, SET_CAMERA, { "cam_Monitor_s069x_static", "Cam_50_saved_by_Prez_C" }
+	},
+
+	{
+		167.350, START_MOTION, { "char_jacobi_5" },
+		{
+			animation = "Sc_dx_s069x_2201_Jacobi",
+			duration = 3.164,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
 	},
 
 	{

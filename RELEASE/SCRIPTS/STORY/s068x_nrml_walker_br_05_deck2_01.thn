@@ -1892,6 +1892,7 @@ entities =
 			attenuation = -30,
 			pan = 0,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -1922,6 +1923,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -2090,9 +2092,9 @@ events =
 	},
 
 	{
-		0.000, START_MOTION, { "char_trent" },
+		0.000, START_MOTION, { "char_juni" },
 		{
-			animation = "Sc_MLHEAD_BASEPOSE_TRENT_000LV_01_01",
+			animation = "Sc_FMHEAD_BASEPOSE_000LV_02_01",
 			duration = 0.100,
 			time_scale = 1,
 			weight = 1,
@@ -2238,6 +2240,17 @@ events =
 	},
 
 	{
+		0.000, START_MOTION, { "char_trent" },
+		{
+			animation = "Sc_MLHEAD_BASEPOSE_TRENT_000LV_01_01",
+			duration = 0.100,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		0.001, START_IK, { "char_juni", "Char_J_Mk_IKeyes" },
 		{
 			duration = 19.764,
@@ -2258,7 +2271,7 @@ events =
 	{
 		0.001, START_IK, { "char_juni", "char_walker" },
 		{
-			duration = 6.795,
+			duration = 6.796,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -3255,19 +3268,6 @@ events =
 	},
 
 	{
-		9.203, START_MOTION, { "char_trent" },
-		{
-			animation = "Sc_MLHAND_NEUT_WALK_RGHT_000LV_XB_%",
-			duration = 3.453,
-			trans_time = 0.500,
-			time_scale = 1,
-			weight = 1,
-			heading = -1,
-			event_flags = 2
-		}
-	},
-
-	{
 		9.203, START_SPATIAL_PROP_ANIM, { "Char_J_Mk_IKeyes", "char_walker" },
 		{
 			duration = 0.531,
@@ -3287,6 +3287,19 @@ events =
 				}
 			},
 			pcurve_period = -1000
+		}
+	},
+
+	{
+		9.203, START_MOTION, { "char_trent" },
+		{
+			animation = "Sc_MLHAND_NEUT_WALK_RGHT_000LV_XB_%",
+			duration = 3.453,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1,
+			event_flags = 2
 		}
 	},
 
@@ -3536,10 +3549,12 @@ events =
 	},
 
 	{
-		12.718, START_MOTION, { "char_juni" },
+		12.718, START_MOTION, { "char_trent" },
 		{
-			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
-			duration = 0.300,
+			animation = "Sc_MLHAND_HNEUT_GESTR_THUMB_000LV_00",
+			duration = 1.000,
+			start_time = 2.000,
+			trans_time = 0.600,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -3547,12 +3562,10 @@ events =
 	},
 
 	{
-		12.718, START_MOTION, { "char_trent" },
+		12.718, START_MOTION, { "char_juni" },
 		{
-			animation = "Sc_MLHAND_HNEUT_GESTR_THUMB_000LV_00",
-			duration = 1.000,
-			start_time = 2.000,
-			trans_time = 0.600,
+			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.300,
 			time_scale = 1,
 			weight = 1,
 			heading = -1

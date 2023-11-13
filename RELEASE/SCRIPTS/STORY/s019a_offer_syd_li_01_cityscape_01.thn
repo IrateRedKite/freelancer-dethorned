@@ -3087,6 +3087,7 @@ entities =
 			attenuation = 0,
 			pan = 0,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -3103,6 +3104,7 @@ entities =
 		type = SOUND,
 		template_name = "mix_s019e",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -3118,10 +3120,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
 		}
 	},
 
@@ -3563,6 +3561,17 @@ events =
 	},
 
 	{
+		0.000, START_AUDIO_PROP_ANIM, { "mix_s019e_1" },
+		{
+			duration = 0.000,
+			audioprops =
+			{
+				attenuation = -100
+			}
+		}
+	},
+
+	{
 		0.000, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_01_Juni_Watch_Land_END" }
 	},
 
@@ -3764,7 +3773,7 @@ events =
 	{
 		10.328, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_MLHAND_NEUT_WALK_RGHT_000LV_XA_%",
+			animation = "Sc_MLHAND_NEUT_WALK_LEFT_000LV_XA_%",
 			duration = 2.532,
 			time_scale = 1,
 			weight = 1,
@@ -3775,7 +3784,7 @@ events =
 	{
 		10.328, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_MLHAND_NEUT_WALK_LEFT_000LV_XA_%",
+			animation = "Sc_MLHAND_NEUT_WALK_RGHT_000LV_XA_%",
 			duration = 2.532,
 			time_scale = 1,
 			weight = 1,
@@ -4047,15 +4056,11 @@ events =
 	},
 
 	{
-		15.255, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_MLBODY_RNNG_STND_TRNS_000LV_XD_04",
-			duration = 4.666,
-			start_time = 0.300,
-			time_scale = 0.7,
-			weight = 1,
-			heading = -1
-		}
+		15.255, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_04_BEV" }
+	},
+
+	{
+		15.255, SET_CAMERA, { "cam_Monitor_2", "Cam_04_BEV" }
 	},
 
 	{
@@ -4073,11 +4078,15 @@ events =
 	},
 
 	{
-		15.255, SET_CAMERA, { "cam_Monitor_2", "Cam_04_BEV" }
-	},
-
-	{
-		15.255, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_04_BEV" }
+		15.255, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_MLBODY_RNNG_STND_TRNS_000LV_XD_04",
+			duration = 4.666,
+			start_time = 0.300,
+			time_scale = 0.7,
+			weight = 1,
+			heading = -1
+		}
 	},
 
 	{
@@ -4427,27 +4436,7 @@ events =
 	},
 
 	{
-		20.929, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
-		{
-			duration = 0.000,
-			lightprops =
-			{
-				on = Y,
-			}
-		}
-	},
-
-	{
-		20.929, START_FLR_HEIGHT_ANIM, { "Char_juni" },
-		{
-			duration = 0.000,
-			target_type = ROOT,
-			floor_height = 0.1
-		}
-	},
-
-	{
-		20.929, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_06_ACS_Trent_Juni_Leaving" }
+		20.929, SET_CAMERA, { "cam_Monitor_2", "Cam_06_ACS_Trent_Juni_Leaving" }
 	},
 
 	{
@@ -4465,7 +4454,27 @@ events =
 	},
 
 	{
-		20.929, SET_CAMERA, { "cam_Monitor_2", "Cam_06_ACS_Trent_Juni_Leaving" }
+		20.929, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_06_ACS_Trent_Juni_Leaving" }
+	},
+
+	{
+		20.929, START_FLR_HEIGHT_ANIM, { "Char_juni" },
+		{
+			duration = 0.000,
+			target_type = ROOT,
+			floor_height = 0.1
+		}
+	},
+
+	{
+		20.929, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
+		{
+			duration = 0.000,
+			lightprops =
+			{
+				on = Y,
+			}
+		}
 	},
 
 	{
@@ -4608,14 +4617,20 @@ events =
 	},
 
 	{
-		23.750, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
+		23.750, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_07_ACOH_Juni_Trent_Leaving" }
+	},
+
+	{
+		23.750, START_FLR_HEIGHT_ANIM, { "Char_juni" },
 		{
 			duration = 0.000,
-			lightprops =
-			{
-				on = N,
-			}
+			target_type = ROOT,
+			floor_height = 0
 		}
+	},
+
+	{
+		23.750, SET_CAMERA, { "cam_Monitor_2", "Cam_07_ACOH_Juni_Trent_Leaving" }
 	},
 
 	{
@@ -4630,20 +4645,14 @@ events =
 	},
 
 	{
-		23.750, SET_CAMERA, { "cam_Monitor_2", "Cam_07_ACOH_Juni_Trent_Leaving" }
-	},
-
-	{
-		23.750, START_FLR_HEIGHT_ANIM, { "Char_juni" },
+		23.750, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
 		{
 			duration = 0.000,
-			target_type = ROOT,
-			floor_height = 0
+			lightprops =
+			{
+				on = N,
+			}
 		}
-	},
-
-	{
-		23.750, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_07_ACOH_Juni_Trent_Leaving" }
 	},
 
 	{
@@ -4988,14 +4997,6 @@ events =
 	},
 
 	{
-		34.179, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_10_ACOH_He_Gone" }
-	},
-
-	{
-		34.179, SET_CAMERA, { "cam_Monitor_2", "Cam_10_ACOH_He_Gone" }
-	},
-
-	{
 		34.179, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
 		{
 			duration = 0.000,
@@ -5003,6 +5004,32 @@ events =
 			{
 				on = Y,
 			}
+		}
+	},
+
+	{
+		34.179, SET_CAMERA, { "cam_Monitor_2", "Cam_10_ACOH_He_Gone" }
+	},
+
+	{
+		34.179, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_10_ACOH_He_Gone" }
+	},
+
+	{
+		34.630, START_IK, { "Char_trent", "char_Trent_Mrk_look_deep_thought_eyes" },
+		{
+			duration = 1.687,
+			end_effector = "Eye IK Left",
+			count_to_root = 1,
+			target_part = "",
+			target_type = ROOT,
+			damping = 1,
+			up = Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 0.500,
+			event_flags = 128
 		}
 	},
 
@@ -5020,24 +5047,6 @@ events =
 			point_at = 1,
 			move_to = 0,
 			transition_duration = 0.800,
-			event_flags = 128
-		}
-	},
-
-	{
-		34.630, START_IK, { "Char_trent", "char_Trent_Mrk_look_deep_thought_eyes" },
-		{
-			duration = 1.687,
-			end_effector = "Eye IK Left",
-			count_to_root = 1,
-			target_part = "",
-			target_type = ROOT,
-			damping = 1,
-			up = Y_AXIS,
-			front = Z_AXIS,
-			point_at = 1,
-			move_to = 0,
-			transition_duration = 0.500,
 			event_flags = 128
 		}
 	},
@@ -5109,6 +5118,14 @@ events =
 	},
 
 	{
+		35.854, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_11_Who_transfer" }
+	},
+
+	{
+		35.854, SET_CAMERA, { "cam_Monitor_2", "Cam_11_Who_transfer" }
+	},
+
+	{
 		35.854, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
 		{
 			duration = 0.000,
@@ -5117,14 +5134,6 @@ events =
 				on = N,
 			}
 		}
-	},
-
-	{
-		35.854, SET_CAMERA, { "cam_Monitor_2", "Cam_11_Who_transfer" }
-	},
-
-	{
-		35.854, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_11_Who_transfer" }
 	},
 
 	{
@@ -5198,6 +5207,14 @@ events =
 	},
 
 	{
+		36.907, SET_CAMERA, { "cam_Monitor_2", "Cam_12_wasnttranfered" }
+	},
+
+	{
+		36.907, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_12_wasnttranfered" }
+	},
+
+	{
 		36.907, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
 		{
 			duration = 0.000,
@@ -5206,14 +5223,6 @@ events =
 				on = Y,
 			}
 		}
-	},
-
-	{
-		36.907, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_12_wasnttranfered" }
-	},
-
-	{
-		36.907, SET_CAMERA, { "cam_Monitor_2", "Cam_12_wasnttranfered" }
 	},
 
 	{
@@ -5314,6 +5323,14 @@ events =
 	},
 
 	{
+		41.595, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_11_Who_transfer" }
+	},
+
+	{
+		41.595, SET_CAMERA, { "cam_Monitor_2", "Cam_11_Who_transfer" }
+	},
+
+	{
 		41.595, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sun_01_Edger" },
 		{
 			duration = 0.000,
@@ -5322,14 +5339,6 @@ events =
 				on = N,
 			}
 		}
-	},
-
-	{
-		41.595, SET_CAMERA, { "cam_Monitor_2", "Cam_11_Who_transfer" }
-	},
-
-	{
-		41.595, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_11_Who_transfer" }
 	},
 
 	{
@@ -5610,18 +5619,6 @@ events =
 	},
 
 	{
-		48.766, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019a_1002_juni",
-			duration = 3.332,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		49.041, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_FMHEAD_NEUT_BLINK_EYES_000LV_A_00",
@@ -5683,6 +5680,18 @@ events =
 				}
 			},
 			pcurve_period = -1000
+		}
+	},
+
+	{
+		50.066, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019a_1002_juni",
+			duration = 3.332,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -5782,7 +5791,7 @@ events =
 	},
 
 	{
-		52.298, START_MOTION, { "Char_trent" },
+		52.598, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019a_1101_Trent",
 			duration = 3.400,
@@ -5794,14 +5803,6 @@ events =
 	},
 
 	{
-		52.701, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_15_Frust_END" }
-	},
-
-	{
-		52.701, SET_CAMERA, { "cam_Monitor_2", "Cam_15_Frust_END" }
-	},
-
-	{
 		52.701, START_LIGHT_PROP_ANIM, { "ambi_LtG00_Direct_Sky_Edger" },
 		{
 			duration = 0.000,
@@ -5810,6 +5811,14 @@ events =
 				on = N,
 			}
 		}
+	},
+
+	{
+		52.701, SET_CAMERA, { "cam_Monitor_2", "Cam_15_Frust_END" }
+	},
+
+	{
+		52.701, SET_CAMERA, { "cam_Monitor_static_cam", "Cam_static_15_Frust_END" }
 	},
 
 	{
@@ -5889,19 +5898,6 @@ events =
 	},
 
 	{
-		55.900, START_MOTION, { "Char_trent" },
-		{
-			animation = "Sc_dx_s019a_1102_Trent",
-			duration = 3.664,
-			start_time = 0.300,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		55.986, START_IK, { "Char_trent", "Char_juni" },
 		{
 			duration = 7.782,
@@ -5916,6 +5912,19 @@ events =
 			move_to = 0,
 			transition_duration = 0.300,
 			event_flags = 128
+		}
+	},
+
+	{
+		56.200, START_MOTION, { "Char_trent" },
+		{
+			animation = "Sc_dx_s019a_1102_Trent",
+			duration = 3.664,
+			start_time = 0.300,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -6002,18 +6011,6 @@ events =
 	},
 
 	{
-		58.850, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019a_1201_juni",
-			duration = 5.000,
-			trans_time = 0.500,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		58.965, START_SPATIAL_PROP_ANIM, { "Camera_ACS_Trent_Juni_(Walker)_(02)", "Camera_ACS_Trent_Juni_(Walker)_(02)_(Ref)" },
 		{
 			duration = 2.700,
@@ -6058,6 +6055,18 @@ events =
 				}
 			},
 			pcurve_period = -1000
+		}
+	},
+
+	{
+		59.150, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019a_1201_juni",
+			duration = 5.000,
+			trans_time = 0.500,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
 		}
 	},
 
@@ -6245,11 +6254,11 @@ events =
 	},
 
 	{
-		63.396, START_MOTION, { "Char_trent" },
+		63.486, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_dx_s019a_1301_Trent",
-			duration = 2.500,
-			trans_time = 0.200,
+			animation = "Sc_MLBODY_STND_SHRG_SHLDRS_SMALL_000LV_XA_01",
+			duration = 2.000,
+			trans_time = 1.000,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6257,11 +6266,11 @@ events =
 	},
 
 	{
-		63.486, START_MOTION, { "Char_trent" },
+		63.696, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_MLBODY_STND_SHRG_SHLDRS_SMALL_000LV_XA_01",
-			duration = 2.000,
-			trans_time = 1.000,
+			animation = "Sc_dx_s019a_1301_Trent",
+			duration = 2.500,
+			trans_time = 0.200,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6346,7 +6355,7 @@ events =
 	},
 
 	{
-		65.099, START_MOTION, { "Char_juni" },
+		65.400, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_dx_s019a_1401_juni",
 			duration = 2.832,
@@ -6439,7 +6448,7 @@ events =
 	},
 
 	{
-		66.850, START_MOTION, { "Char_trent" },
+		67.150, START_MOTION, { "Char_trent" },
 		{
 			animation = "Sc_dx_s019a_1501_Trent",
 			duration = 3.332,
@@ -6553,11 +6562,10 @@ events =
 	},
 
 	{
-		69.298, START_MOTION, { "Char_juni" },
+		69.502, START_MOTION, { "Char_juni" },
 		{
-			animation = "Sc_dx_s019a_1601_juni",
-			duration = 2.000,
-			trans_time = 0.400,
+			animation = "Sc_FMHAND_HNEUT_GESTR_CASL_000LV_00",
+			duration = 2.500,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6565,10 +6573,11 @@ events =
 	},
 
 	{
-		69.502, START_MOTION, { "Char_juni" },
+		69.598, START_MOTION, { "Char_juni" },
 		{
-			animation = "Sc_FMHAND_HNEUT_GESTR_CASL_000LV_00",
-			duration = 2.500,
+			animation = "Sc_dx_s019a_1601_juni",
+			duration = 2.000,
+			trans_time = 0.400,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6652,11 +6661,11 @@ events =
 	},
 
 	{
-		70.798, START_MOTION, { "Char_juni" },
+		71.097, START_MOTION, { "Char_trent" },
 		{
-			animation = "Sc_dx_s019a_1602_juni",
-			duration = 4.664,
-			trans_time = 0.200,
+			animation = "Sc_MLBODY_STND_CROSS_ARMS_000LV_xa_06",
+			duration = 3.832,
+			trans_time = 1.000,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6664,11 +6673,11 @@ events =
 	},
 
 	{
-		71.097, START_MOTION, { "Char_trent" },
+		71.098, START_MOTION, { "Char_juni" },
 		{
-			animation = "Sc_MLBODY_STND_CROSS_ARMS_000LV_xa_06",
-			duration = 3.832,
-			trans_time = 1.000,
+			animation = "Sc_dx_s019a_1602_juni",
+			duration = 4.664,
+			trans_time = 0.200,
 			time_scale = 1,
 			weight = 1,
 			heading = -1
@@ -6801,18 +6810,6 @@ events =
 	},
 
 	{
-		75.298, START_MOTION, { "Char_juni" },
-		{
-			animation = "Sc_dx_s019a_1603_juni",
-			duration = 2.664,
-			trans_time = 0.200,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
-		}
-	},
-
-	{
 		75.313, START_MOTION, { "Char_juni" },
 		{
 			animation = "Sc_FMHAND_NEUT_ATEASE_LEFT_000LV_XA_%",
@@ -6845,6 +6842,18 @@ events =
 			start_time = 0.200,
 			trans_time = 0.300,
 			time_scale = 0.5,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
+		75.598, START_MOTION, { "Char_juni" },
+		{
+			animation = "Sc_dx_s019a_1603_juni",
+			duration = 2.664,
+			trans_time = 0.200,
+			time_scale = 1,
 			weight = 1,
 			heading = -1
 		}

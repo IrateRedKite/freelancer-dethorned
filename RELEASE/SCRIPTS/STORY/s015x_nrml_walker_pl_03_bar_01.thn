@@ -2094,6 +2094,7 @@ entities =
 			pan = 13,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -2123,6 +2124,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -3779,7 +3781,7 @@ events =
 	{
 		10.828, START_IK, { "Char_Walker", "Char_Trent" },
 		{
-			duration = 5.170,
+			duration = 5.171,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "teeth top",

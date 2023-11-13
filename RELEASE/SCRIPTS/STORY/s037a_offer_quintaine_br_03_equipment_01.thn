@@ -593,6 +593,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 1000,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -622,6 +623,7 @@ entities =
 			ain = 360,
 			aout = 360,
 			atout = 0,
+			rmix = 0,
 		},
 		userprops =
 		{
@@ -793,6 +795,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -2447,6 +2450,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = -1,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -2477,6 +2481,7 @@ entities =
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
+			ain = 360,
 			aout = 360,
 			atout = 0,
 			rmix = 0,
@@ -3378,6 +3383,18 @@ entities =
 			orient = { {  0.098182,  0.000000, -0.995168 },
 					   {  0.000000,  1.000000,  0.000000 },
 					   {  0.995168,  0.000000,  0.098182 } }
+		}
+	},
+
+	{
+		entity_name = "Mrk_look_at_Sinclair",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -1.132977, 1.582739, -29.03296 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
 		}
 	},
 
@@ -7150,6 +7167,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -7184,6 +7202,30 @@ entities =
 		{
 			category = "Audio",
 			Priority = "Story_Sound_1",
+		}
+	},
+
+	{
+		entity_name = "rtc_music_anticipation_more_forboding_1",
+		type = SOUND,
+		template_name = "rtc_music_anticipation_more_forboding",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 1,
+			dmax = 1e+009,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
 		}
 	},
 
@@ -8430,6 +8472,7 @@ entities =
 			attenuation = -20,
 			pan = 0,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -10749,6 +10792,18 @@ events =
 	},
 
 	{
+		23.437, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_MOTION_BREATHE_HEAVY_000LV_XA_%",
+			duration = 4.000,
+			trans_time = 0.200,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		23.531, START_SPATIAL_PROP_ANIM, { "Char_Trent", "Mrk_Trent_orient" },
 		{
 			duration = 1.000,
@@ -11211,7 +11266,7 @@ events =
 	{
 		29.625, START_IK, { "Char_Tobias", "Char_Sinclair" },
 		{
-			duration = 3.061,
+			duration = 8.560,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -12610,6 +12665,24 @@ events =
 	},
 
 	{
+		42.097, START_IK, { "Char_Quintaine", "Mrk_look_at_Sinclair" },
+		{
+			duration = 9.189,
+			end_effector = "Body_Head",
+			count_to_root = 1,
+			target_part = "hp_head",
+			target_type = ROOT,
+			damping = 6,
+			up = NEG_Y_AXIS,
+			front = Z_AXIS,
+			point_at = 1,
+			move_to = 0,
+			transition_duration = 3.000,
+			event_flags = 128
+		}
+	},
+
+	{
 		42.097, START_MOTION, { "Char_Quintaine" },
 		{
 			animation = "Sc_dx_s037a_1203_Quintaine",
@@ -13495,7 +13568,7 @@ events =
 	},
 
 	{
-		66.477, START_SPATIAL_PROP_ANIM, { "Char_Trent_Mrk_Eyes", "Char_Juni_Mrk_HeadForEyes" },
+		66.477, START_SPATIAL_PROP_ANIM, { "Char_Tobias_Mrk_Eyes", "Char_Juni_Mrk_HeadForEyes" },
 		{
 			duration = 0.100,
 			target_part = "",
@@ -13508,7 +13581,7 @@ events =
 	},
 
 	{
-		66.477, START_SPATIAL_PROP_ANIM, { "Char_Tobias_Mrk_Eyes", "Char_Juni_Mrk_HeadForEyes" },
+		66.477, START_SPATIAL_PROP_ANIM, { "Char_Trent_Mrk_Eyes", "Char_Juni_Mrk_HeadForEyes" },
 		{
 			duration = 0.100,
 			target_part = "",
@@ -14978,6 +15051,17 @@ events =
 	},
 
 	{
+		88.362, START_MOTION, { "Char_Trent" },
+		{
+			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
+			duration = 0.266,
+			time_scale = 1,
+			weight = 1,
+			heading = -1
+		}
+	},
+
+	{
 		88.362, START_SPATIAL_PROP_ANIM, { "Char_Trent_Mrk_Eyes", "Char_Tobias_Mrk_HeadForEyes" },
 		{
 			duration = 0.500,
@@ -14987,17 +15071,6 @@ events =
 			{
 				pos = { 0.44278, 1.724887, -27.38417 }
 			}
-		}
-	},
-
-	{
-		88.362, START_MOTION, { "Char_Trent" },
-		{
-			animation = "Sc_MLHEAD_NEUT_BLINK_EYES_000LV_A_00",
-			duration = 0.266,
-			time_scale = 1,
-			weight = 1,
-			heading = -1
 		}
 	},
 
@@ -15349,6 +15422,14 @@ events =
 	},
 
 	{
+		93.527, SET_CAMERA, { "Cam_Monitor_s037a_static", "Cam_13_Quintaine/insert_A_Static" }
+	},
+
+	{
+		93.527, SET_CAMERA, { "Cam_Monitor_s037a", "Cam_13_Quintaine/insert_A" }
+	},
+
+	{
 		93.527, ATTACH_ENTITY, { "ambi_LtG00_Artifact_Glow", "prop_artifact_crystal" },
 		{
 			duration = 80.699,
@@ -15359,14 +15440,6 @@ events =
 			target_type = PART,
 			flags = POSITION
 		}
-	},
-
-	{
-		93.527, SET_CAMERA, { "Cam_Monitor_s037a", "Cam_13_Quintaine/insert_A" }
-	},
-
-	{
-		93.527, SET_CAMERA, { "Cam_Monitor_s037a_static", "Cam_13_Quintaine/insert_A_Static" }
 	},
 
 	{
@@ -18472,7 +18545,7 @@ events =
 	{
 		145.503, START_IK, { "Char_Juni", "Char_Quintaine" },
 		{
-			duration = 13.933,
+			duration = 13.934,
 			end_effector = "Eye IK Left",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -18625,7 +18698,7 @@ events =
 	{
 		148.094, START_IK, { "Char_Sinclair", "Char_Quintaine" },
 		{
-			duration = 7.892,
+			duration = 10.951,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",

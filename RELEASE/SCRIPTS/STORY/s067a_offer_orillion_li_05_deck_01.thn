@@ -738,6 +738,7 @@ entities =
 		audioprops =
 		{
 			attenuation = -22,
+			pan = -36,
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
@@ -767,6 +768,7 @@ entities =
 			attenuation = -23,
 			pan = -20,
 			dmin = 50,
+			dmax = 300,
 			ain = 360,
 			aout = 360,
 			atout = 0,
@@ -796,6 +798,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -824,6 +827,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =
@@ -1005,6 +1009,7 @@ entities =
 		type = SOUND,
 		template_name = "ambience_deck_space_larger",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -1020,11 +1025,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
-			Priority = "Story_Sound_1",
 		}
 	},
 
@@ -1033,6 +1033,7 @@ entities =
 		type = SOUND,
 		template_name = "rtc_music_anticipation_motivated",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -1048,11 +1049,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
-			Priority = "rtc_music_1",
 		}
 	},
 
@@ -1117,6 +1113,7 @@ entities =
 		type = SOUND,
 		template_name = "ship_levitation",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE + SPATIAL,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -1132,11 +1129,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
-			Priority = "Story_Sound_1",
 		}
 	},
 
@@ -2085,7 +2077,7 @@ events =
 	{
 		3.592, START_IK, { "Char_Orillion", "Char_O_Mk_IKhead_J" },
 		{
-			duration = 3.607,
+			duration = 3.608,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",

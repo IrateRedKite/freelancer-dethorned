@@ -1454,6 +1454,7 @@ entities =
 		type = SOUND,
 		template_name = "mix_s072e",
 		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = REFERENCE,
 		spatialprops =
 		{
 			pos = { 0, 0, 0 },
@@ -1469,10 +1470,6 @@ entities =
 			aout = 360,
 			atout = 0,
 			rmix = 0,
-		},
-		userprops =
-		{
-			category = "Audio",
 		}
 	},
 

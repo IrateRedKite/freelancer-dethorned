@@ -394,6 +394,7 @@ entities =
 		{
 			attenuation = -19,
 			pan = -4,
+			dmin = 50,
 			dmax = 300,
 			ain = 360,
 			aout = 360,
@@ -424,6 +425,7 @@ entities =
 			dmax = 300,
 			ain = 360,
 			aout = 360,
+			atout = 0,
 			rmix = 0,
 		},
 		userprops =

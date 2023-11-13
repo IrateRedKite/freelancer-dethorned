@@ -2131,6 +2131,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = 0,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -2162,6 +2163,7 @@ entities =
 			dmin = 50,
 			dmax = 300,
 			ain = 360,
+			aout = 360,
 			atout = 0,
 			rmix = 0,
 		},
@@ -3236,6 +3238,7 @@ entities =
 		},
 		audioprops =
 		{
+			attenuation = 0,
 			pan = 0,
 			dmin = 50,
 			dmax = 300,
@@ -6350,7 +6353,7 @@ events =
 	{
 		22.156, START_IK, { "Char_Tobias", "Mk_Tobias_Look_Trent" },
 		{
-			duration = 8.406,
+			duration = 9.506,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
@@ -6983,7 +6986,7 @@ events =
 	{
 		30.625, START_IK, { "Char_Tobias", "Char_Trent" },
 		{
-			duration = 2.938,
+			duration = 2.954,
 			end_effector = "Body_Head",
 			count_to_root = 1,
 			target_part = "hp_head",
